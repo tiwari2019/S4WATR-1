@@ -1,0 +1,512 @@
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93> <http://purl.org/dc/elements/1.1/title> "SAREF extension for Water"@en .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93> <http://purl.org/dc/terms/creator> ""@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#alt
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeometry"@en .
+# 
+# http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#label> "sfContains"@en .
+# 
+# http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#label> "sfWithin"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasCharacterstics
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasCharacterstics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasCharacterstics> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasCharacterstics> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasMeter
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasMeter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasMeter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasMeter> <http://www.w3.org/2000/01/rdf-schema#label> "hasMeter"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasVersion
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasVersion"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Device> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isManagedBy"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset> <http://www.w3.org/2000/01/rdf-schema#label> "manageWaterAsset"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# https://w3id.org/saref#controlsProperty
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
+<https://w3id.org/saref#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#label> "controlsProperty"@en .
+# 
+# https://w3id.org/saref#isControlledByDevice
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#label> "isControlledByDevice"@en .
+# 
+# https://w3id.org/saref#isMeasuredByDevice
+<https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Device> .
+# 
+# https://w3id.org/saref#isMeasuredIn
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
+<https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "isMeasuredIn"@en .
+# 
+# https://w3id.org/saref#makesMeasurement
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/saref#measurementMadeBy> .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makesMeasurement"@en .
+# 
+# https://w3id.org/saref#measurementMadeBy
+<https://w3id.org/saref#measurementMadeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#measurementMadeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#measurementMadeBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Device> .
+# 
+# https://w3id.org/saref#measuresProperty
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#label> "measuresProperty" .
+# 
+# https://w3id.org/saref#relatesToMeasurements
+<https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToMeasurement" .
+# 
+# https://w3id.org/saref#relatesToProperty
+<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToProperty"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFabricationNo
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFabricationNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFabricationNo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFabricationNo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFabricationNo> <http://www.w3.org/2000/01/rdf-schema#label> "hasFabricationNo"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFirmwareVersion
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFirmwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFirmwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFirmwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFirmwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasFirmwareVersion"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasHardwareVersion
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasHardwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasHardwareVersion"@en .
+# 
+# https://w3id.org/saref#hasManufacture
+<https://w3id.org/saref#hasManufacture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the manufacturer of an entity (e.g., device)"@en .
+<https://w3id.org/saref#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#label> "hasManufacture"@en .
+# 
+# https://w3id.org/saref#hasModel
+<https://w3id.org/saref#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the model of an entity (e.g., device)" .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "hasModel"@en .
+# 
+# https://w3id.org/saref#hasTimeStamp
+<https://w3id.org/saref#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimeStamp"@en .
+# 
+# https://w3id.org/saref#hasValue
+<https://w3id.org/saref#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+# 
+# http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
+# 
+# http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#hasGeometry> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfContains> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/ont/geosparql#sfWithin> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/ont/geosparql#SpatialObject> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
+_:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialObject" .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Aquedunct
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Aquedunct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Aquedunct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Aquedunct> <http://www.w3.org/2000/01/rdf-schema#label> "Aquedunct"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CatchmentWell
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CatchmentWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CatchmentWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CatchmentWell> <http://www.w3.org/2000/01/rdf-schema#label> "CatchmentWell"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics> <http://www.w3.org/2000/01/rdf-schema#label> "Characterstics"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Chemical
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Chemical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Chemical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Dam
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Dam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Dam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Dam> <http://www.w3.org/2000/01/rdf-schema#label> "Dam"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#GroundWaterWell
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#GroundWaterWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#GroundWaterWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#GroundWaterWell> <http://www.w3.org/2000/01/rdf-schema#label> "GroundWaterWell"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pipe
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pipe> <http://www.w3.org/2000/01/rdf-schema#label> "Pipe"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#PressureRegulator
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#PressureRegulator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#PressureRegulator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Actuator> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#PressureRegulator> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pump
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Actuator> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pump> <http://www.w3.org/2000/01/rdf-schema#label> "Regulator"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Reservoir
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Reservoir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Reservoir> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Reservoir> <http://www.w3.org/2000/01/rdf-schema#label> "Reservoir"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#StorageTank
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#StorageTank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#StorageTank> <http://www.w3.org/2000/01/rdf-schema#label> "StorageTank"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#SurfaceWaterIntake
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#SurfaceWaterIntake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#SurfaceWaterIntake> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#SurfaceWaterIntake> <http://www.w3.org/2000/01/rdf-schema#label> "SurfaceWaterIntake"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Valve
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Valve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Valve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Actuator> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Valve> <http://www.w3.org/2000/01/rdf-schema#label> "Valve"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version> <http://www.w3.org/2000/01/rdf-schema#label> "Version"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WasteWaterPlant
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WasteWaterPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#label> "WasteWaterPlant"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#label> "WaterAsset"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterMeter"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType> <http://www.w3.org/2000/01/rdf-schema#label> "WaterMeterType"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMonitoringSensor
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMonitoringSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMonitoringSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMonitoringSensor> <http://www.w3.org/2000/01/rdf-schema#label> "WaterMonitoringSensor"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterQualitySensor
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterQualitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterQualitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterQualitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "WaterQualitySensor"@en .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterflowInstrument
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterflowInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterflowInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterflowInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "WaterflowInstrument"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#Point
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Geometry> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point" .
+# 
+# https://w3id.org/def/saref4city#City
+<https://w3id.org/def/saref4city#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/def/saref4city#" .
+<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# https://w3id.org/saref#Actuator
+<https://w3id.org/saref#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+# 
+# https://w3id.org/saref#Device
+<https://w3id.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Feature> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref" .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# https://w3id.org/saref#Measurement
+<https://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToProperty> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid7 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid7 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#UnitOfMeasure> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToProperty> .
+_:genid8 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Property> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasTimeStamp> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
+_:genid10 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
+# 
+# https://w3id.org/saref#Property
+<https://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isControlledByDevice> .
+_:genid12 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredByDevice> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToMeasurements> .
+_:genid14 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref"@en .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
+# 
+# https://w3id.org/saref#Sensor
+<https://w3id.org/saref#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+# 
+# https://w3id.org/saref#UnitOfMeasure
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "UnitOfMeasure" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Capacity
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Conductance
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Conductance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Conductance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentLevel
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterFlow
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterLeak
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterLeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterLeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#FlowOfWater
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#FlowOfWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#FlowOfWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Hardness
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Hardness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#InflowRates
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#InflowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#InflowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#OutFlowRates
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#OutFlowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#OutFlowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Power
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#RadioFrequencyLevel
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#RadioFrequencyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#RadioFrequencyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Temperature
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Turbidity
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Turbidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Turbidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Volume
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
+# 
+# http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#pH
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#pH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#pH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Chemical> .
+# 
+# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
