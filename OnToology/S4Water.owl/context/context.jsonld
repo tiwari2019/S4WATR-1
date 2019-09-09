@@ -4,7 +4,7 @@
       "@id" : "https://w3id.org/saref#UnitOfMeasure"
     },
     "WaterflowInstrument" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterflowInstrument"
+      "@id" : "https://w3id.org/def/S4WATR#WaterflowInstrument"
     },
     "isControlledByDevice" : {
       "@id" : "https://w3id.org/saref#isControlledByDevice",
@@ -15,13 +15,13 @@
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Dam" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Dam"
+      "@id" : "https://w3id.org/def/S4WATR#Dam"
     },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     },
     "hasVersion" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasVersion",
+      "@id" : "https://w3id.org/def/S4WATR#hasVersion",
       "@type" : "@id"
     },
     "measuresProperty" : {
@@ -29,13 +29,13 @@
       "@type" : "@id"
     },
     "Pipe" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pipe"
+      "@id" : "https://w3id.org/def/S4WATR#Pipe"
     },
     "Geometry" : {
       "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
     },
     "hasMeter" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasMeter",
+      "@id" : "https://w3id.org/def/S4WATR#hasMeter",
       "@type" : "@id"
     },
     "hasValue" : {
@@ -52,32 +52,32 @@
       "@id" : "http://www.opengis.net/ont/geosparql#Feature"
     },
     "Characterstics" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics"
+      "@id" : "https://w3id.org/def/S4WATR#Characterstics"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "isManagedBy" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy",
+      "@id" : "https://w3id.org/def/S4WATR#isManagedBy",
       "@type" : "@id"
     },
     "Measurement" : {
       "@id" : "https://w3id.org/saref#Measurement"
     },
     "WaterMeter" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter"
+      "@id" : "https://w3id.org/def/S4WATR#WaterMeter"
     },
     "WaterMeterType" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType"
+      "@id" : "https://w3id.org/def/S4WATR#WaterMeterType"
     },
     "Chemical" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Chemical"
+      "@id" : "https://w3id.org/def/S4WATR#Chemical"
     },
     "Physical" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical"
+      "@id" : "https://w3id.org/def/S4WATR#Physical"
     },
     "hasCharacterstics" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasCharacterstics",
+      "@id" : "https://w3id.org/def/S4WATR#hasCharacterstics",
       "@type" : "@id"
     },
     "measurementMadeBy" : {
@@ -92,33 +92,33 @@
       "@type" : "@id"
     },
     "WaterQualitySensor" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterQualitySensor"
+      "@id" : "https://w3id.org/def/S4WATR#WaterQualitySensor"
     },
     "alt" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
     },
     "GroundWaterWell" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#GroundWaterWell"
+      "@id" : "https://w3id.org/def/S4WATR#GroundWaterWell"
     },
     "StorageTank" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#StorageTank"
+      "@id" : "https://w3id.org/def/S4WATR#StorageTank"
     },
     "hasTimeStamp" : {
       "@id" : "https://w3id.org/saref#hasTimeStamp"
     },
     "WaterAsset" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
+      "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
     },
     "isMeasuredByDevice" : {
       "@id" : "https://w3id.org/saref#isMeasuredByDevice",
       "@type" : "@id"
     },
     "hasHardwareVersion" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasHardwareVersion",
+      "@id" : "https://w3id.org/def/S4WATR#hasHardwareVersion",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "hasFirmwareVersion" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFirmwareVersion",
+      "@id" : "https://w3id.org/def/S4WATR#hasFirmwareVersion",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "isDefinedBy" : {
@@ -132,7 +132,7 @@
       "@type" : "@id"
     },
     "manageWaterAsset" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset",
+      "@id" : "https://w3id.org/def/S4WATR#manageWaterAsset",
       "@type" : "@id"
     },
     "hasGeometry" : {
@@ -153,7 +153,7 @@
       "@id" : "http://purl.org/dc/terms/source"
     },
     "SurfaceWaterIntake" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#SurfaceWaterIntake"
+      "@id" : "https://w3id.org/def/S4WATR#SurfaceWaterIntake"
     },
     "isMeasuredIn" : {
       "@id" : "https://w3id.org/saref#isMeasuredIn",
@@ -166,19 +166,19 @@
       "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
     },
     "PressureRegulator" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#PressureRegulator"
+      "@id" : "https://w3id.org/def/S4WATR#PressureRegulator"
     },
     "lat" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
     },
     "Aquedunct" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Aquedunct"
+      "@id" : "https://w3id.org/def/S4WATR#Aquedunct"
     },
     "Pump" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pump"
+      "@id" : "https://w3id.org/def/S4WATR#Pump"
     },
     "WasteWaterPlant" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WasteWaterPlant"
+      "@id" : "https://w3id.org/def/S4WATR#WasteWaterPlant"
     },
     "hasManufacture" : {
       "@id" : "https://w3id.org/saref#hasManufacture"
@@ -187,7 +187,7 @@
       "@id" : "https://w3id.org/def/saref4city#City"
     },
     "Version" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version"
+      "@id" : "https://w3id.org/def/S4WATR#Version"
     },
     "relatesToProperty" : {
       "@id" : "https://w3id.org/saref#relatesToProperty",
@@ -207,13 +207,13 @@
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
     },
     "CatchmentWell" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CatchmentWell"
+      "@id" : "https://w3id.org/def/S4WATR#CatchmentWell"
     },
     "Device" : {
       "@id" : "https://w3id.org/saref#Device"
     },
     "Valve" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Valve"
+      "@id" : "https://w3id.org/def/S4WATR#Valve"
     },
     "relatesToMeasurements" : {
       "@id" : "https://w3id.org/saref#relatesToMeasurements",
@@ -223,14 +223,14 @@
       "@id" : "http://purl.org/dc/elements/1.1/description"
     },
     "Reservoir" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Reservoir"
+      "@id" : "https://w3id.org/def/S4WATR#Reservoir"
     },
     "hasFabricationNo" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFabricationNo",
+      "@id" : "https://w3id.org/def/S4WATR#hasFabricationNo",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "WaterMonitoringSensor" : {
-      "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMonitoringSensor"
+      "@id" : "https://w3id.org/def/S4WATR#WaterMonitoringSensor"
     },
     "Sensor" : {
       "@id" : "https://w3id.org/saref#Sensor"

@@ -1,36 +1,36 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":Actuator" "http://www.opengis.net/ont/geosparql#Feature" "base:WaterMonitoringSensor" "base:CatchmentWell" "base:SurfaceWaterIntake" "base:Reservoir" "base:Physical" ":Sensor" ":Device" "base:Valve" "base:Version" "base:WaterMeterType" "base:WaterflowInstrument" "base:WaterAsset" "base:Pump" "base:GroundWaterWell" "base:StorageTank" "base:Dam" "http://www.opengis.net/ont/geosparql#SpatialObject" "base:WaterMeter" "http://www.opengis.net/ont/geosparql#Geometry" "base:WasteWaterPlant" "base:Characterstics" "base:Chemical" "base:Pipe" ":UnitOfMeasure" "wgs84_pos:Point" ":Measurement" "base:Aquedunct" "base:WaterQualitySensor" "base:PressureRegulator" ; /*classes style*/
+node [shape = rectangle, color="black"]; ":PressureRegulator" ":Version" "http://www.opengis.net/ont/geosparql#Feature" ":WaterMeterType" ":GroundWaterWell" ":Dam" ":WaterAsset" ":Reservoir" ":CatchmentWell" ":Sensor" ":WaterMeter" ":Device" ":Pump" ":StorageTank" ":Valve" ":WaterMonitoringSensor" ":WasteWaterPlant" "http://www.opengis.net/ont/geosparql#SpatialObject" ":Aquedunct" "http://www.opengis.net/ont/geosparql#Geometry" ":WaterflowInstrument" ":Pipe" ":SurfaceWaterIntake" ":UnitOfMeasure" "wgs84_pos:Point" ":Measurement" ":Chemical" ":WaterQualitySensor" ":Characterstics" ":Physical" ":Actuator" ; /*classes style*/
 	":Measurement" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	":Sensor" -> ":Device" [ label = "rdfs:subClassOf" ];
-	"base:WaterMeterType" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"base:Dam" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
-	"base:WaterflowInstrument" -> ":Device" [ label = "rdfs:subClassOf" ];
-	"base:Aquedunct" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
-	"base:WasteWaterPlant" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
-	"base:Chemical" -> "base:Characterstics" [ label = "rdfs:subClassOf" ];
-	"base:CatchmentWell" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
-	"base:Version" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"base:WaterQualitySensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
-	"base:WaterMeter" -> ":Device" [ label = "rdfs:subClassOf" ];
-	"base:Pump" -> ":Actuator" [ label = "rdfs:subClassOf" ];
+	":WaterflowInstrument" -> ":Device" [ label = "rdfs:subClassOf" ];
+	":Reservoir" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
+	":Pipe" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
+	":WaterMonitoringSensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
+	":CatchmentWell" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
+	":StorageTank" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
+	":WaterMeter" -> ":Device" [ label = "rdfs:subClassOf" ];
+	":Dam" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
+	":WaterAsset" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":GroundWaterWell" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
+	":PressureRegulator" -> ":Actuator" [ label = "rdfs:subClassOf" ];
+	":WaterMeterType" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":Aquedunct" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
 	"wgs84_pos:Point" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "rdfs:subClassOf" ];
-	"base:SurfaceWaterIntake" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
+	":SurfaceWaterIntake" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
 	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	":Physical" -> ":Characterstics" [ label = "rdfs:subClassOf" ];
 	"http://www.opengis.net/ont/geosparql#SpatialObject" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"base:Pipe" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
 	":Actuator" -> ":Device" [ label = "rdfs:subClassOf" ];
-	"base:WaterMonitoringSensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
-	"base:GroundWaterWell" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
-	"base:WaterAsset" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":WaterQualitySensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
+	":Valve" -> ":Actuator" [ label = "rdfs:subClassOf" ];
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
-	"base:Reservoir" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
-	"base:Valve" -> ":Actuator" [ label = "rdfs:subClassOf" ];
-	"base:Physical" -> "base:Characterstics" [ label = "rdfs:subClassOf" ];
-	"base:StorageTank" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
+	":Chemical" -> ":Characterstics" [ label = "rdfs:subClassOf" ];
 	":UnitOfMeasure" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
-	"base:PressureRegulator" -> ":Actuator" [ label = "rdfs:subClassOf" ];
+	":Version" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	":WasteWaterPlant" -> ":WaterAsset" [ label = "rdfs:subClassOf" ];
+	":Pump" -> ":Actuator" [ label = "rdfs:subClassOf" ];
+	":Sensor" -> ":Device" [ label = "rdfs:subClassOf" ];
 	":Device" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
 
 }

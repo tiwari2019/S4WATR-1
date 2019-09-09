@@ -231,374 +231,6 @@
     "@value" : "sfWithin"
   } ]
 }, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/title" : [ {
-    "@language" : "en",
-    "@value" : "SAREF extension for Water"
-  } ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@language" : "en",
-    "@value" : ""
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Aquedunct",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Aquedunct"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Capacity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CatchmentWell",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "CatchmentWell"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Characterstics"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Chemical",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Conductance",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterFlow",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#CurrentWaterLeak",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Dam",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Dam"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#FlowOfWater",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#GroundWaterWell",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "GroundWaterWell"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Hardness",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#InflowRates",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#OutFlowRates",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pipe",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Pipe"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Power",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#PressureRegulator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Pressure"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Actuator"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Pump",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Regulator"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Actuator"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#RadioFrequencyLevel",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Reservoir",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Reservoir"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#StorageTank",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "StorageTank"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#SurfaceWaterIntake",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "SurfaceWaterIntake"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Temperature",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Turbidity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Physical" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Valve",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Valve"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Actuator"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Version"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Volume",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WasteWaterPlant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WasteWaterPlant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterAsset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterMeter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterMeterType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMonitoringSensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterMonitoringSensor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Sensor"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterQualitySensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterQualitySensor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Sensor"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterflowInstrument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterflowInstrument"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasCharacterstics",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Characterstics"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFabricationNo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasFabricationNo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasFirmwareVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasFirmwareVersion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasHardwareVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasHardwareVersion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasMeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasMeter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeterType"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#hasVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterMeter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasVersion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Version"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#isManagedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "isManagedBy"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#manageWaterAsset",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "manageWaterAsset"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#WaterAsset"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#pH",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93#Chemical" ]
-}, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -628,6 +260,387 @@
 }, {
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@language" : "en",
+    "@value" : "https://www.etsi.org/"
+  }, {
+    "@value" : "http://www.oeg-upm.net/"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "SAREF Extension for Water"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/def/S4WATR"
+  } ],
+  "http://www.w3.org/2003/01/geo/wgs84_pos#alt" : [ {
+    "@language" : "en",
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Aquedunct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aquedunct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Capacity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#CatchmentWell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CatchmentWell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Characterstics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Characterstics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Chemical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#Characterstics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Conductance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Physical" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#CurrentLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#CurrentWaterFlow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#CurrentWaterLeak",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Dam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dam"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#FlowOfWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#GroundWaterWell",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GroundWaterWell"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Hardness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#InflowRates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#OutFlowRates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Physical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#Characterstics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Pipe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pipe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Power",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#PressureRegulator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pressure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Pump",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Regulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#RadioFrequencyLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Reservoir",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reservoir"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#StorageTank",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "StorageTank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#SurfaceWaterIntake",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SurfaceWaterIntake"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Temperature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Physical" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Turbidity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Physical" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Valve",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Valve"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Actuator"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Version"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Volume",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/saref#Property" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#WasteWaterPlant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WasteWaterPlant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#WaterAsset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterAsset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#WaterMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#WaterMeterType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterMeterType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#WaterMonitoringSensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterMonitoringSensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#WaterQualitySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterQualitySensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Sensor"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#WaterflowInstrument",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterflowInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#hasCharacterstics",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#Characterstics"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#hasFabricationNo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasFabricationNo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#hasFirmwareVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasFirmwareVersion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#hasHardwareVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasHardwareVersion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#hasMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterMeterType"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#hasVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "hasVersion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#Version"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#isManagedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "isManagedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#manageWaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#manageWaterAsset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "manageWaterAsset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#pH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Chemical" ]
 }, {
   "@id" : "https://w3id.org/def/saref4city#City",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
