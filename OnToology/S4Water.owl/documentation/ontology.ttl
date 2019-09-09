@@ -7,7 +7,6 @@
 @base <https://w3id.org/def/S4WATR> .
 
 <https://w3id.org/def/S4WATR> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://w3id.org/def/S4WATR> ;
                                <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/"@en ,
                                                                            "http://www.oeg-upm.net/" ;
                                <http://purl.org/dc/elements/1.1/title> "SAREF Extension for Water"@en ;
@@ -247,12 +246,14 @@
 ###  http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               rdfs:comment "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types." ;
                                                rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#" .
 
 
 ###  http://www.opengis.net/ont/geosparql#Geometry
 <http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
                                                 rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:comment "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types." ;
                                                 rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#" ;
                                                 rdfs:label "Geometry"@en .
 
@@ -283,6 +284,11 @@
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
 <http://www.w3.org/2003/01/geo/wgs84_pos#Point> rdf:type owl:Class ;
                                                 rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                rdfs:comment """Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT), lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).""" ;
                                                 rdfs:isDefinedBy "http://www.w3.org/2003/01/geo/wgs84_pos#" ;
                                                 rdfs:label "Point" .
 
@@ -418,18 +424,23 @@
 
 ###  https://w3id.org/def/saref4city#City
 <https://w3id.org/def/saref4city#City> rdf:type owl:Class ;
+                                       rdfs:comment "A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority." ;
                                        rdfs:isDefinedBy "https://w3id.org/def/saref4city#" ;
                                        rdfs:label "City" .
 
 
 ###  https://w3id.org/saref#Actuator
 <https://w3id.org/saref#Actuator> rdf:type owl:Class ;
-                                  rdfs:subClassOf <https://w3id.org/saref#Device> .
+                                  rdfs:subClassOf <https://w3id.org/saref#Device> ;
+                                  rdfs:comment "A device responsible for moving or controlling a mechanism or system." ;
+                                  rdfs:isDefinedBy "https://w3id.org/saref" ;
+                                  rdfs:label "Actuator" .
 
 
 ###  https://w3id.org/saref#Device
 <https://w3id.org/saref#Device> rdf:type owl:Class ;
                                 rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+                                rdfs:comment "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended." ;
                                 rdfs:isDefinedBy "https://w3id.org/saref" ;
                                 rdfs:label "Device"@en .
 
@@ -468,6 +479,7 @@
                                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                        owl:onDataRange xsd:float
                                                      ] ;
+                                     rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement." ;
                                      rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
                                      rdfs:label "Measurement"@en .
 
@@ -486,18 +498,23 @@
                                                     owl:onProperty <https://w3id.org/saref#relatesToMeasurements> ;
                                                     owl:allValuesFrom <https://w3id.org/saref#Measurement>
                                                   ] ;
+                                  rdfs:comment "An aspect of an entity that can be observable by a sensor." ;
                                   rdfs:isDefinedBy "https://w3id.org/saref"@en ;
                                   rdfs:label "Property"@en .
 
 
 ###  https://w3id.org/saref#Sensor
 <https://w3id.org/saref#Sensor> rdf:type owl:Class ;
-                                rdfs:subClassOf <https://w3id.org/saref#Device> .
+                                rdfs:subClassOf <https://w3id.org/saref#Device> ;
+                                rdfs:comment "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. A device that has category saref:Sensor and performs a saref:SensingFunction." ;
+                                rdfs:isDefinedBy "https://w3id.org/saref" ;
+                                rdfs:label "Label" .
 
 
 ###  https://w3id.org/saref#UnitOfMeasure
 <https://w3id.org/saref#UnitOfMeasure> rdf:type owl:Class ;
                                        rdfs:subClassOf owl:Thing ;
+                                       rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended." ;
                                        rdfs:isDefinedBy "https://w3id.org/saref#" ;
                                        rdfs:label "UnitOfMeasure" .
 

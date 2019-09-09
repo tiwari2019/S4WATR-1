@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="40" parse.nodes="28" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="39" parse.nodes="27" parse.order="free">
       <node id="nid_NULL">
          <data key="d0">
             <y:ShapeNode>
@@ -225,24 +225,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
+      <node id="nid_:hasValue">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="500.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.opengis.net/ont/geosparql#SpatialObject</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:hasValue</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:allValuesFrom9" source="nid_NULL" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
+    <edge id="eid_owl:onProperty9" source="nid_NULL" target="nid_:hasValue">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:allValuesFrom</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -271,24 +271,24 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_:hasValue">
+      <node id="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="500.0" x="0.0" y="0.0" />
                <y:Fill color="#FFFFFF" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:hasValue</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.opengis.net/ont/geosparql#SpatialObject</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_owl:onProperty11" source="nid_NULL" target="nid_:hasValue">
+    <edge id="eid_owl:allValuesFrom11" source="nid_NULL" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
                <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:onProperty</y:EdgeLabel>
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:allValuesFrom</y:EdgeLabel>
                <y:BendStyle smoothed="false" />
             </y:PolyLineEdge>
          </data>
@@ -500,29 +500,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_https://w3id.org/def/S4WATR">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="270.0" x="0.0" y="0.0" />
-               <y:Fill color="#FFFFFF" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">https://w3id.org/def/S4WATR</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_owl:versionIRI22" source="nid_https://w3id.org/def/S4WATR" target="nid_https://w3id.org/def/S4WATR">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">owl:versionIRI</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_:WaterAsset">
          <data key="d0">
             <y:ShapeNode>
@@ -547,7 +524,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_:hasCharacterstics23" source="nid_:WaterAsset" target="nid_:Characterstics">
+    <edge id="eid_:hasCharacterstics22" source="nid_:WaterAsset" target="nid_:Characterstics">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -558,7 +535,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:measurementMadeBy24" source="nid_:Measurement" target="nid_:Device">
+    <edge id="eid_:measurementMadeBy23" source="nid_:Measurement" target="nid_:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -569,7 +546,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:manageWaterAsset25" source="nid_:Device" target="nid_:WaterAsset">
+    <edge id="eid_:manageWaterAsset24" source="nid_:Device" target="nid_:WaterAsset">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -592,7 +569,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_:hasModel26" source="nid_:Device" target="nid_rdfs:Literal">
+    <edge id="eid_:hasModel25" source="nid_:Device" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -603,7 +580,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:isControlledByDevice27" source="nid_:Property" target="nid_:Device">
+    <edge id="eid_:isControlledByDevice26" source="nid_:Property" target="nid_:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -614,7 +591,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:hasHardwareVersion28" source="nid_:Device" target="nid_rdfs:Literal">
+    <edge id="eid_:hasHardwareVersion27" source="nid_:Device" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -649,7 +626,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_:hasVersion29" source="nid_:WaterMeter" target="nid_:Version">
+    <edge id="eid_:hasVersion28" source="nid_:WaterMeter" target="nid_:Version">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -660,7 +637,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:relatesToMeasurements30" source="nid_:Property" target="nid_:Measurement">
+    <edge id="eid_:relatesToMeasurements29" source="nid_:Property" target="nid_:Measurement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -671,7 +648,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:makesMeasurement31" source="nid_:Device" target="nid_:Measurement">
+    <edge id="eid_:makesMeasurement30" source="nid_:Device" target="nid_:Measurement">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -682,7 +659,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:hasFabricationNo32" source="nid_:Device" target="nid_rdfs:Literal">
+    <edge id="eid_:hasFabricationNo31" source="nid_:Device" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -693,7 +670,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:hasFirmwareVersion33" source="nid_:Device" target="nid_rdfs:Literal">
+    <edge id="eid_:hasFirmwareVersion32" source="nid_:Device" target="nid_rdfs:Literal">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -704,7 +681,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:controlsProperty34" source="nid_:Device" target="nid_:Property">
+    <edge id="eid_:controlsProperty33" source="nid_:Device" target="nid_:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -715,7 +692,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:isManagedBy35" source="nid_:WaterAsset" target="nid_:Device">
+    <edge id="eid_:isManagedBy34" source="nid_:WaterAsset" target="nid_:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -726,7 +703,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:isMeasuredByDevice36" source="nid_:Property" target="nid_:Device">
+    <edge id="eid_:isMeasuredByDevice35" source="nid_:Property" target="nid_:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -749,7 +726,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_:hasMeter37" source="nid_:WaterMeter" target="nid_:WaterMeterType">
+    <edge id="eid_:hasMeter36" source="nid_:WaterMeter" target="nid_:WaterMeterType">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -760,7 +737,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:isMeasuredIn38" source="nid_:Measurement" target="nid_:UnitOfMeasure">
+    <edge id="eid_:isMeasuredIn37" source="nid_:Measurement" target="nid_:UnitOfMeasure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -771,7 +748,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_:measuresProperty39" source="nid_:Device" target="nid_:Property">
+    <edge id="eid_:measuresProperty38" source="nid_:Device" target="nid_:Property">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
