@@ -1,0 +1,45 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; ":Property" ":Device" "base:Version" "base:WaterMeterType" "base:WaterAsset" "http://www.opengis.net/ont/geosparql#SpatialObject" "base:WaterMeter" "http://www.opengis.net/ont/geosparql#Geometry" "base:Characterstics" ":UnitOfMeasure" "wgs84_pos:Point" ":Measurement" ; /*classes style*/
+	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
+	"NULL" -> "wgs84_pos:Point" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":isMeasuredByDevice" [ label = "owl:onProperty" ];
+	"NULL" -> ":isControlledByDevice" [ label = "owl:onProperty" ];
+	"NULL" -> ":Measurement" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "xsd:float" [ label = "owl:onDataRange" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":relatesToProperty" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:dateTime" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
+	"NULL" -> ":Property" [ label = "owl:onClass" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":hasValue" [ label = "owl:onProperty" ];
+	"NULL" -> ":UnitOfMeasure" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":UnitOfMeasure" [ label = "owl:onClass" ];
+	"NULL" -> ":isMeasuredIn" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#sfContains" [ label = "owl:onProperty" ];
+	"NULL" -> ":hasTimeStamp" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#sfWithin" [ label = "owl:onProperty" ];
+	"NULL" -> ":Property" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":Device" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#hasGeometry" [ label = "owl:onProperty" ];
+	":Device" -> "rdfs:Literal" [ label = "base:hasFirmwareVersion" ];
+	":Measurement" -> ":Device" [ label = ":measurementMadeBy" ];
+	"base:WaterAsset" -> "base:Characterstics" [ label = "base:hasCharacterstics" ];
+	":Device" -> "rdfs:Literal" [ label = ":hasModel" ];
+	":Property" -> ":Device" [ label = ":isControlledByDevice" ];
+	":Property" -> ":Measurement" [ label = ":relatesToMeasurements" ];
+	":Device" -> ":Measurement" [ label = ":makesMeasurement" ];
+	"base:WaterMeter" -> "base:Version" [ label = "base:hasVersion" ];
+	":Device" -> "rdfs:Literal" [ label = "base:hasFabricationNo" ];
+	":Device" -> ":Property" [ label = ":controlsProperty" ];
+	":Device" -> "rdfs:Literal" [ label = "base:hasHardwareVersion" ];
+	":Property" -> ":Device" [ label = ":isMeasuredByDevice" ];
+	":Device" -> "base:WaterAsset" [ label = "base:manageWaterAsset" ];
+	"base:WaterAsset" -> ":Device" [ label = "base:isManagedBy" ];
+	"base:WaterMeter" -> "base:WaterMeterType" [ label = "base:hasMeter" ];
+	":Measurement" -> ":UnitOfMeasure" [ label = ":isMeasuredIn" ];
+	":Device" -> ":Property" [ label = ":measuresProperty" ];
+
+}
