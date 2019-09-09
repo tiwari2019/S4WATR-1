@@ -11,10 +11,10 @@ node [shape = rectangle, color="orange"]; ":Property" ":Device" "base:Version" "
 	"NULL" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":relatesToProperty" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:dateTime" [ label = "owl:allValuesFrom" ];
-	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
-	"NULL" -> ":Property" [ label = "owl:onClass" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
 	"NULL" -> ":hasValue" [ label = "owl:onProperty" ];
+	"NULL" -> ":Property" [ label = "owl:onClass" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:onClass" ];
 	"NULL" -> ":isMeasuredIn" [ label = "owl:onProperty" ];
