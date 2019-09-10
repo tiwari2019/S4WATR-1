@@ -455,6 +455,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#CatchmentWell">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+        <rdfs:comment>A Catchment Well is a well that hasbeen constructed to collect water.</rdfs:comment>
         <rdfs:label xml:lang="en">CatchmentWell</rdfs:label>
     </owl:Class>
     
@@ -578,6 +579,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WasteWaterPlant">
         <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+        <rdfs:comment>A Waste Water Plant is a facility where contaminants are removed from waste water or sewage</rdfs:comment>
         <rdfs:label xml:lang="en">WasteWaterPlant</rdfs:label>
     </owl:Class>
     
@@ -596,6 +598,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterMeter">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
+        <rdfs:comment>A WaterMeter is a device that measure different aspects of a water infrastructure.</rdfs:comment>
         <rdfs:label xml:lang="en">WaterMeter</rdfs:label>
     </owl:Class>
     
@@ -651,6 +654,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saref#Actuator">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/saref#Sensor"/>
         <rdfs:comment>A device responsible for moving or controlling a mechanism or system.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/saref</rdfs:isDefinedBy>
         <rdfs:label>Actuator</rdfs:label>
@@ -662,6 +666,30 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/saref#Device">
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#controlsProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#makesMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#measuresProperty"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/saref#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/S4WATR#hasFabricationNo"/>
+                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device&apos;s user vs. the point of view of the device&apos;s manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended.</rdfs:comment>
         <rdfs:isDefinedBy>https://w3id.org/saref</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Device</rdfs:label>
