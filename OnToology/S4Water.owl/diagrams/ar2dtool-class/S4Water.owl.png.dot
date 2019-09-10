@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; ":Version" ":Property" ":WaterMeterType" ":WaterAsset" ":WaterMeter" ":Device" "http://www.opengis.net/ont/geosparql#SpatialObject" "http://www.opengis.net/ont/geosparql#Geometry" ":UnitOfMeasure" "wgs84_pos:Point" ":Measurement" ":Characterstics" ; /*classes style*/
+node [shape = rectangle, color="orange"]; ":Version" ":Property" ":WaterMeterType" ":WaterAsset" ":Sensor" ":WaterMeter" ":Device" "http://www.opengis.net/ont/geosparql#SpatialObject" "http://www.opengis.net/ont/geosparql#Geometry" ":UnitOfMeasure" "wgs84_pos:Point" ":Measurement" ":Characterstics" ":Actuator" ; /*classes style*/
 	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
 	"NULL" -> "wgs84_pos:Point" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":isMeasuredByDevice" [ label = "owl:onProperty" ];
@@ -10,6 +10,7 @@ node [shape = rectangle, color="orange"]; ":Version" ":Property" ":WaterMeterTyp
 	"NULL" -> "xsd:float" [ label = "owl:onDataRange" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":relatesToProperty" [ label = "owl:onProperty" ];
+	"NULL" -> ":controlsProperty" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:dateTime" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":hasValue" [ label = "owl:onProperty" ];
 	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
@@ -19,11 +20,15 @@ node [shape = rectangle, color="orange"]; ":Version" ":Property" ":WaterMeterTyp
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:onClass" ];
 	"NULL" -> ":isMeasuredIn" [ label = "owl:onProperty" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#sfContains" [ label = "owl:onProperty" ];
+	"NULL" -> ":measuresProperty" [ label = "owl:onProperty" ];
 	"NULL" -> ":hasTimeStamp" [ label = "owl:onProperty" ];
+	"NULL" -> ":makesMeasurement" [ label = "owl:onProperty" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#sfWithin" [ label = "owl:onProperty" ];
+	"NULL" -> ":hasFabricationNo" [ label = "owl:onProperty" ];
 	"NULL" -> ":Property" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#hasGeometry" [ label = "owl:onProperty" ];
 	"NULL" -> ":Device" [ label = "owl:allValuesFrom" ];
+	":Actuator" -> ":Sensor" [ label = "owl:disjointWith" ];
 	":WaterAsset" -> ":Characterstics" [ label = ":hasCharacterstics" ];
 	":Measurement" -> ":Device" [ label = ":measurementMadeBy" ];
 	":Device" -> ":WaterAsset" [ label = ":manageWaterAsset" ];
