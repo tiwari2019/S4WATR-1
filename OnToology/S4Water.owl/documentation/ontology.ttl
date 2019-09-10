@@ -302,6 +302,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 ###  https://w3id.org/def/S4WATR#CatchmentWell
 :CatchmentWell rdf:type owl:Class ;
                rdfs:subClassOf :WaterAsset ;
+               rdfs:comment "A Catchment Well is a well that hasbeen constructed to collect water." ;
                rdfs:label "CatchmentWell"@en .
 
 
@@ -383,6 +384,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 ###  https://w3id.org/def/S4WATR#WasteWaterPlant
 :WasteWaterPlant rdf:type owl:Class ;
                  rdfs:subClassOf :WaterAsset ;
+                 rdfs:comment "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage" ;
                  rdfs:label "WasteWaterPlant"@en .
 
 
@@ -395,6 +397,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 ###  https://w3id.org/def/S4WATR#WaterMeter
 :WaterMeter rdf:type owl:Class ;
             rdfs:subClassOf <https://w3id.org/saref#Device> ;
+            rdfs:comment "A WaterMeter is a device that measure different aspects of a water infrastructure." ;
             rdfs:label "WaterMeter"@en .
 
 
@@ -432,6 +435,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 ###  https://w3id.org/saref#Actuator
 <https://w3id.org/saref#Actuator> rdf:type owl:Class ;
                                   rdfs:subClassOf <https://w3id.org/saref#Device> ;
+                                  owl:disjointWith <https://w3id.org/saref#Sensor> ;
                                   rdfs:comment "A device responsible for moving or controlling a mechanism or system." ;
                                   rdfs:isDefinedBy "https://w3id.org/saref" ;
                                   rdfs:label "Actuator" .
@@ -439,7 +443,23 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/saref#Device
 <https://w3id.org/saref#Device> rdf:type owl:Class ;
-                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ;
+                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#controlsProperty> ;
+                                                  owl:allValuesFrom <https://w3id.org/saref#Property>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#makesMeasurement> ;
+                                                  owl:allValuesFrom <https://w3id.org/saref#Measurement>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#measuresProperty> ;
+                                                  owl:allValuesFrom <https://w3id.org/saref#Property>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasFabricationNo ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ;
                                 rdfs:comment "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended." ;
                                 rdfs:isDefinedBy "https://w3id.org/saref" ;
                                 rdfs:label "Device"@en .
