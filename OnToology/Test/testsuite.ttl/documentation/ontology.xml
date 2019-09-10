@@ -111,12 +111,122 @@
     
 
 
+    <!-- urn:default:baseUri:Test14 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test14">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterAsset subClassOf isMeasuredIn only UnitOfMeasure</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test15 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test15">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Property subClassOf isMeasuredByDevice only Device</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test16 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test16">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Property subClassOf isControlledByDevice only Device</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test17 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test17">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterMeter subClassOf hasFabricationNo max 1 string</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test18 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test18">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterMeter subClassOf hasModel max 1 string</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test19 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test19">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Valve type Class</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
     <!-- urn:default:baseUri:Test2 -->
 
 
     <NamedIndividual rdf:about="urn:default:baseUri:Test2">
         <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
         <vtc:desiredBehaviour>Conductance type Characterstics</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test20 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test20">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Pump type Class</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test21 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test21">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>GroundWaterWell subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test22 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test22">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Dam subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test23 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test23">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Reservoir subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test24 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test24">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Property subClassOf relatesToMeasurements only Measurement</vtc:desiredBehaviour>
     </NamedIndividual>
     
 
