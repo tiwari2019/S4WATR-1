@@ -38,10 +38,76 @@
     "@value" : "StorageTank subClassOf WaterAsset"
   } ]
 }, {
+  "@id" : "urn:default:baseUri:Test14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WaterAsset subClassOf isMeasuredIn only UnitOfMeasure"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Property subClassOf isMeasuredByDevice only Device"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Property subClassOf isControlledByDevice only Device"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WaterMeter subClassOf hasFabricationNo max 1 string"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "WaterMeter subClassOf hasModel max 1 string"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Valve type Class"
+  } ]
+}, {
   "@id" : "urn:default:baseUri:Test2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
   "http://w3id.org/def/vtc#desiredBehaviour" : [ {
     "@value" : "Conductance type Characterstics"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Pump type Class"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "GroundWaterWell subClassOf WaterAsset"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Dam subClassOf WaterAsset"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Reservoir subClassOf WaterAsset"
+  } ]
+}, {
+  "@id" : "urn:default:baseUri:Test24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/def/vtc#TestCaseDesign" ],
+  "http://w3id.org/def/vtc#desiredBehaviour" : [ {
+    "@value" : "Property subClassOf relatesToMeasurements only Measurement"
   } ]
 }, {
   "@id" : "urn:default:baseUri:Test3",
