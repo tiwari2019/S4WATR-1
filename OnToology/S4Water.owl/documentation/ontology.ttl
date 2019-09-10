@@ -390,13 +390,23 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#WaterAsset
 :WaterAsset rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing ;
+            rdfs:subClassOf owl:Thing ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
+                              owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
+                            ] ;
+            rdfs:comment """Water Asset contains, what is built to pump, divert, store, transport, trat and provide pure drinking water.
+(http://www.waterencyclopedia.com/Hy-La/Infrastructure-Water-Supply.html)""" ;
             rdfs:label "WaterAsset"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterMeter
 :WaterMeter rdf:type owl:Class ;
-            rdfs:subClassOf <https://w3id.org/saref#Device> ;
+            rdfs:subClassOf <https://w3id.org/saref#Device> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasFirmwareVersion ;
+                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                            ] ;
             rdfs:comment "A WaterMeter is a device that measure different aspects of a water infrastructure." ;
             rdfs:label "WaterMeter"@en .
 
@@ -455,6 +465,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty <https://w3id.org/saref#measuresProperty> ;
                                                   owl:allValuesFrom <https://w3id.org/saref#Property>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasVersion ;
+                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :Version
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :hasFabricationNo ;
@@ -548,6 +563,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                    <https://w3id.org/saref#Property> .
 
 
+###  https://w3id.org/def/S4WATR#ColdWaterMeter
+:ColdWaterMeter rdf:type owl:NamedIndividual ,
+                         :WaterMeterType .
+
+
 ###  https://w3id.org/def/S4WATR#Conductance
 :Conductance rdf:type owl:NamedIndividual ,
                       :Physical .
@@ -575,6 +595,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#Hardness
 :Hardness rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/S4WATR#HotWaterMeter
+:HotWaterMeter rdf:type owl:NamedIndividual ,
+                        owl:Thing .
 
 
 ###  https://w3id.org/def/S4WATR#InflowRates
