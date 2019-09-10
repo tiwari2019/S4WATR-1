@@ -12,7 +12,7 @@
 
 :Test1 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR1>;
+       vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR1>;
        dc:description "pH is a chemical property of Water";
        <http://w3id.org/def/vtc#desiredBehaviour> "pH type Characterstics"^^xsd:string .
 
@@ -21,7 +21,7 @@
 
 :Test2 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,  owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+       vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
        dc:description "Conductance is a Physical Property of Water.";
        <http://w3id.org/def/vtc#desiredBehaviour> "Conductance type Characterstics"^^xsd:string .
 
@@ -29,7 +29,7 @@
 
 :Test3 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,  owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+       vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
        dc:description "Dam is type of WaterInfrastructure";
        <http://w3id.org/def/vtc#desiredBehaviour> "Dam subClassOf WaterAsset"^^xsd:string .
 
@@ -37,7 +37,7 @@
 
 :Test4 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
        dc:description "What is a WaterMeter?";
        <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf Device"^^xsd:string .
 
@@ -46,7 +46,7 @@
 
 :Test5 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+       vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
        dc:description "Example of Device such as Sensor Actuator";
        <http://w3id.org/def/vtc#desiredBehaviour> "Sensor type Class"^^xsd:string .
        <http://w3id.org/def/vtc#desiredBehaviour> "Actuator type Class"^^xsd:string .
@@ -57,7 +57,7 @@
 
 :Test6 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+       vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
        dc:description "What firmware version is the Water Meter using?";
        <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasFirmwareVersion max 1 string"^^xsd:string .
        
@@ -66,7 +66,7 @@
 
 :Test7 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
        dc:description " "
 
 
@@ -75,7 +75,7 @@
 
 :Test8 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
        vtc:belongsTo :TestsuiteS4WATR;
-	     vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+       vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
        dc:description "What is a sensor?"
        <http://w3id.org/def/vtc#desiredBehaviour> "Sensor subClassOf Device"^^xsd:string .
 
@@ -91,7 +91,7 @@
 
 :Test10 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,owl:NamedIndividual ;
         vtc:belongsTo :TestsuiteS4WATR;
-	      vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
         dc:description "A device shall have a model property"
         <http://w3id.org/def/vtc#desiredBehaviour> "Device subClassOf hasModel max 1 string"^^xsd:string .
 
@@ -101,7 +101,7 @@
 
 :Test11 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
         vtc:belongsTo :TestsuiteS4WATR;
-	      vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
         dc:description "What are the various WaterInfrastructure?"
         vtc:desiredBehaviour "CatchmentWell subClassOf WaterAsset"
         vtc:desiredBehaviour "WasteWaterPlant subClassOf WaterAsset"
@@ -113,7 +113,7 @@
 
 :Test12 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,  owl:NamedIndividual ;
         vtc:belongsTo :TestsuiteS4WATR;
-	      vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
         dc:description "Water Infrastructure can be measured by Water Meter."
         vtc:desiredBehaviour "WaterAsset subClassOf isMeasuredIn only UnitOfMeasure"
 
@@ -123,7 +123,7 @@
 
 :Test13 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
         vtc:belongsTo :TestsuiteS4WATR;
-	      vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
         dc:description "Device is used to measure the Properties"
         vtc:desiredBehaviour "Property subClassOf isMeasuredByDevice only Device"
  
@@ -134,58 +134,52 @@
 
 ###  Test16
 
-:Test16 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
-                 owl:NamedIndividual ;
+:Test16 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
+        vtc:belongsTo :TestsuiteS4WATR;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+        dc:description "Device is used to control the Properties"
+        vtc:desiredBehaviour "Property subClassOf isControlledByDevice only Device"
         
-        <http://w3id.org/def/vtc#desiredBehaviour> "Property subClassOf isControlledByDevice only Device"^^xsd:string .
-
-
+   
 
 ###  Test17
 
-:Test17 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
-                owl:NamedIndividual ;
+:Test17 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
+        vtc:belongsTo :TestsuiteS4WATR;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+        dc:description "What is the fabrication No of water meter?"
+        vtc:desiredBehaviour "WaterMeter subClassOf hasFabricationNo max 1 string"
        
-       <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasFabricationNo max 1 string"^^xsd:string .
-
+       
 
 
 ###  Test18
 
-:Test18 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
-                owl:NamedIndividual ;
+:Test18 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
+        vtc:belongsTo :TestsuiteS4WATR;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+        dc:description "A Water Meter has Model"
+        vtc:desiredBehaviour "WaterMeter subClassOf hasModel max 1 string"
        
-       <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasModel max 1 string"^^xsd:string .
-
-
-
+       
 ###  Test19
 
-:Test19 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
-                owl:NamedIndividual ;
+:Test19 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
+        vtc:belongsTo :TestsuiteS4WATR;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+        dc:description "Actuator has different categories"
+        vtc:desiredBehaviour "Valve type Class; Pump type Class"
        
-       <http://w3id.org/def/vtc#desiredBehaviour> "Valve type Class"^^xsd:string .
-
-
-
-###  Test20
-
-:Test20 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
-                owl:NamedIndividual ;
-       
-       <http://w3id.org/def/vtc#desiredBehaviour> "Pump type Class"^^xsd:string .
-
-
-
+    
 ###  Test21
 
-:Test21 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
-                owl:NamedIndividual ;
+:Test21 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
+        vtc:belongsTo :TestsuiteS4WATR;
+	vtc:isRelatedToRequirement <https://docs.google.com/spreadsheets/d/14jat2hpbgRO_HFdkXH0xbmudqHk2xLoQ0P2ROU91skk/edit#gid=0#S4WATR2>;
+        dc:description "GroundWaterWell is a Water Infrastructure"
+        vtc:desiredBehaviour "GroundWaterWell subClassOf WaterAsset"
        
-       <http://w3id.org/def/vtc#desiredBehaviour> "GroundWaterWell subClassOf WaterAsset"^^xsd:string .
-
-
-
+       
 ###  Test22
 
 :Test22 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
