@@ -1,5 +1,9 @@
 {
   "@context" : {
+    "hasTarrif" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasTarrif",
+      "@type" : "@id"
+    },
     "UnitOfMeasure" : {
       "@id" : "https://w3id.org/saref#UnitOfMeasure"
     },
@@ -14,11 +18,17 @@
       "@id" : "https://w3id.org/saref#hasModel",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
     "Dam" : {
       "@id" : "https://w3id.org/def/S4WATR#Dam"
     },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "TemporalUnit" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalUnit"
     },
     "hasVersion" : {
       "@id" : "https://w3id.org/def/S4WATR#hasVersion",
@@ -48,14 +58,22 @@
     "long" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
     },
+    "assignedTo" : {
+      "@id" : "https://w3id.org/def/S4WATR#assignedTo",
+      "@type" : "@id"
+    },
     "Feature" : {
       "@id" : "http://www.opengis.net/ont/geosparql#Feature"
     },
-    "Characterstics" : {
-      "@id" : "https://w3id.org/def/S4WATR#Characterstics"
-    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Indicator" : {
+      "@id" : "https://w3id.org/def/S4WATR#Indicator"
+    },
+    "hasIndicator" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasIndicator",
+      "@type" : "@id"
     },
     "isManagedBy" : {
       "@id" : "https://w3id.org/def/S4WATR#isManagedBy",
@@ -75,10 +93,6 @@
     },
     "Physical" : {
       "@id" : "https://w3id.org/def/S4WATR#Physical"
-    },
-    "hasCharacterstics" : {
-      "@id" : "https://w3id.org/def/S4WATR#hasCharacterstics",
-      "@type" : "@id"
     },
     "measurementMadeBy" : {
       "@id" : "https://w3id.org/saref#measurementMadeBy",
@@ -177,6 +191,9 @@
     "Pump" : {
       "@id" : "https://w3id.org/def/S4WATR#Pump"
     },
+    "Tarrif" : {
+      "@id" : "https://w3id.org/def/S4WATR#Tarrif"
+    },
     "WasteWaterPlant" : {
       "@id" : "https://w3id.org/def/S4WATR#WasteWaterPlant"
     },
@@ -214,6 +231,9 @@
     },
     "Valve" : {
       "@id" : "https://w3id.org/def/S4WATR#Valve"
+    },
+    "WaterProperty" : {
+      "@id" : "https://w3id.org/def/S4WATR#WaterProperty"
     },
     "relatesToMeasurements" : {
       "@id" : "https://w3id.org/saref#relatesToMeasurements",

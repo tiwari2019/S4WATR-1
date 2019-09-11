@@ -11,6 +11,7 @@
                                                                            "http://www.oeg-upm.net/" ;
                                <http://purl.org/dc/elements/1.1/title> "SAREF Extension for Water"@en ;
                                <http://purl.org/dc/terms/creator> ""@en ;
+                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
                                <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ""@en .
 
 #################################################################
@@ -39,6 +40,10 @@
 
 ###  http://purl.org/dc/terms/creator
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/source
@@ -85,10 +90,18 @@
                                                    rdfs:label "location" .
 
 
-###  https://w3id.org/def/S4WATR#hasCharacterstics
-:hasCharacterstics rdf:type owl:ObjectProperty ;
-                   rdfs:domain :WaterAsset ;
-                   rdfs:range :Characterstics .
+###  https://w3id.org/def/S4WATR#assignedTo
+:assignedTo rdf:type owl:ObjectProperty ;
+            rdfs:domain :Indicator ;
+            rdfs:range <https://w3id.org/def/saref4city#City> ;
+            rdfs:label "assignedTo" .
+
+
+###  https://w3id.org/def/S4WATR#hasIndicator
+:hasIndicator rdf:type owl:ObjectProperty ;
+              rdfs:domain :WaterAsset ;
+              rdfs:range :Indicator ;
+              rdfs:label "hasIndicator" .
 
 
 ###  https://w3id.org/def/S4WATR#hasMeter
@@ -96,6 +109,13 @@
           rdfs:domain :WaterMeter ;
           rdfs:range :WaterMeterType ;
           rdfs:label "hasMeter"@en .
+
+
+###  https://w3id.org/def/S4WATR#hasTarrif
+:hasTarrif rdf:type owl:ObjectProperty ;
+           rdfs:domain :WaterMeter ;
+           rdfs:range :Tarrif ;
+           rdfs:label "Tarrif" .
 
 
 ###  https://w3id.org/def/S4WATR#hasVersion
@@ -293,6 +313,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                 rdfs:label "Point" .
 
 
+###  http://www.w3.org/2006/time#TemporalUnit
+<http://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
+                                           rdfs:label "TemporalUnit" .
+
+
 ###  https://w3id.org/def/S4WATR#Aquedunct
 :Aquedunct rdf:type owl:Class ;
            rdfs:subClassOf :WaterAsset ;
@@ -306,14 +331,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                rdfs:label "CatchmentWell"@en .
 
 
-###  https://w3id.org/def/S4WATR#Characterstics
-:Characterstics rdf:type owl:Class ;
-                rdfs:label "Characterstics"@en .
-
-
 ###  https://w3id.org/def/S4WATR#Chemical
 :Chemical rdf:type owl:Class ;
-          rdfs:subClassOf :Characterstics .
+          rdfs:subClassOf :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#Dam
@@ -328,9 +348,19 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                  rdfs:label "GroundWaterWell"@en .
 
 
+###  https://w3id.org/def/S4WATR#Indicator
+:Indicator rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :assignedTo ;
+                             owl:someValuesFrom <https://w3id.org/def/saref4city#City>
+                           ] ;
+           rdfs:label "" ,
+                      "Indicator" .
+
+
 ###  https://w3id.org/def/S4WATR#Physical
 :Physical rdf:type owl:Class ;
-          rdfs:subClassOf :Characterstics .
+          rdfs:subClassOf :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#Pipe
@@ -367,6 +397,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 :SurfaceWaterIntake rdf:type owl:Class ;
                     rdfs:subClassOf :WaterAsset ;
                     rdfs:label "SurfaceWaterIntake"@en .
+
+
+###  https://w3id.org/def/S4WATR#Tarrif
+:Tarrif rdf:type owl:Class ;
+        rdfs:label "Tarrif" .
 
 
 ###  https://w3id.org/def/S4WATR#Valve
@@ -421,6 +456,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 :WaterMonitoringSensor rdf:type owl:Class ;
                        rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
                        rdfs:label "WaterMonitoringSensor"@en .
+
+
+###  https://w3id.org/def/S4WATR#WaterProperty
+:WaterProperty rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#WaterQualitySensor
@@ -560,12 +600,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#Capacity
 :Capacity rdf:type owl:NamedIndividual ,
-                   <https://w3id.org/saref#Property> .
-
-
-###  https://w3id.org/def/S4WATR#ColdWaterMeter
-:ColdWaterMeter rdf:type owl:NamedIndividual ,
-                         :WaterMeterType .
+                   :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#Conductance
@@ -575,26 +610,27 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#CurrentLevel
 :CurrentLevel rdf:type owl:NamedIndividual ,
-                       <https://w3id.org/saref#Property> .
+                       :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#CurrentWaterFlow
 :CurrentWaterFlow rdf:type owl:NamedIndividual ,
-                           <https://w3id.org/saref#Property> .
+                           :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#CurrentWaterLeak
 :CurrentWaterLeak rdf:type owl:NamedIndividual ,
-                           <https://w3id.org/saref#Property> .
+                           :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#FlowOfWater
 :FlowOfWater rdf:type owl:NamedIndividual ,
-                      <https://w3id.org/saref#Property> .
+                      :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#Hardness
-:Hardness rdf:type owl:NamedIndividual .
+:Hardness rdf:type owl:NamedIndividual ,
+                   :Chemical .
 
 
 ###  https://w3id.org/def/S4WATR#HotWaterMeter
@@ -604,27 +640,27 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#InflowRates
 :InflowRates rdf:type owl:NamedIndividual ,
-                      <https://w3id.org/saref#Property> .
+                      :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#OutFlowRates
 :OutFlowRates rdf:type owl:NamedIndividual ,
-                       <https://w3id.org/saref#Property> .
+                       :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#Power
 :Power rdf:type owl:NamedIndividual ,
-                <https://w3id.org/saref#Property> .
+                :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#RadioFrequencyLevel
 :RadioFrequencyLevel rdf:type owl:NamedIndividual ,
-                              <https://w3id.org/saref#Property> .
+                              :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#Temperature
 :Temperature rdf:type owl:NamedIndividual ,
-                      :Physical .
+                      <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#Turbidity
@@ -634,7 +670,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#Volume
 :Volume rdf:type owl:NamedIndividual ,
-                 <https://w3id.org/saref#Property> .
+                 :WaterProperty .
 
 
 ###  https://w3id.org/def/S4WATR#pH

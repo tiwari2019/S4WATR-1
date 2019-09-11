@@ -4,6 +4,9 @@ This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
 <ul class="hlist">
    <li>
+      <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator"/>
+   </li>
+   <li>
       <a href="#https://w3id.org/saref#Actuator" title="https://w3id.org/saref#Actuator">Actuator</a>
    </li>
    <li>
@@ -11,9 +14,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/def/S4WATR#CatchmentWell" title="https://w3id.org/def/S4WATR#CatchmentWell">CatchmentWell</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/def/S4WATR#Characterstics" title="https://w3id.org/def/S4WATR#Characterstics">Characterstics</a>
    </li>
    <li>
       <a href="#https://w3id.org/def/S4WATR#Chemical" title="https://w3id.org/def/S4WATR#Chemical">
@@ -80,6 +80,12 @@ This ontology has the following classes and properties.</span>
       <a href="#https://w3id.org/def/S4WATR#SurfaceWaterIntake" title="https://w3id.org/def/S4WATR#SurfaceWaterIntake">SurfaceWaterIntake</a>
    </li>
    <li>
+      <a href="#https://w3id.org/def/S4WATR#Tarrif" title="https://w3id.org/def/S4WATR#Tarrif">Tarrif</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2006/time#TemporalUnit" title="http://www.w3.org/2006/time#TemporalUnit">TemporalUnit</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">UnitOfMeasure</a>
    </li>
    <li>
@@ -90,6 +96,11 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#https://w3id.org/def/S4WATR#WasteWaterPlant" title="https://w3id.org/def/S4WATR#WasteWaterPlant">WasteWaterPlant</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/def/S4WATR#WaterProperty" title="https://w3id.org/def/S4WATR#WaterProperty">
+         <span>water property</span>
+      </a>
    </li>
    <li>
       <a href="#https://w3id.org/def/S4WATR#WaterAsset" title="https://w3id.org/def/S4WATR#WaterAsset">WaterAsset</a>
@@ -112,15 +123,16 @@ This ontology has the following classes and properties.</span>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
+      <a href="#https://w3id.org/def/S4WATR#assignedTo" title="https://w3id.org/def/S4WATR#assignedTo">assignedTo</a>
+   </li>
+   <li>
       <a href="#https://w3id.org/saref#controlsProperty" title="https://w3id.org/saref#controlsProperty">controlsProperty</a>
    </li>
    <li>
-      <a href="#https://w3id.org/def/S4WATR#hasCharacterstics" title="https://w3id.org/def/S4WATR#hasCharacterstics">
-         <span>has characterstics</span>
-      </a>
+      <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">hasGeometry</a>
    </li>
    <li>
-      <a href="#http://www.opengis.net/ont/geosparql#hasGeometry" title="http://www.opengis.net/ont/geosparql#hasGeometry">hasGeometry</a>
+      <a href="#https://w3id.org/def/S4WATR#hasIndicator" title="https://w3id.org/def/S4WATR#hasIndicator">hasIndicator</a>
    </li>
    <li>
       <a href="#https://w3id.org/def/S4WATR#hasMeter" title="https://w3id.org/def/S4WATR#hasMeter">hasMeter</a>
@@ -171,6 +183,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://www.opengis.net/ont/geosparql#sfWithin" title="http://www.opengis.net/ont/geosparql#sfWithin">sfWithin</a>
    </li>
+   <li>
+      <a href="#https://w3id.org/def/S4WATR#hasTarrif" title="https://w3id.org/def/S4WATR#hasTarrif">Tarrif</a>
+   </li>
 </ul><h4>Data Properties</h4><ul class="hlist">
    <li>
       <a href="#https://w3id.org/def/S4WATR#hasFabricationNo" title="https://w3id.org/def/S4WATR#hasFabricationNo">hasFabricationNo</a>
@@ -200,11 +215,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/def/S4WATR#ColdWaterMeter" title="https://w3id.org/def/S4WATR#ColdWaterMeter">
-         <span>cold water meter</span>
-      </a>
-   </li>
-   <li>
       <a href="#https://w3id.org/def/S4WATR#Conductance" title="https://w3id.org/def/S4WATR#Conductance">
          <span>conductance</span>
       </a>
@@ -227,6 +237,11 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#https://w3id.org/def/S4WATR#FlowOfWater" title="https://w3id.org/def/S4WATR#FlowOfWater">
          <span>flow of water</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/def/S4WATR#Hardness" title="https://w3id.org/def/S4WATR#Hardness">
+         <span>hardness</span>
       </a>
    </li>
    <li>
