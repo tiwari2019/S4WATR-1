@@ -14,6 +14,9 @@
       "@id" : "https://w3id.org/saref#isControlledByDevice",
       "@type" : "@id"
     },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
     "hasModel" : {
       "@id" : "https://w3id.org/saref#hasModel",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -131,6 +134,9 @@
       "@id" : "https://w3id.org/def/S4WATR#hasHardwareVersion",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
+    "preferredNamespacePrefix" : {
+      "@id" : "https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix"
+    },
     "hasFirmwareVersion" : {
       "@id" : "https://w3id.org/def/S4WATR#hasFirmwareVersion",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
@@ -241,6 +247,9 @@
     },
     "description" : {
       "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "https://w3id.org/def/S4WATR#vann:preferredNamespaceUri"
     },
     "Reservoir" : {
       "@id" : "https://w3id.org/def/S4WATR#Reservoir"

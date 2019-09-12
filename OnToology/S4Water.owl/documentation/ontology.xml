@@ -1,20 +1,27 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://w3id.org/def/S4WATR#"
-     xml:base="https://w3id.org/def/S4WATR"
+<rdf:RDF xmlns="https://saref.etsi.org/saref4watr#"
+     xml:base="https://saref.etsi.org/saref4watr"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="https://w3id.org/def/S4WATR#vann:"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vann1="http://purl.org/vocab/vann/"
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
-    <owl:Ontology rdf:about="https://w3id.org/def/S4WATR">
+    <owl:Ontology rdf:about="https://saref.etsi.org/saref4watr">
         <dc:publisher xml:lang="en">https://www.etsi.org/</dc:publisher>
         <dc:publisher>http://www.oeg-upm.net/</dc:publisher>
-        <dc:title xml:lang="en">SAREF Extension for Water</dc:title>
+        <dc:title xml:lang="en">SAREF4ABCD is an extension of SAREF for Water</dc:title>
+        <dc:title xml:lang="en">SAREF4WATR: an extension of SAREF for Water</dc:title>
         <terms:creator xml:lang="en"></terms:creator>
-        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:license xml:lang="en">https://forge.etsi.org/etsi-software-license</terms:license>
+        <terms:source xml:lang="en">https://forge.etsi.org/rep/SAREF/saref4watr/</terms:source>
+        <vann1:preferredNamespaceUri xml:lang="en">https://saref.etsi.org/saref4watr#</vann1:preferredNamespaceUri>
+        <vann1:preferredNamespaceUri xml:lang="en">s4watr</vann1:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="en">v0.1.2</owl:versionInfo>
         <wgs84_pos:alt xml:lang="en"></wgs84_pos:alt>
     </owl:Ontology>
     
@@ -88,6 +95,13 @@
     
 
 
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#alt -->
 
 
@@ -106,6 +120,20 @@
 
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    
+
+
+    <!-- https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix"/>
+    
+
+
+    <!-- https://w3id.org/def/S4WATR#vann:preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/S4WATR#vann:preferredNamespaceUri"/>
     
 
 
@@ -579,6 +607,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#Indicator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/S4WATR#assignedTo"/>
@@ -912,6 +941,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <owl:Class rdf:about="https://w3id.org/saref#Property">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/saref#isControlledByDevice"/>

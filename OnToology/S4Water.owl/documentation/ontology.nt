@@ -1,10 +1,15 @@
-<https://w3id.org/def/S4WATR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/"@en .
-<https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" .
-<https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/title> "SAREF Extension for Water"@en .
-<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/creator> ""@en .
-<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" .
-<https://w3id.org/def/S4WATR> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ""@en .
+<https://saref.etsi.org/saref4watr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/"@en .
+<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" .
+<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/title> "SAREF4ABCD is an extension of SAREF for Water"@en .
+<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/title> "SAREF4WATR: an extension of SAREF for Water"@en .
+<https://saref.etsi.org/saref4watr> <http://purl.org/dc/terms/creator> ""@en .
+<https://saref.etsi.org/saref4watr> <http://purl.org/dc/terms/license> "https://forge.etsi.org/etsi-software-license"@en .
+<https://saref.etsi.org/saref4watr> <http://purl.org/dc/terms/source> "https://forge.etsi.org/rep/SAREF/saref4watr/"@en .
+<https://saref.etsi.org/saref4watr> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://saref.etsi.org/saref4watr#"@en .
+<https://saref.etsi.org/saref4watr> <http://purl.org/vocab/vann/preferredNamespaceUri> "s4watr"@en .
+<https://saref.etsi.org/saref4watr> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.2"@en .
+<https://saref.etsi.org/saref4watr> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ""@en .
 # 
 # 
 # #################################################################
@@ -38,6 +43,9 @@
 # http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2003/01/geo/wgs84_pos#alt
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -46,6 +54,12 @@
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix
+<https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/def/S4WATR#vann:preferredNamespaceUri
+<https://w3id.org/def/S4WATR#vann:preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -309,6 +323,7 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 # 
 # https://w3id.org/def/S4WATR#Indicator
 <https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#assignedTo> .
@@ -496,6 +511,7 @@ _:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XM
 # 
 # https://w3id.org/saref#Property
 <https://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isControlledByDevice> .

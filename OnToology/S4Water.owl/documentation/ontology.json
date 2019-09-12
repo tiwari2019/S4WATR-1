@@ -240,6 +240,9 @@
   "@id" : "http://purl.org/dc/terms/source",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://www.opengis.net/ont/geosparql#Feature",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -357,7 +360,7 @@
     "@value" : "TemporalUnit"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/S4WATR",
+  "@id" : "https://saref.etsi.org/saref4watr",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
     "@language" : "en",
@@ -367,14 +370,33 @@
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "SAREF Extension for Water"
+    "@value" : "SAREF4ABCD is an extension of SAREF for Water"
+  }, {
+    "@language" : "en",
+    "@value" : "SAREF4WATR: an extension of SAREF for Water"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
     "@value" : ""
   } ],
   "http://purl.org/dc/terms/license" : [ {
-    "@value" : "https://creativecommons.org/licenses/by/4.0/"
+    "@language" : "en",
+    "@value" : "https://forge.etsi.org/etsi-software-license"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@language" : "en",
+    "@value" : "https://forge.etsi.org/rep/SAREF/saref4watr/"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@language" : "en",
+    "@value" : "https://saref.etsi.org/saref4watr#"
+  }, {
+    "@language" : "en",
+    "@value" : "s4watr"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "v0.1.2"
   } ],
   "http://www.w3.org/2003/01/geo/wgs84_pos#alt" : [ {
     "@language" : "en",
@@ -462,6 +484,8 @@
     "@value" : "Indicator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
     "@id" : "_:genid5"
   } ]
 }, {
@@ -800,6 +824,12 @@
   "@id" : "https://w3id.org/def/S4WATR#pH",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Chemical" ]
 }, {
+  "@id" : "https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#vann:preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://w3id.org/def/saref4city#City",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -901,6 +931,8 @@
     "@value" : "Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
     "@id" : "_:genid20"
   }, {
     "@id" : "_:genid21"
