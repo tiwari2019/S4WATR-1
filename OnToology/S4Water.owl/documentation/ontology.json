@@ -250,6 +250,10 @@
     "@language" : "en",
     "@value" : "http://www.opengis.net/ont/geosparql#"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
   } ]
@@ -684,6 +688,10 @@
   "@id" : "https://w3id.org/def/S4WATR#WaterProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "WaterProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "WaterProperty"
   } ],

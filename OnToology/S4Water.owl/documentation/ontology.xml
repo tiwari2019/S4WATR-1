@@ -469,6 +469,7 @@
         <rdfs:subClassOf rdf:resource="http://www.opengis.net/ont/geosparql#SpatialObject"/>
         <rdfs:comment xml:lang="en">This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">http://www.opengis.net/ont/geosparql#</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
     </owl:Class>
     
 
@@ -784,6 +785,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterProperty">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Property"/>
         <rdfs:comment xml:lang="en">WaterProperty</rdfs:comment>
+        <rdfs:label xml:lang="en">WaterProperty</rdfs:label>
     </owl:Class>
     
 

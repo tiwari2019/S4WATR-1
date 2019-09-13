@@ -280,7 +280,8 @@
 <http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
                                                rdfs:comment "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en ;
-                                               rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en .
+                                               rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en ;
+                                               rdfs:label "Feature"@en .
 
 
 ###  http://www.opengis.net/ont/geosparql#Geometry
@@ -477,7 +478,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 ###  https://w3id.org/def/S4WATR#WaterProperty
 :WaterProperty rdf:type owl:Class ;
                rdfs:subClassOf <https://w3id.org/saref#Property> ;
-               rdfs:comment "WaterProperty"@en .
+               rdfs:comment "WaterProperty"@en ;
+               rdfs:label "WaterProperty"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterQualitySensor
