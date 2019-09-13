@@ -4,9 +4,6 @@ This section provides details for each class and property defined by SAREF exten
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator"/>
-      </li>
-      <li>
          <a href="#https://w3id.org/saref#Actuator" title="https://w3id.org/saref#Actuator">Actuator</a>
       </li>
       <li>
@@ -41,7 +38,7 @@ This section provides details for each class and property defined by SAREF exten
          <a href="#https://w3id.org/def/S4WATR#GroundWaterWell" title="https://w3id.org/def/S4WATR#GroundWaterWell">GroundWaterWell</a>
       </li>
       <li>
-         <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Label</a>
+         <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator">Indicator</a>
       </li>
       <li>
          <a href="#https://w3id.org/saref#Measurement" title="https://w3id.org/saref#Measurement">Measurement</a>
@@ -58,16 +55,19 @@ This section provides details for each class and property defined by SAREF exten
          <a href="#http://www.w3.org/2003/01/geo/wgs84_pos#Point" title="http://www.w3.org/2003/01/geo/wgs84_pos#Point">Point</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/S4WATR#PressureRegulator" title="https://w3id.org/def/S4WATR#PressureRegulator">Pressure</a>
+         <a href="#https://w3id.org/def/S4WATR#PressureRegulator" title="https://w3id.org/def/S4WATR#PressureRegulator">PressureRegulator</a>
       </li>
       <li>
          <a href="#https://w3id.org/saref#Property" title="https://w3id.org/saref#Property">Property</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/S4WATR#Pump" title="https://w3id.org/def/S4WATR#Pump">Regulator</a>
+         <a href="#https://w3id.org/def/S4WATR#Pump" title="https://w3id.org/def/S4WATR#Pump">Pump</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/S4WATR#Reservoir" title="https://w3id.org/def/S4WATR#Reservoir">Reservoir</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Sensor</a>
       </li>
       <li>
          <a href="#http://www.opengis.net/ont/geosparql#SpatialObject"
@@ -122,32 +122,6 @@ This section provides details for each class and property defined by SAREF exten
          <a href="#https://w3id.org/def/S4WATR#WaterQualitySensor" title="https://w3id.org/def/S4WATR#WaterQualitySensor">WaterQualitySensor</a>
       </li>
    </ul>
-   <div class="entity" id="https://w3id.org/def/S4WATR#Indicator">
-      <h3>
-         <sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/S4WATR#Indicator</p>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/S4WATR#assignedTo" title="https://w3id.org/def/S4WATR#assignedTo">assignedTo</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#https://w3id.org/def/S4WATR#hasIndicator" title="https://w3id.org/def/S4WATR#hasIndicator">hasIndicator</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="https://w3id.org/saref#Actuator">
       <h3>Actuator<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -170,14 +144,14 @@ This section provides details for each class and property defined by SAREF exten
          </dd>
          <dt>has sub-classes</dt>
          <dd>
-            <a href="#https://w3id.org/def/S4WATR#PressureRegulator" title="https://w3id.org/def/S4WATR#PressureRegulator">Pressure</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#Pump" title="https://w3id.org/def/S4WATR#Pump">Regulator</a>
+            <a href="#https://w3id.org/def/S4WATR#PressureRegulator" title="https://w3id.org/def/S4WATR#PressureRegulator">PressureRegulator</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#Pump" title="https://w3id.org/def/S4WATR#Pump">Pump</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#Valve" title="https://w3id.org/def/S4WATR#Valve">Valve</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
-            <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Label</a>
+            <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -222,6 +196,9 @@ This section provides details for each class and property defined by SAREF exten
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/S4WATR#Chemical</p>
+      <div class="comment">
+         <span class="markdown">Chemical</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -296,7 +273,7 @@ This section provides details for each class and property defined by SAREF exten
          <dt>has sub-classes</dt>
          <dd>
             <a href="#https://w3id.org/saref#Actuator" title="https://w3id.org/saref#Actuator">Actuator</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Label</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#WaterMeter" title="https://w3id.org/def/S4WATR#WaterMeter">WaterMeter</a>
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#WaterflowInstrument" title="https://w3id.org/def/S4WATR#WaterflowInstrument">WaterflowInstrument</a>
             <sup class="type-c" title="class">c</sup>
@@ -315,10 +292,10 @@ This section provides details for each class and property defined by SAREF exten
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/saref#isMeasuredByDevice" title="https://w3id.org/saref#isMeasuredByDevice">is measured by device</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#isControlledByDevice" title="https://w3id.org/saref#isControlledByDevice">isControlledByDevice</a>
+            <a href="#https://w3id.org/saref#isControlledByDevice" title="https://w3id.org/saref#isControlledByDevice">isControlledByDevice</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#isManagedBy" title="https://w3id.org/def/S4WATR#isManagedBy">isManagedBy</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">measurement made by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#isMeasuredByDevice" title="https://w3id.org/saref#isMeasuredByDevice">isMeasuredByDevice</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">measurementMadeBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -394,37 +371,25 @@ This section provides details for each class and property defined by SAREF exten
          </dd>
       </dl>
    </div>
-   <div class="entity" id="https://w3id.org/saref#Sensor">
-      <h3>Label<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="https://w3id.org/def/S4WATR#Indicator">
+      <h3>Indicator<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://w3id.org/saref#Sensor</p>
-      <div class="comment">
-         <span class="markdown">A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. A device that has category saref:Sensor and performs a saref:SensingFunction.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93</dd>
-      </dl>
+         <strong>IRI:</strong> https://w3id.org/def/S4WATR#Indicator</p>
       <dl class="description">
          <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/saref#Device" title="https://w3id.org/saref#Device">Device</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#https://w3id.org/def/S4WATR#assignedTo" title="https://w3id.org/def/S4WATR#assignedTo">assignedTo</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
-         <dt>has sub-classes</dt>
+         <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/def/S4WATR#WaterMonitoringSensor"
-               title="https://w3id.org/def/S4WATR#WaterMonitoringSensor">WaterMonitoringSensor</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#WaterQualitySensor" title="https://w3id.org/def/S4WATR#WaterQualitySensor">WaterQualitySensor</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is disjoint with</dt>
-         <dd>
-            <a href="#https://w3id.org/saref#Actuator" title="https://w3id.org/saref#Actuator">Actuator</a>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#https://w3id.org/def/S4WATR#hasIndicator" title="https://w3id.org/def/S4WATR#hasIndicator">hasIndicator</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -451,7 +416,7 @@ This section provides details for each class and property defined by SAREF exten
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.org/saref#isMeasuredIn" title="https://w3id.org/saref#isMeasuredIn">isMeasuredIn</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">measurement made by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">measurementMadeBy</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -469,6 +434,9 @@ This section provides details for each class and property defined by SAREF exten
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/S4WATR#Physical</p>
+      <div class="comment">
+         <span class="markdown">Phtsical</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -525,7 +493,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/S4WATR#PressureRegulator">
-      <h3>Pressure<sup class="type-c" title="class">c</sup>
+      <h3>PressureRegulator<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -555,10 +523,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd>
-            <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
+         <dd/>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#https://w3id.org/def/S4WATR#WaterProperty" title="https://w3id.org/def/S4WATR#WaterProperty">water property</a>
@@ -566,8 +531,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/saref#isMeasuredByDevice" title="https://w3id.org/saref#isMeasuredByDevice">is measured by device</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#isControlledByDevice" title="https://w3id.org/saref#isControlledByDevice">isControlledByDevice</a>
+            <a href="#https://w3id.org/saref#isControlledByDevice" title="https://w3id.org/saref#isControlledByDevice">isControlledByDevice</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#isMeasuredByDevice" title="https://w3id.org/saref#isMeasuredByDevice">isMeasuredByDevice</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#relatesToMeasurements" title="https://w3id.org/saref#relatesToMeasurements">relatesToMeasurement</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
@@ -585,7 +550,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/S4WATR#Pump">
-      <h3>Regulator<sup class="type-c" title="class">c</sup>
+      <h3>Pump<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -610,6 +575,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.org/def/S4WATR#WaterAsset" title="https://w3id.org/def/S4WATR#WaterAsset">WaterAsset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://w3id.org/saref#Sensor">
+      <h3>Sensor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/saref#Sensor</p>
+      <div class="comment">
+         <span class="markdown">A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. A device that has category saref:Sensor and performs a saref:SensingFunction.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://www.semanticweb.org/stiwari/ontologies/2019/7/untitled-ontology-93</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/saref#Device" title="https://w3id.org/saref#Device">Device</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/S4WATR#WaterMonitoringSensor"
+               title="https://w3id.org/def/S4WATR#WaterMonitoringSensor">WaterMonitoringSensor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#WaterQualitySensor" title="https://w3id.org/def/S4WATR#WaterQualitySensor">WaterQualitySensor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#https://w3id.org/saref#Actuator" title="https://w3id.org/saref#Actuator">Actuator</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -779,6 +778,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </h3>
       <p>
          <strong>IRI:</strong> https://w3id.org/def/S4WATR#WaterProperty</p>
+      <div class="comment">
+         <span class="markdown">WaterProperty</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -920,7 +922,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Label</a>
+            <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -935,7 +937,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Label</a>
+            <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Sensor</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -962,15 +964,13 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#https://w3id.org/def/S4WATR#hasVersion" title="https://w3id.org/def/S4WATR#hasVersion">hasVersion</a>
       </li>
       <li>
-         <a href="#https://w3id.org/saref#isMeasuredByDevice" title="https://w3id.org/saref#isMeasuredByDevice">
-            <span>is measured by device</span>
-         </a>
-      </li>
-      <li>
          <a href="#https://w3id.org/saref#isControlledByDevice" title="https://w3id.org/saref#isControlledByDevice">isControlledByDevice</a>
       </li>
       <li>
          <a href="#https://w3id.org/def/S4WATR#isManagedBy" title="https://w3id.org/def/S4WATR#isManagedBy">isManagedBy</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/saref#isMeasuredByDevice" title="https://w3id.org/saref#isMeasuredByDevice">isMeasuredByDevice</a>
       </li>
       <li>
          <a href="#https://w3id.org/saref#isMeasuredIn" title="https://w3id.org/saref#isMeasuredIn">isMeasuredIn</a>
@@ -985,9 +985,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#https://w3id.org/def/S4WATR#manageWaterAsset" title="https://w3id.org/def/S4WATR#manageWaterAsset">manageWaterAsset</a>
       </li>
       <li>
-         <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">
-            <span>measurement made by</span>
-         </a>
+         <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">measurementMadeBy</a>
       </li>
       <li>
          <a href="#https://w3id.org/saref#measuresProperty" title="https://w3id.org/saref#measuresProperty">measuresProperty</a>
@@ -1019,7 +1017,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator"/>
+               <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator">Indicator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1084,7 +1082,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator"/>
+               <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator">Indicator</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1129,28 +1127,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <a href="#https://w3id.org/def/S4WATR#Version" title="https://w3id.org/def/S4WATR#Version">Version</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="https://w3id.org/saref#isMeasuredByDevice">
-      <h3>is measured by device<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/saref#isMeasuredByDevice</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#https://w3id.org/saref#Property" title="https://w3id.org/saref#Property">Property</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#https://w3id.org/saref#Device" title="https://w3id.org/saref#Device">Device</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1205,6 +1181,28 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dd>
                <a href="#https://w3id.org/def/S4WATR#manageWaterAsset" title="https://w3id.org/def/S4WATR#manageWaterAsset">manageWaterAsset</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/saref#isMeasuredByDevice">
+      <h3>isMeasuredByDevice<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/saref#isMeasuredByDevice</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/saref#Property" title="https://w3id.org/saref#Property">Property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/saref#Device" title="https://w3id.org/saref#Device">Device</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1272,7 +1270,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">measurement made by</a>
+               <a href="#https://w3id.org/saref#measurementMadeBy" title="https://w3id.org/saref#measurementMadeBy">measurementMadeBy</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -1306,7 +1304,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </div>
    </div>
    <div class="entity" id="https://w3id.org/saref#measurementMadeBy">
-      <h3>measurement made by<sup class="type-op" title="object property">op</sup>
+      <h3>measurementMadeBy<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>

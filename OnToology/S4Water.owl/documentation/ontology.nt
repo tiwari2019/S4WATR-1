@@ -1,15 +1,13 @@
-<https://saref.etsi.org/saref4watr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/"@en .
-<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" .
-<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/title> "SAREF4ABCD is an extension of SAREF for Water"@en .
-<https://saref.etsi.org/saref4watr> <http://purl.org/dc/elements/1.1/title> "SAREF4WATR: an extension of SAREF for Water"@en .
-<https://saref.etsi.org/saref4watr> <http://purl.org/dc/terms/creator> ""@en .
-<https://saref.etsi.org/saref4watr> <http://purl.org/dc/terms/license> "https://forge.etsi.org/etsi-software-license"@en .
-<https://saref.etsi.org/saref4watr> <http://purl.org/dc/terms/source> "https://forge.etsi.org/rep/SAREF/saref4watr/"@en .
-<https://saref.etsi.org/saref4watr> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://saref.etsi.org/saref4watr#"@en .
-<https://saref.etsi.org/saref4watr> <http://purl.org/vocab/vann/preferredNamespaceUri> "s4watr"@en .
-<https://saref.etsi.org/saref4watr> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.2"@en .
-<https://saref.etsi.org/saref4watr> <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ""@en .
+<https://w3id.org/def/S4WATR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/description> "SAREF4WATR is an extension of SAREF for Water"@en .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/" .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/title> "SAREF4WATR is an extension of SAREF for Water"@en .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/creator> "http://w3id.org/people/mpoveda" .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/creator> "http://www.garcia-castro.com/foaf.rdf#me" .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/creator> "https://www.linkedin.com/in/sanjutiwari/" .
+<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/license> "https://forge.etsi.org/etsi-software-license" .
+<https://w3id.org/def/S4WATR> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.2"@en .
 # 
 # 
 # #################################################################
@@ -43,9 +41,6 @@
 # http://purl.org/dc/terms/source
 <http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://purl.org/vocab/vann/preferredNamespaceUri
-<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://www.w3.org/2003/01/geo/wgs84_pos#alt
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -55,11 +50,11 @@
 # http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix
-<https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://w3id.org/def/S4WATR#preferredNamespacePrefix
+<https://w3id.org/def/S4WATR#preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://w3id.org/def/S4WATR#vann:preferredNamespaceUri
-<https://w3id.org/def/S4WATR#vann:preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# https://w3id.org/def/S4WATR#preferredNamespaceURI
+<https://w3id.org/def/S4WATR#preferredNamespaceURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # 
 # 
@@ -72,35 +67,35 @@
 # 
 # http://www.opengis.net/ont/geosparql#hasGeometry
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#"@en .
 <http://www.opengis.net/ont/geosparql#hasGeometry> <http://www.w3.org/2000/01/rdf-schema#label> "hasGeometry"@en .
 # 
 # http://www.opengis.net/ont/geosparql#sfContains
 <http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#"@en .
 <http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/2000/01/rdf-schema#label> "sfContains"@en .
 # 
 # http://www.opengis.net/ont/geosparql#sfWithin
 <http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#"@en .
 <http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/2000/01/rdf-schema#label> "sfWithin"@en .
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#location
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#"@en .
 <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
 # 
 # https://w3id.org/def/S4WATR#assignedTo
 <https://w3id.org/def/S4WATR#assignedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/S4WATR#assignedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/S4WATR#Indicator> .
 <https://w3id.org/def/S4WATR#assignedTo> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/saref4city#City> .
-<https://w3id.org/def/S4WATR#assignedTo> <http://www.w3.org/2000/01/rdf-schema#label> "assignedTo" .
+<https://w3id.org/def/S4WATR#assignedTo> <http://www.w3.org/2000/01/rdf-schema#label> "assignedTo"@en .
 # 
 # https://w3id.org/def/S4WATR#hasIndicator
 <https://w3id.org/def/S4WATR#hasIndicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/S4WATR#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/S4WATR#WaterAsset> .
 <https://w3id.org/def/S4WATR#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/S4WATR#Indicator> .
-<https://w3id.org/def/S4WATR#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "hasIndicator" .
+<https://w3id.org/def/S4WATR#hasIndicator> <http://www.w3.org/2000/01/rdf-schema#label> "hasIndicator"@en .
 # 
 # https://w3id.org/def/S4WATR#hasMeter
 <https://w3id.org/def/S4WATR#hasMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -112,7 +107,7 @@
 <https://w3id.org/def/S4WATR#hasTarrif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/S4WATR#hasTarrif> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/S4WATR#WaterMeter> .
 <https://w3id.org/def/S4WATR#hasTarrif> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/S4WATR#Tarrif> .
-<https://w3id.org/def/S4WATR#hasTarrif> <http://www.w3.org/2000/01/rdf-schema#label> "Tarrif" .
+<https://w3id.org/def/S4WATR#hasTarrif> <http://www.w3.org/2000/01/rdf-schema#label> "Tarrif"@en .
 # 
 # https://w3id.org/def/S4WATR#hasVersion
 <https://w3id.org/def/S4WATR#hasVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -144,13 +139,14 @@
 <https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Device> .
-<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#isControlledByDevice> <http://www.w3.org/2000/01/rdf-schema#label> "isControlledByDevice"@en .
 # 
 # https://w3id.org/saref#isMeasuredByDevice
 <https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#isMeasuredByDevice> <http://www.w3.org/2000/01/rdf-schema#label> "isMeasuredByDevice"@en .
 # 
 # https://w3id.org/saref#isMeasuredIn
 <https://w3id.org/saref#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -164,30 +160,31 @@
 <https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/saref#measurementMadeBy> .
 <https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
 <https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Measurement> .
-<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makesMeasurement"@en .
 # 
 # https://w3id.org/saref#measurementMadeBy
 <https://w3id.org/saref#measurementMadeBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/saref#measurementMadeBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Measurement> .
 <https://w3id.org/saref#measurementMadeBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#measurementMadeBy> <http://www.w3.org/2000/01/rdf-schema#label> "measurementMadeBy"@en .
 # 
 # https://w3id.org/saref#measuresProperty
 <https://w3id.org/saref#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
 <https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
-<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#label> "measuresProperty" .
+<https://w3id.org/saref#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#label> "measuresProperty"@en .
 # 
 # https://w3id.org/saref#relatesToMeasurements
 <https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/saref#Measurement> .
-<https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToMeasurement" .
+<https://w3id.org/saref#relatesToMeasurements> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToMeasurement"@en .
 # 
 # https://w3id.org/saref#relatesToProperty
 <https://w3id.org/saref#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#relatesToProperty> <http://www.w3.org/2000/01/rdf-schema#label> "relatesToProperty"@en .
 # 
 # 
@@ -220,25 +217,25 @@
 # https://w3id.org/saref#hasManufacture
 <https://w3id.org/saref#hasManufacture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/saref#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the manufacturer of an entity (e.g., device)"@en .
-<https://w3id.org/saref#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#hasManufacture> <http://www.w3.org/2000/01/rdf-schema#label> "hasManufacture"@en .
 # 
 # https://w3id.org/saref#hasModel
 <https://w3id.org/saref#hasModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
 <https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the model of an entity (e.g., device)" .
-<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#comment> "A relationship identifying the model of an entity (e.g., device)"@en .
+<https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#hasModel> <http://www.w3.org/2000/01/rdf-schema#label> "hasModel"@en .
 # 
 # https://w3id.org/saref#hasTimeStamp
 <https://w3id.org/saref#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/saref#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#hasTimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimeStamp"@en .
 # 
 # https://w3id.org/saref#hasValue
 <https://w3id.org/saref#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
+<https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasValue"@en .
 # 
 # 
@@ -253,14 +250,14 @@
 # http://www.opengis.net/ont/geosparql#Feature
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
-<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types." .
-<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en .
+<http://www.opengis.net/ont/geosparql#Feature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#"@en .
 # 
 # http://www.opengis.net/ont/geosparql#Geometry
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#SpatialObject> .
-<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types." .
-<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#comment> "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en .
+<http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#"@en .
 <http://www.opengis.net/ont/geosparql#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometry"@en .
 # 
 # http://www.opengis.net/ont/geosparql#SpatialObject
@@ -282,19 +279,19 @@ _:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/o
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2003/01/geo/wgs84_pos#location> .
 _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
-<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#" .
-<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialObject" .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.opengis.net/ont/geosparql#"@en .
+<http://www.opengis.net/ont/geosparql#SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "SpatialObject"@en .
 # 
 # http://www.w3.org/2003/01/geo/wgs84_pos#Point
 <http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/ont/geosparql#Geometry> .
-<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "Uniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT), lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2)." .
-<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#" .
-<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "Uniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT), lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2)."@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#"@en .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point"@en .
 # 
 # http://www.w3.org/2006/time#TemporalUnit
 <http://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalUnit" .
+<http://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalUnit"@en .
 # 
 # https://w3id.org/def/S4WATR#Aquedunct
 <https://w3id.org/def/S4WATR#Aquedunct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -304,12 +301,13 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 # https://w3id.org/def/S4WATR#CatchmentWell
 <https://w3id.org/def/S4WATR#CatchmentWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#CatchmentWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
-<https://w3id.org/def/S4WATR#CatchmentWell> <http://www.w3.org/2000/01/rdf-schema#comment> "A Catchment Well is a well that hasbeen constructed to collect water." .
+<https://w3id.org/def/S4WATR#CatchmentWell> <http://www.w3.org/2000/01/rdf-schema#comment> "A Catchment Well is a well that hasbeen constructed to collect water."@en .
 <https://w3id.org/def/S4WATR#CatchmentWell> <http://www.w3.org/2000/01/rdf-schema#label> "CatchmentWell"@en .
 # 
 # https://w3id.org/def/S4WATR#Chemical
 <https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemical"@en .
 # 
 # https://w3id.org/def/S4WATR#Dam
 <https://w3id.org/def/S4WATR#Dam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -323,17 +321,16 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 # 
 # https://w3id.org/def/S4WATR#Indicator
 <https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#assignedTo> .
 _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/saref4city#City> .
-<https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "" .
-<https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator" .
+<https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/2000/01/rdf-schema#label> "Indicator"@en .
 # 
 # https://w3id.org/def/S4WATR#Physical
 <https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/2000/01/rdf-schema#comment> "Phtsical"@en .
 # 
 # https://w3id.org/def/S4WATR#Pipe
 <https://w3id.org/def/S4WATR#Pipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -343,12 +340,12 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 # https://w3id.org/def/S4WATR#PressureRegulator
 <https://w3id.org/def/S4WATR#PressureRegulator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#PressureRegulator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Actuator> .
-<https://w3id.org/def/S4WATR#PressureRegulator> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure"@en .
+<https://w3id.org/def/S4WATR#PressureRegulator> <http://www.w3.org/2000/01/rdf-schema#label> "PressureRegulator"@en .
 # 
 # https://w3id.org/def/S4WATR#Pump
 <https://w3id.org/def/S4WATR#Pump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#Pump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Actuator> .
-<https://w3id.org/def/S4WATR#Pump> <http://www.w3.org/2000/01/rdf-schema#label> "Regulator"@en .
+<https://w3id.org/def/S4WATR#Pump> <http://www.w3.org/2000/01/rdf-schema#label> "Pump"@en .
 # 
 # https://w3id.org/def/S4WATR#Reservoir
 <https://w3id.org/def/S4WATR#Reservoir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -367,7 +364,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 # 
 # https://w3id.org/def/S4WATR#Tarrif
 <https://w3id.org/def/S4WATR#Tarrif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#Tarrif> <http://www.w3.org/2000/01/rdf-schema#label> "Tarrif" .
+<https://w3id.org/def/S4WATR#Tarrif> <http://www.w3.org/2000/01/rdf-schema#label> "Tarrif"@en .
 # 
 # https://w3id.org/def/S4WATR#Valve
 <https://w3id.org/def/S4WATR#Valve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -382,7 +379,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 # https://w3id.org/def/S4WATR#WasteWaterPlant
 <https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
-<https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage" .
+<https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage"@en .
 <https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#label> "WasteWaterPlant"@en .
 # 
 # https://w3id.org/def/S4WATR#WaterAsset
@@ -392,7 +389,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
 _:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
-<https://w3id.org/def/S4WATR#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Water Asset contains, what is built to pump, divert, store, transport, trat and provide pure drinking water.\n(http://www.waterencyclopedia.com/Hy-La/Infrastructure-Water-Supply.html)" .
+<https://w3id.org/def/S4WATR#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Water Asset contains, what is built to pump, divert, store, transport, trat and provide pure drinking water.\n(http://www.waterencyclopedia.com/Hy-La/Infrastructure-Water-Supply.html)"@en .
 <https://w3id.org/def/S4WATR#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#label> "WaterAsset"@en .
 # 
 # https://w3id.org/def/S4WATR#WaterMeter
@@ -402,7 +399,7 @@ _:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#U
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#hasFirmwareVersion> .
 _:genid7 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A WaterMeter is a device that measure different aspects of a water infrastructure." .
+<https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A WaterMeter is a device that measure different aspects of a water infrastructure."@en .
 <https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterMeter"@en .
 # 
 # https://w3id.org/def/S4WATR#WaterMeterType
@@ -418,6 +415,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/
 # https://w3id.org/def/S4WATR#WaterProperty
 <https://w3id.org/def/S4WATR#WaterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#WaterProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Property> .
+<https://w3id.org/def/S4WATR#WaterProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "WaterProperty"@en .
 # 
 # https://w3id.org/def/S4WATR#WaterQualitySensor
 <https://w3id.org/def/S4WATR#WaterQualitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -431,17 +429,17 @@ _:genid7 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/
 # 
 # https://w3id.org/def/saref4city#City
 <https://w3id.org/def/saref4city#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority." .
-<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/def/saref4city#" .
-<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#comment> "A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority."@en .
+<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/def/saref4city#"@en .
+<https://w3id.org/def/saref4city#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
 # 
 # https://w3id.org/saref#Actuator
 <https://w3id.org/saref#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
 <https://w3id.org/saref#Actuator> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/saref#Sensor> .
-<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "A device responsible for moving or controlling a mechanism or system." .
-<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref" .
-<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator" .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#comment> "A device responsible for moving or controlling a mechanism or system."@en .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref"@en .
+<https://w3id.org/saref#Actuator> <http://www.w3.org/2000/01/rdf-schema#label> "Actuator"@en .
 # 
 # https://w3id.org/saref#Device
 <https://w3id.org/saref#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -467,8 +465,8 @@ _:genid11 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/S4WATR#V
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid12 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#hasFabricationNo> .
 _:genid12 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended." .
-<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref" .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended."@en .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref"@en .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
 # 
 # https://w3id.org/saref#Measurement
@@ -505,13 +503,12 @@ _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
 _:genid19 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid19 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement." .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
 # 
 # https://w3id.org/saref#Property
 <https://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isControlledByDevice> .
@@ -524,23 +521,23 @@ _:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToMeasurements> .
 _:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
-<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect of an entity that can be observable by a sensor." .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect of an entity that can be observable by a sensor."@en .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref"@en .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
 # 
 # https://w3id.org/saref#Sensor
 <https://w3id.org/saref#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
-<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. A device that has category saref:Sensor and performs a saref:SensingFunction." .
-<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref" .
-<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Label" .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. A device that has category saref:Sensor and performs a saref:SensingFunction."@en .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref"@en .
+<https://w3id.org/saref#Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
 # 
 # https://w3id.org/saref#UnitOfMeasure
 <https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended." .
-<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#" .
-<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "UnitOfMeasure" .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#comment> "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended."@en .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
+<https://w3id.org/saref#UnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#label> "UnitOfMeasure"@en .
 # 
 # 
 # 
