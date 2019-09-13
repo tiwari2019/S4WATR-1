@@ -307,7 +307,8 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 # https://w3id.org/def/S4WATR#Chemical
 <https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterProperty> .
-<https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemical"@en .
+<https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemical Property"@en .
+<https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical"@en .
 # 
 # https://w3id.org/def/S4WATR#Dam
 <https://w3id.org/def/S4WATR#Dam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -330,7 +331,8 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 # https://w3id.org/def/S4WATR#Physical
 <https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterProperty> .
-<https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/2000/01/rdf-schema#comment> "Phtsical"@en .
+<https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical Property"@en .
+<https://w3id.org/def/S4WATR#Physical> <http://www.w3.org/2000/01/rdf-schema#label> "Physical"@en .
 # 
 # https://w3id.org/def/S4WATR#Pipe
 <https://w3id.org/def/S4WATR#Pipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
