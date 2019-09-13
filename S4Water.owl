@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/def/S4WATR#"
-     xml:base="https://w3id.org/def/S4WATR"
+     xml:base="https://w3id.org/def/S4WATR#"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -19,7 +19,7 @@
         <terms:creator>https://www.linkedin.com/in/sanjutiwari/</terms:creator>
         <terms:license>https://forge.etsi.org/etsi-software-license</terms:license>
         <owl:versionInfo xml:lang="en">v0.1.2</owl:versionInfo>
-        <preferredNamespacePrefix>s4watr</preferredNamespacePrefix>
+        
     </owl:Ontology>
     
 
@@ -587,7 +587,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#Pump">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Actuator"/>
-        <rdfs:label xml:lang="en">Dump</rdfs:label>
+        <rdfs:label xml:lang="en">Pump</rdfs:label>
     </owl:Class>
     
 
@@ -887,7 +887,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
         <rdfs:comment xml:lang="en">A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. A device that has category saref:Sensor and performs a saref:SensingFunction.</rdfs:comment>
         <rdfs:isDefinedBy xml:lang="en">https://w3id.org/saref</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Label</rdfs:label>
+        <rdfs:label xml:lang="en">Sensor</rdfs:label>
     </owl:Class>
     
 
