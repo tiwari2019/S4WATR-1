@@ -347,7 +347,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 ###  https://w3id.org/def/S4WATR#Chemical
 :Chemical rdf:type owl:Class ;
           rdfs:subClassOf :WaterProperty ;
-          rdfs:comment "Chemical"@en .
+          rdfs:comment "Chemical Property"@en ;
+          rdfs:label "Chemical"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Dam
@@ -374,7 +375,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 ###  https://w3id.org/def/S4WATR#Physical
 :Physical rdf:type owl:Class ;
           rdfs:subClassOf :WaterProperty ;
-          rdfs:comment "Phtsical"@en .
+          rdfs:comment "Physical Property"@en ;
+          rdfs:label "Physical"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Pipe
