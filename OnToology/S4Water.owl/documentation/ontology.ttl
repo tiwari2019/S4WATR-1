@@ -1,18 +1,23 @@
-@prefix : <https://w3id.org/def/S4WATR#> .
+@prefix : <https://saref.etsi.org/saref4watr#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://w3id.org/def/S4WATR> .
+@base <https://saref.etsi.org/saref4watr> .
 
-<https://w3id.org/def/S4WATR> rdf:type owl:Ontology ;
-                               <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/"@en ,
-                                                                           "http://www.oeg-upm.net/" ;
-                               <http://purl.org/dc/elements/1.1/title> "SAREF Extension for Water"@en ;
-                               <http://purl.org/dc/terms/creator> ""@en ;
-                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
-                               <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ""@en .
+<https://saref.etsi.org/saref4watr> rdf:type owl:Ontology ;
+                                     <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/"@en ,
+                                                                                 "http://www.oeg-upm.net/" ;
+                                     <http://purl.org/dc/elements/1.1/title> "SAREF4ABCD is an extension of SAREF for Water"@en ,
+                                                                             "SAREF4WATR: an extension of SAREF for Water"@en ;
+                                     <http://purl.org/dc/terms/creator> ""@en ;
+                                     <http://purl.org/dc/terms/license> "https://forge.etsi.org/etsi-software-license"@en ;
+                                     <http://purl.org/dc/terms/source> "https://forge.etsi.org/rep/SAREF/saref4watr/"@en ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "https://saref.etsi.org/saref4watr#"@en ,
+                                                                                        "s4watr"@en ;
+                                     owl:versionInfo "v0.1.2"@en ;
+                                     <http://www.w3.org/2003/01/geo/wgs84_pos#alt> ""@en .
 
 #################################################################
 #    Annotation properties
@@ -50,6 +55,10 @@
 <http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
 <http://www.w3.org/2003/01/geo/wgs84_pos#alt> rdf:type owl:AnnotationProperty .
 
@@ -60,6 +69,14 @@
 
 ###  http://www.w3.org/2003/01/geo/wgs84_pos#long
 <http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix
+<https://w3id.org/def/S4WATR#vann:preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/S4WATR#vann:preferredNamespaceUri
+<https://w3id.org/def/S4WATR#vann:preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -91,53 +108,53 @@
 
 
 ###  https://w3id.org/def/S4WATR#assignedTo
-:assignedTo rdf:type owl:ObjectProperty ;
-            rdfs:domain :Indicator ;
-            rdfs:range <https://w3id.org/def/saref4city#City> ;
-            rdfs:label "assignedTo" .
+<https://w3id.org/def/S4WATR#assignedTo> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/def/S4WATR#Indicator> ;
+                                         rdfs:range <https://w3id.org/def/saref4city#City> ;
+                                         rdfs:label "assignedTo" .
 
 
 ###  https://w3id.org/def/S4WATR#hasIndicator
-:hasIndicator rdf:type owl:ObjectProperty ;
-              rdfs:domain :WaterAsset ;
-              rdfs:range :Indicator ;
-              rdfs:label "hasIndicator" .
+<https://w3id.org/def/S4WATR#hasIndicator> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                           rdfs:range <https://w3id.org/def/S4WATR#Indicator> ;
+                                           rdfs:label "hasIndicator" .
 
 
 ###  https://w3id.org/def/S4WATR#hasMeter
-:hasMeter rdf:type owl:ObjectProperty ;
-          rdfs:domain :WaterMeter ;
-          rdfs:range :WaterMeterType ;
-          rdfs:label "hasMeter"@en .
+<https://w3id.org/def/S4WATR#hasMeter> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <https://w3id.org/def/S4WATR#WaterMeter> ;
+                                       rdfs:range <https://w3id.org/def/S4WATR#WaterMeterType> ;
+                                       rdfs:label "hasMeter"@en .
 
 
 ###  https://w3id.org/def/S4WATR#hasTarrif
-:hasTarrif rdf:type owl:ObjectProperty ;
-           rdfs:domain :WaterMeter ;
-           rdfs:range :Tarrif ;
-           rdfs:label "Tarrif" .
+<https://w3id.org/def/S4WATR#hasTarrif> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <https://w3id.org/def/S4WATR#WaterMeter> ;
+                                        rdfs:range <https://w3id.org/def/S4WATR#Tarrif> ;
+                                        rdfs:label "Tarrif" .
 
 
 ###  https://w3id.org/def/S4WATR#hasVersion
-:hasVersion rdf:type owl:ObjectProperty ;
-            rdfs:domain :WaterMeter ;
-            rdfs:range :Version ;
-            rdfs:label "hasVersion"@en .
+<https://w3id.org/def/S4WATR#hasVersion> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/def/S4WATR#WaterMeter> ;
+                                         rdfs:range <https://w3id.org/def/S4WATR#Version> ;
+                                         rdfs:label "hasVersion"@en .
 
 
 ###  https://w3id.org/def/S4WATR#isManagedBy
-:isManagedBy rdf:type owl:ObjectProperty ;
-             owl:inverseOf :manageWaterAsset ;
-             rdfs:domain :WaterAsset ;
-             rdfs:range <https://w3id.org/saref#Device> ;
-             rdfs:label "isManagedBy"@en .
+<https://w3id.org/def/S4WATR#isManagedBy> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <https://w3id.org/def/S4WATR#manageWaterAsset> ;
+                                          rdfs:domain <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                          rdfs:range <https://w3id.org/saref#Device> ;
+                                          rdfs:label "isManagedBy"@en .
 
 
 ###  https://w3id.org/def/S4WATR#manageWaterAsset
-:manageWaterAsset rdf:type owl:ObjectProperty ;
-                  rdfs:domain <https://w3id.org/saref#Device> ;
-                  rdfs:range :WaterAsset ;
-                  rdfs:label "manageWaterAsset"@en .
+<https://w3id.org/def/S4WATR#manageWaterAsset> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/saref#Device> ;
+                                               rdfs:range <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                               rdfs:label "manageWaterAsset"@en .
 
 
 ###  https://w3id.org/saref#controlsProperty
@@ -211,24 +228,24 @@
 #################################################################
 
 ###  https://w3id.org/def/S4WATR#hasFabricationNo
-:hasFabricationNo rdf:type owl:DatatypeProperty ;
-                  rdfs:domain <https://w3id.org/saref#Device> ;
-                  rdfs:range rdfs:Literal ;
-                  rdfs:label "hasFabricationNo"@en .
+<https://w3id.org/def/S4WATR#hasFabricationNo> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://w3id.org/saref#Device> ;
+                                               rdfs:range rdfs:Literal ;
+                                               rdfs:label "hasFabricationNo"@en .
 
 
 ###  https://w3id.org/def/S4WATR#hasFirmwareVersion
-:hasFirmwareVersion rdf:type owl:DatatypeProperty ;
-                    rdfs:domain <https://w3id.org/saref#Device> ;
-                    rdfs:range rdfs:Literal ;
-                    rdfs:label "hasFirmwareVersion"@en .
+<https://w3id.org/def/S4WATR#hasFirmwareVersion> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://w3id.org/saref#Device> ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 rdfs:label "hasFirmwareVersion"@en .
 
 
 ###  https://w3id.org/def/S4WATR#hasHardwareVersion
-:hasHardwareVersion rdf:type owl:DatatypeProperty ;
-                    rdfs:domain <https://w3id.org/saref#Device> ;
-                    rdfs:range rdfs:Literal ;
-                    rdfs:label "hasHardwareVersion"@en .
+<https://w3id.org/def/S4WATR#hasHardwareVersion> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:domain <https://w3id.org/saref#Device> ;
+                                                 rdfs:range rdfs:Literal ;
+                                                 rdfs:label "hasHardwareVersion"@en .
 
 
 ###  https://w3id.org/saref#hasManufacture
@@ -319,160 +336,161 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
 ###  https://w3id.org/def/S4WATR#Aquedunct
-:Aquedunct rdf:type owl:Class ;
-           rdfs:subClassOf :WaterAsset ;
-           rdfs:label "Aquedunct"@en .
+<https://w3id.org/def/S4WATR#Aquedunct> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                        rdfs:label "Aquedunct"@en .
 
 
 ###  https://w3id.org/def/S4WATR#CatchmentWell
-:CatchmentWell rdf:type owl:Class ;
-               rdfs:subClassOf :WaterAsset ;
-               rdfs:comment "A Catchment Well is a well that hasbeen constructed to collect water." ;
-               rdfs:label "CatchmentWell"@en .
+<https://w3id.org/def/S4WATR#CatchmentWell> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                            rdfs:comment "A Catchment Well is a well that hasbeen constructed to collect water." ;
+                                            rdfs:label "CatchmentWell"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Chemical
-:Chemical rdf:type owl:Class ;
-          rdfs:subClassOf :WaterProperty .
+<https://w3id.org/def/S4WATR#Chemical> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#Dam
-:Dam rdf:type owl:Class ;
-     rdfs:subClassOf :WaterAsset ;
-     rdfs:label "Dam"@en .
+<https://w3id.org/def/S4WATR#Dam> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                  rdfs:label "Dam"@en .
 
 
 ###  https://w3id.org/def/S4WATR#GroundWaterWell
-:GroundWaterWell rdf:type owl:Class ;
-                 rdfs:subClassOf :WaterAsset ;
-                 rdfs:label "GroundWaterWell"@en .
+<https://w3id.org/def/S4WATR#GroundWaterWell> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                              rdfs:label "GroundWaterWell"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Indicator
-:Indicator rdf:type owl:Class ;
-           rdfs:subClassOf [ rdf:type owl:Restriction ;
-                             owl:onProperty :assignedTo ;
-                             owl:someValuesFrom <https://w3id.org/def/saref4city#City>
-                           ] ;
-           rdfs:label "" ,
-                      "Indicator" .
+<https://w3id.org/def/S4WATR#Indicator> rdf:type owl:Class ;
+                                        rdfs:subClassOf owl:Thing ,
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty <https://w3id.org/def/S4WATR#assignedTo> ;
+                                                          owl:someValuesFrom <https://w3id.org/def/saref4city#City>
+                                                        ] ;
+                                        rdfs:label "" ,
+                                                   "Indicator" .
 
 
 ###  https://w3id.org/def/S4WATR#Physical
-:Physical rdf:type owl:Class ;
-          rdfs:subClassOf :WaterProperty .
+<https://w3id.org/def/S4WATR#Physical> rdf:type owl:Class ;
+                                       rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#Pipe
-:Pipe rdf:type owl:Class ;
-      rdfs:subClassOf :WaterAsset ;
-      rdfs:label "Pipe"@en .
+<https://w3id.org/def/S4WATR#Pipe> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                   rdfs:label "Pipe"@en .
 
 
 ###  https://w3id.org/def/S4WATR#PressureRegulator
-:PressureRegulator rdf:type owl:Class ;
-                   rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
-                   rdfs:label "Pressure"@en .
+<https://w3id.org/def/S4WATR#PressureRegulator> rdf:type owl:Class ;
+                                                rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
+                                                rdfs:label "Pressure"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Pump
-:Pump rdf:type owl:Class ;
-      rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
-      rdfs:label "Regulator"@en .
+<https://w3id.org/def/S4WATR#Pump> rdf:type owl:Class ;
+                                   rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
+                                   rdfs:label "Regulator"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Reservoir
-:Reservoir rdf:type owl:Class ;
-           rdfs:subClassOf :WaterAsset ;
-           rdfs:label "Reservoir"@en .
+<https://w3id.org/def/S4WATR#Reservoir> rdf:type owl:Class ;
+                                        rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                        rdfs:label "Reservoir"@en .
 
 
 ###  https://w3id.org/def/S4WATR#StorageTank
-:StorageTank rdf:type owl:Class ;
-             rdfs:subClassOf :WaterAsset ;
-             rdfs:label "StorageTank"@en .
+<https://w3id.org/def/S4WATR#StorageTank> rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                          rdfs:label "StorageTank"@en .
 
 
 ###  https://w3id.org/def/S4WATR#SurfaceWaterIntake
-:SurfaceWaterIntake rdf:type owl:Class ;
-                    rdfs:subClassOf :WaterAsset ;
-                    rdfs:label "SurfaceWaterIntake"@en .
+<https://w3id.org/def/S4WATR#SurfaceWaterIntake> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                                 rdfs:label "SurfaceWaterIntake"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Tarrif
-:Tarrif rdf:type owl:Class ;
-        rdfs:label "Tarrif" .
+<https://w3id.org/def/S4WATR#Tarrif> rdf:type owl:Class ;
+                                     rdfs:label "Tarrif" .
 
 
 ###  https://w3id.org/def/S4WATR#Valve
-:Valve rdf:type owl:Class ;
-       rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
-       rdfs:label "Valve"@en .
+<https://w3id.org/def/S4WATR#Valve> rdf:type owl:Class ;
+                                    rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
+                                    rdfs:label "Valve"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Version
-:Version rdf:type owl:Class ;
-         rdfs:subClassOf owl:Thing ;
-         rdfs:label "Version"@en .
+<https://w3id.org/def/S4WATR#Version> rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Thing ;
+                                      rdfs:label "Version"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WasteWaterPlant
-:WasteWaterPlant rdf:type owl:Class ;
-                 rdfs:subClassOf :WaterAsset ;
-                 rdfs:comment "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage" ;
-                 rdfs:label "WasteWaterPlant"@en .
+<https://w3id.org/def/S4WATR#WasteWaterPlant> rdf:type owl:Class ;
+                                              rdfs:subClassOf <https://w3id.org/def/S4WATR#WaterAsset> ;
+                                              rdfs:comment "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage" ;
+                                              rdfs:label "WasteWaterPlant"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterAsset
-:WaterAsset rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
-                              owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
-                            ] ;
-            rdfs:comment """Water Asset contains, what is built to pump, divert, store, transport, trat and provide pure drinking water.
+<https://w3id.org/def/S4WATR#WaterAsset> rdf:type owl:Class ;
+                                         rdfs:subClassOf owl:Thing ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
+                                                           owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
+                                                         ] ;
+                                         rdfs:comment """Water Asset contains, what is built to pump, divert, store, transport, trat and provide pure drinking water.
 (http://www.waterencyclopedia.com/Hy-La/Infrastructure-Water-Supply.html)""" ;
-            rdfs:label "WaterAsset"@en .
+                                         rdfs:label "WaterAsset"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterMeter
-:WaterMeter rdf:type owl:Class ;
-            rdfs:subClassOf <https://w3id.org/saref#Device> ,
-                            [ rdf:type owl:Restriction ;
-                              owl:onProperty :hasFirmwareVersion ;
-                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
-                            ] ;
-            rdfs:comment "A WaterMeter is a device that measure different aspects of a water infrastructure." ;
-            rdfs:label "WaterMeter"@en .
+<https://w3id.org/def/S4WATR#WaterMeter> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/saref#Device> ,
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <https://w3id.org/def/S4WATR#hasFirmwareVersion> ;
+                                                           owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                         ] ;
+                                         rdfs:comment "A WaterMeter is a device that measure different aspects of a water infrastructure." ;
+                                         rdfs:label "WaterMeter"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterMeterType
-:WaterMeterType rdf:type owl:Class ;
-                rdfs:subClassOf owl:Thing ;
-                rdfs:label "WaterMeterType"@en .
+<https://w3id.org/def/S4WATR#WaterMeterType> rdf:type owl:Class ;
+                                             rdfs:subClassOf owl:Thing ;
+                                             rdfs:label "WaterMeterType"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterMonitoringSensor
-:WaterMonitoringSensor rdf:type owl:Class ;
-                       rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
-                       rdfs:label "WaterMonitoringSensor"@en .
+<https://w3id.org/def/S4WATR#WaterMonitoringSensor> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                                                    rdfs:label "WaterMonitoringSensor"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterProperty
-:WaterProperty rdf:type owl:Class ;
-               rdfs:subClassOf <https://w3id.org/saref#Property> .
+<https://w3id.org/def/S4WATR#WaterProperty> rdf:type owl:Class ;
+                                            rdfs:subClassOf <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#WaterQualitySensor
-:WaterQualitySensor rdf:type owl:Class ;
-                    rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
-                    rdfs:label "WaterQualitySensor"@en .
+<https://w3id.org/def/S4WATR#WaterQualitySensor> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                                                 rdfs:label "WaterQualitySensor"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterflowInstrument
-:WaterflowInstrument rdf:type owl:Class ;
-                     rdfs:subClassOf <https://w3id.org/saref#Device> ;
-                     rdfs:label "WaterflowInstrument"@en .
+<https://w3id.org/def/S4WATR#WaterflowInstrument> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://w3id.org/saref#Device> ;
+                                                  rdfs:label "WaterflowInstrument"@en .
 
 
 ###  https://w3id.org/def/saref4city#City
@@ -507,12 +525,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                   owl:allValuesFrom <https://w3id.org/saref#Property>
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :hasVersion ;
+                                                  owl:onProperty <https://w3id.org/def/S4WATR#hasVersion> ;
                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                  owl:onClass :Version
+                                                  owl:onClass <https://w3id.org/def/S4WATR#Version>
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :hasFabricationNo ;
+                                                  owl:onProperty <https://w3id.org/def/S4WATR#hasFabricationNo> ;
                                                   owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                                 ] ;
                                 rdfs:comment "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended." ;
@@ -561,7 +579,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/saref#Property
 <https://w3id.org/saref#Property> rdf:type owl:Class ;
-                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                  rdfs:subClassOf owl:Thing ,
+                                                  [ rdf:type owl:Restriction ;
                                                     owl:onProperty <https://w3id.org/saref#isControlledByDevice> ;
                                                     owl:allValuesFrom <https://w3id.org/saref#Device>
                                                   ] ,
@@ -599,83 +618,83 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 #################################################################
 
 ###  https://w3id.org/def/S4WATR#Capacity
-:Capacity rdf:type owl:NamedIndividual ,
-                   :WaterProperty .
+<https://w3id.org/def/S4WATR#Capacity> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#Conductance
-:Conductance rdf:type owl:NamedIndividual ,
-                      :Physical .
+<https://w3id.org/def/S4WATR#Conductance> rdf:type owl:NamedIndividual ,
+                                                   <https://w3id.org/def/S4WATR#Physical> .
 
 
 ###  https://w3id.org/def/S4WATR#CurrentLevel
-:CurrentLevel rdf:type owl:NamedIndividual ,
-                       :WaterProperty .
+<https://w3id.org/def/S4WATR#CurrentLevel> rdf:type owl:NamedIndividual ,
+                                                    <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#CurrentWaterFlow
-:CurrentWaterFlow rdf:type owl:NamedIndividual ,
-                           :WaterProperty .
+<https://w3id.org/def/S4WATR#CurrentWaterFlow> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#CurrentWaterLeak
-:CurrentWaterLeak rdf:type owl:NamedIndividual ,
-                           :WaterProperty .
+<https://w3id.org/def/S4WATR#CurrentWaterLeak> rdf:type owl:NamedIndividual ,
+                                                        <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#FlowOfWater
-:FlowOfWater rdf:type owl:NamedIndividual ,
-                      :WaterProperty .
+<https://w3id.org/def/S4WATR#FlowOfWater> rdf:type owl:NamedIndividual ,
+                                                   <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#Hardness
-:Hardness rdf:type owl:NamedIndividual ,
-                   :Chemical .
+<https://w3id.org/def/S4WATR#Hardness> rdf:type owl:NamedIndividual ,
+                                                <https://w3id.org/def/S4WATR#Chemical> .
 
 
 ###  https://w3id.org/def/S4WATR#HotWaterMeter
-:HotWaterMeter rdf:type owl:NamedIndividual ,
-                        owl:Thing .
+<https://w3id.org/def/S4WATR#HotWaterMeter> rdf:type owl:NamedIndividual ,
+                                                     owl:Thing .
 
 
 ###  https://w3id.org/def/S4WATR#InflowRates
-:InflowRates rdf:type owl:NamedIndividual ,
-                      :WaterProperty .
+<https://w3id.org/def/S4WATR#InflowRates> rdf:type owl:NamedIndividual ,
+                                                   <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#OutFlowRates
-:OutFlowRates rdf:type owl:NamedIndividual ,
-                       :WaterProperty .
+<https://w3id.org/def/S4WATR#OutFlowRates> rdf:type owl:NamedIndividual ,
+                                                    <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#Power
-:Power rdf:type owl:NamedIndividual ,
-                :WaterProperty .
+<https://w3id.org/def/S4WATR#Power> rdf:type owl:NamedIndividual ,
+                                             <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#RadioFrequencyLevel
-:RadioFrequencyLevel rdf:type owl:NamedIndividual ,
-                              :WaterProperty .
+<https://w3id.org/def/S4WATR#RadioFrequencyLevel> rdf:type owl:NamedIndividual ,
+                                                           <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#Temperature
-:Temperature rdf:type owl:NamedIndividual ,
-                      <https://w3id.org/saref#Property> .
+<https://w3id.org/def/S4WATR#Temperature> rdf:type owl:NamedIndividual ,
+                                                   <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#Turbidity
-:Turbidity rdf:type owl:NamedIndividual ,
-                    :Physical .
+<https://w3id.org/def/S4WATR#Turbidity> rdf:type owl:NamedIndividual ,
+                                                 <https://w3id.org/def/S4WATR#Physical> .
 
 
 ###  https://w3id.org/def/S4WATR#Volume
-:Volume rdf:type owl:NamedIndividual ,
-                 :WaterProperty .
+<https://w3id.org/def/S4WATR#Volume> rdf:type owl:NamedIndividual ,
+                                              <https://w3id.org/def/S4WATR#WaterProperty> .
 
 
 ###  https://w3id.org/def/S4WATR#pH
-:pH rdf:type owl:NamedIndividual ,
-             :Chemical .
+<https://w3id.org/def/S4WATR#pH> rdf:type owl:NamedIndividual ,
+                                          <https://w3id.org/def/S4WATR#Chemical> .
 
 
 ###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
