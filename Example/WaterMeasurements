@@ -1,0 +1,22 @@
+////Physiscal Properties
+
+ex:Temperature
+  rdf:type owl:NamedIndividual ;
+  rdf:type <https://w3id.org/saref#Property> ;
+
+
+ex:Conductance
+  rdf:type owl:NamedIndividual ;
+  rdfs:type s4watr:Physical ;
+
+ex:Turbididty
+  rdf:type owl:NamedIndividual ;
+  rdfs:type s4watr:Physical ;
+  
+  ex:pH
+  rdf:type owl:NamedIndividual ;
+  rdfs:type s4watr:Chemical ;
+
+ex:Hardness
+  rdf:type owl:NamedIndividual ;
+  rdfs:type s4watr:Chemical ;
