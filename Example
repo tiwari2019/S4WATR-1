@@ -1,1 +1,38 @@
+ex:AQDNCT001
+     rdf:type  s4watr:Aquedunct;
+     rdf:type  owl:NamedIndividual;
+     s4watr:composedBy   ex:GWW001;
+     
+.     
+ex:CatchmentWell
+    rdf:type owl:Class;
+    rdfs:comment "A catchment well is a well that has been constructed to collect water."^^xsd:string;
+    rdfs:subClassOf s4watr:WaterAsset;
+     
+.     
+ex:WQS001
+     rdf:type  s4watr:WaterQualitySensor;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:AQDNCT001;
+     
+.
+ex:WQS002 
+     rdf:type  s4watr:WaterQualitySensor;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:AQDNCT001;      
+     
+ .
+ ex:Pump001
+     rdf:type  s4watr:Pump;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:ST001;
 
+.
+ex:Pump002
+     rdf:type  s4watr:Pump;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:ST002;
+     
+     
+     
+     
