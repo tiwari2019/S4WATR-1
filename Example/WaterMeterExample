@@ -1,0 +1,100 @@
+//Requirements for WaterMeter Infrastructure
+
+ex:AQDNCT001
+     rdf:type  s4watr:Aquedunct;
+     rdf:type  owl:NamedIndividual;
+     s4watr:composedBy   ex:GWW001;
+     
+.     
+ex:CatchmentWell
+    rdf:type owl:Class;
+    rdfs:comment "A catchment well is a well that has been constructed to collect water."^^xsd:string;
+    rdfs:subClassOf s4watr:WaterAsset;
+     
+.     
+ex:WQS001
+     rdf:type  s4watr:WaterQualitySensor;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:AQDNCT001;
+     
+.
+ex:WQS002 
+     rdf:type  s4watr:WaterQualitySensor;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:AQDNCT001;      
+     
+ .
+ ex:Pump001
+     rdf:type  s4watr:Pump;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:ST001;
+
+.
+ex:Pump002
+     rdf:type  s4watr:Pump;
+     rdf:type  owl:NamedIndividual;
+     s4watr:isUsedIn   ex:ST002;
+ 
+ 
+
+
+//// Table 2 Requirements for WaterMeter Category    
+
+
+ex:WaterMeter
+    rdf:type owl:Class;
+    rdfs:comment "A WaterMeter is a device that measure different aspects of a water infrastructure."^^xsd:string;
+    rdfs:subClassOf <https://w3id.org/saref#Sensor>;
+
+
+ex:ColdWaterMeter
+  rdf:type owl:Class;
+  rdfs:subClassOf s4watr:WaterMeter;
+
+ex:HotWaterMeter
+  rdf:type owl:Class;
+  rdfs:subClassOf s4watr:WaterMeter;
+
+ex:WM001
+   	rdf:type  s4watr:WaterMeter
+	rdf:type  owl:NamedIndividual;
+        saref:hasFabricationNo    ex:4837QW;
+
+ex:CWMeter001
+   	rdf:type  s4watr:ColdWaterMeter
+	rdf:type  owl:NamedIndividual;
+        saref:hasFabricationNo    ex:4837CWM;
+
+
+ex:HWMeter001
+   	rdf:type  s4watr:HotWaterMeter
+	rdf:type  owl:NamedIndividual;
+        s4watr:hasFabricationNo    ex:4847HWM;   
+
+ex:WM001
+   	rdf:type  s4watr:WaterMeter
+	rdf:type  owl:NamedIndividual;
+        saref:hasModel    ex:Turion;
+
+ex:WM001
+   	rdf:type  s4watr:WaterMeter
+	rdf:type  owl:NamedIndividual;
+        saref:hasManufacturer    ex:MeterAll;
+
+ex:WM001
+   	rdf:type  s4watr:WaterMeter
+	rdf:type  owl:NamedIndividual;
+        s4watr:hasVersion    ex:Version1.2;
+
+ex:WM001
+   	rdf:type  s4watr:WaterMeter
+	rdf:type  owl:NamedIndividual;
+        s4watr:hasHardwareVersion    ex:23.5b;
+
+ex:WM001
+   	rdf:type  s4watr:WaterMeter
+	rdf:type  owl:NamedIndividual;
+        s4watr:hasFirmwareVersion    ex:123.7;
+
+     
+     
