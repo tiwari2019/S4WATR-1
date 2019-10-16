@@ -368,7 +368,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#CapacitySensor
 :CapacitySensor rdf:type owl:Class ;
-                rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                rdfs:subClassOf <https://w3id.org/saref#Sensor> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :usedIn ;
+                                  owl:someValuesFrom :WaterInfrastructure
+                                ] ;
                 rdfs:label "CapacitySensor"@en .
 
 
