@@ -392,7 +392,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "TemporalUnit"
+    "@value" : "TemporalEntity"
   } ]
 }, {
   "@id" : "http://xmlns.com/foaf/0.1/Person",
@@ -483,7 +483,14 @@
   } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#ColdWaterMeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "ColdWaterMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterMeter"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#Conductance",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Physical" ]
@@ -524,7 +531,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Chemical" ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#HotWaterMeter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2002/07/owl#Thing" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "HotWaterMeter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterMeter"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#Indicator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -742,10 +756,6 @@
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://w3id.org/saref#Device"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "hasFabricationNo"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
   } ]
@@ -825,6 +835,12 @@
     "@id" : "https://w3id.org/def/S4WATR#Version"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/S4WATR#hasVersionNo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/S4WATR#isManagedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -862,6 +878,15 @@
 }, {
   "@id" : "https://w3id.org/def/S4WATR#preferredNamespaceURI",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#usedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/saref4city#City",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],

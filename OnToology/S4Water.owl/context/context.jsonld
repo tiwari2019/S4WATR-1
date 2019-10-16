@@ -58,6 +58,10 @@
       "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
       "@type" : "@id"
     },
+    "usedIn" : {
+      "@id" : "https://w3id.org/def/S4WATR#usedIn",
+      "@type" : "@id"
+    },
     "long" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
     },
@@ -106,6 +110,12 @@
     },
     "Interval" : {
       "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "hasVersionNo" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasVersionNo"
+    },
+    "HotWaterMeter" : {
+      "@id" : "https://w3id.org/def/S4WATR#HotWaterMeter"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
@@ -202,6 +212,9 @@
     },
     "lat" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "ColdWaterMeter" : {
+      "@id" : "https://w3id.org/def/S4WATR#ColdWaterMeter"
     },
     "Aquedunct" : {
       "@id" : "https://w3id.org/def/S4WATR#Aquedunct"

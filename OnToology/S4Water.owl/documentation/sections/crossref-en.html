@@ -22,6 +22,11 @@ This section provides details for each class and property defined by SAREF exten
          <a href="#https://w3id.org/def/saref4city#City" title="https://w3id.org/def/saref4city#City">City</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/S4WATR#ColdWaterMeter" title="https://w3id.org/def/S4WATR#ColdWaterMeter">
+            <span>ColdWaterMeter</span>
+         </a>
+      </li>
+      <li>
          <a href="#https://w3id.org/def/S4WATR#Dam" title="https://w3id.org/def/S4WATR#Dam">Dam</a>
       </li>
       <li>
@@ -35,6 +40,11 @@ This section provides details for each class and property defined by SAREF exten
       </li>
       <li>
          <a href="#https://w3id.org/def/S4WATR#GroundWaterWell" title="https://w3id.org/def/S4WATR#GroundWaterWell">GroundWaterWell</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/S4WATR#HotWaterMeter" title="https://w3id.org/def/S4WATR#HotWaterMeter">
+            <span>HotWaterMeter</span>
+         </a>
       </li>
       <li>
          <a href="#https://w3id.org/def/S4WATR#Indicator" title="https://w3id.org/def/S4WATR#Indicator">Indicator</a>
@@ -90,7 +100,7 @@ This section provides details for each class and property defined by SAREF exten
          <a href="#https://w3id.org/def/S4WATR#Tarrif" title="https://w3id.org/def/S4WATR#Tarrif">Tarrif</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">TemporalUnit</a>
+         <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">TemporalEntity</a>
       </li>
       <li>
          <a href="#https://w3id.org/saref#UnitOfMeasure" title="https://w3id.org/saref#UnitOfMeasure">UnitOfMeasure</a>
@@ -250,6 +260,23 @@ This section provides details for each class and property defined by SAREF exten
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/def/S4WATR#ColdWaterMeter">
+      <h3>ColdWaterMeter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/S4WATR#ColdWaterMeter</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/S4WATR#WaterMeter" title="https://w3id.org/def/S4WATR#WaterMeter">WaterMeter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>named individual</dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/def/S4WATR#Dam">
       <h3>Dam<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -294,13 +321,15 @@ This section provides details for each class and property defined by SAREF exten
          <dt>is in domain of</dt>
          <dd>
             <a href="#https://w3id.org/saref#controlsProperty" title="https://w3id.org/saref#controlsProperty">controlsProperty</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#hasFabricationNo" title="https://w3id.org/def/S4WATR#hasFabricationNo">hasFabricationNo</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#hasFabricationNo" title="https://w3id.org/def/S4WATR#hasFabricationNo">has fabrication no</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/S4WATR#hasVersionNo" title="https://w3id.org/def/S4WATR#hasVersionNo">has version no</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/S4WATR#hasFirmwareVersion" title="https://w3id.org/def/S4WATR#hasFirmwareVersion">hasFirmwareVersion</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/S4WATR#hasHardwareVersion" title="https://w3id.org/def/S4WATR#hasHardwareVersion">hasHardwareVersion</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/saref#hasModel" title="https://w3id.org/saref#hasModel">hasModel</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/saref#makesMeasurement" title="https://w3id.org/saref#makesMeasurement">makesMeasurement</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#manageWaterAsset" title="https://w3id.org/def/S4WATR#manageWaterAsset">manageWaterAsset</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#measuresProperty" title="https://w3id.org/saref#measuresProperty">measuresProperty</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">used in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -384,6 +413,21 @@ This section provides details for each class and property defined by SAREF exten
          </dd>
       </dl>
    </div>
+   <div class="entity" id="https://w3id.org/def/S4WATR#HotWaterMeter">
+      <h3>HotWaterMeter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/S4WATR#HotWaterMeter</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/S4WATR#WaterMeter" title="https://w3id.org/def/S4WATR#WaterMeter">WaterMeter</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="https://w3id.org/def/S4WATR#Indicator">
       <h3>Indicator<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -416,7 +460,7 @@ This section provides details for each class and property defined by SAREF exten
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">TemporalUnit</a>
+            <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">TemporalEntity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -431,7 +475,7 @@ This section provides details for each class and property defined by SAREF exten
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">TemporalUnit</a>
+            <a href="#http://www.w3.org/2006/time#TemporalEntity" title="http://www.w3.org/2006/time#TemporalEntity">TemporalEntity</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -728,7 +772,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </dl>
    </div>
    <div class="entity" id="http://www.w3.org/2006/time#TemporalEntity">
-      <h3>TemporalUnit<sup class="type-c" title="class">c</sup>
+      <h3>TemporalEntity<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
@@ -865,6 +909,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#StorageTank" title="https://w3id.org/def/S4WATR#StorageTank">StorageTank</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">used in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="https://w3id.org/def/S4WATR#WaterMeter">
@@ -881,6 +930,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <dt>has super-classes</dt>
          <dd>
             <a href="#https://w3id.org/saref#Sensor" title="https://w3id.org/saref#Sensor">Sensor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#https://w3id.org/def/S4WATR#ColdWaterMeter" title="https://w3id.org/def/S4WATR#ColdWaterMeter">ColdWaterMeter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#HotWaterMeter" title="https://w3id.org/def/S4WATR#HotWaterMeter">HotWaterMeter</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in domain of</dt>
@@ -1007,6 +1062,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
       <li>
          <a href="#https://w3id.org/def/S4WATR#hasTarrif" title="https://w3id.org/def/S4WATR#hasTarrif">Tarrif</a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">
+            <span>used in</span>
+         </a>
       </li>
    </ul>
    <div class="entity" id="https://w3id.org/def/S4WATR#assignedTo">
@@ -1434,11 +1494,40 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dl>
       </div>
    </div>
+   <div class="entity" id="https://w3id.org/def/S4WATR#usedIn">
+      <h3>used in<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/S4WATR#usedIn</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/saref#Device" title="https://w3id.org/saref#Device">Device</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/S4WATR#WaterInfrastructure" title="https://w3id.org/def/S4WATR#WaterInfrastructure">WaterInfrastructure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
 </div><div id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#https://w3id.org/def/S4WATR#hasFabricationNo" title="https://w3id.org/def/S4WATR#hasFabricationNo">hasFabricationNo</a>
+         <a href="#https://w3id.org/def/S4WATR#hasFabricationNo" title="https://w3id.org/def/S4WATR#hasFabricationNo">
+            <span>has fabrication no</span>
+         </a>
+      </li>
+      <li>
+         <a href="#https://w3id.org/def/S4WATR#hasVersionNo" title="https://w3id.org/def/S4WATR#hasVersionNo">
+            <span>has version no</span>
+         </a>
       </li>
       <li>
          <a href="#https://w3id.org/def/S4WATR#hasFirmwareVersion" title="https://w3id.org/def/S4WATR#hasFirmwareVersion">hasFirmwareVersion</a>
@@ -1460,7 +1549,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </li>
    </ul>
    <div class="entity" id="https://w3id.org/def/S4WATR#hasFabricationNo">
-      <h3>hasFabricationNo<sup class="type-dp" title="data property">dp</sup>
+      <h3>has fabrication no<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -1476,6 +1565,23 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2000/01/rdf-schema#Literal">literal</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/S4WATR#hasVersionNo">
+      <h3>has version no<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/S4WATR#hasVersionNo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/saref#Device" title="https://w3id.org/saref#Device">Device</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
