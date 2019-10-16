@@ -8,17 +8,17 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterm="https://w3id.org/def/S4WATR#dcterm:"
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="https://w3id.org/def/S4WATR">
         <dc:description xml:lang="en">SAREF4WATR is an extension of SAREF for Water</dc:description>
         <dc:publisher>http://www.oeg-upm.net/</dc:publisher>
         <dc:publisher>https://www.etsi.org/</dc:publisher>
         <dc:title xml:lang="en">SAREF4WATR is an extension of SAREF for Water</dc:title>
-        <terms:creator>http://w3id.org/people/mpoveda</terms:creator>
         <terms:creator>http://www.garcia-castro.com/foaf.rdf#me</terms:creator>
-        <terms:creator>https://www.linkedin.com/in/sanjutiwari/</terms:creator>
         <terms:license>https://forge.etsi.org/etsi-software-license</terms:license>
         <owl:versionInfo xml:lang="en">v0.1.2</owl:versionInfo>
+        <preferredNamespacePrefix xml:lang="en"></preferredNamespacePrefix>
     </owl:Ontology>
     
 
@@ -112,6 +112,12 @@
     
 
 
+    <!-- https://w3id.org/def/S4WATR#dcterm:created -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/def/S4WATR#dcterm:created"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -183,7 +189,6 @@
 
     <owl:ObjectProperty rdf:about="https://w3id.org/def/S4WATR#hasMeter">
         <rdfs:domain rdf:resource="https://w3id.org/def/S4WATR#WaterMeter"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/S4WATR#WaterMeterType"/>
         <rdfs:label xml:lang="en">hasMeter</rdfs:label>
     </owl:ObjectProperty>
     
@@ -488,19 +493,52 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- http://www.w3.org/2006/time#TemporalUnit -->
+    <!-- http://www.w3.org/2006/time#Instant -->
 
-    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalUnit">
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Instant">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Interval -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Interval">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#TemporalEntity -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#TemporalEntity">
+        <rdfs:comment xml:lang="en">A temporal interval or instant.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://www.w3.org/2006/time#</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">TemporalUnit</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
     
 
 
     <!-- https://w3id.org/def/S4WATR#Aquedunct -->
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#Aquedunct">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterInfrastructure"/>
         <rdfs:label xml:lang="en">Aquedunct</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/S4WATR#CapacitySensor -->
+
+    <owl:Class rdf:about="https://w3id.org/def/S4WATR#CapacitySensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
+        <rdfs:label xml:lang="en">CapacitySensor</rdfs:label>
     </owl:Class>
     
 
@@ -570,7 +608,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#Pipe -->
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#Pipe">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterInfrastructure"/>
         <rdfs:label xml:lang="en">Pipe</rdfs:label>
     </owl:Class>
     
@@ -606,17 +644,17 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#StorageTank -->
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#StorageTank">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterInfrastructure"/>
         <rdfs:label xml:lang="en">StorageTank</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/def/S4WATR#SurfaceWaterIntake -->
+    <!-- https://w3id.org/def/S4WATR#TankLevelSensor -->
 
-    <owl:Class rdf:about="https://w3id.org/def/S4WATR#SurfaceWaterIntake">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
-        <rdfs:label xml:lang="en">SurfaceWaterIntake</rdfs:label>
+    <owl:Class rdf:about="https://w3id.org/def/S4WATR#TankLevelSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
+        <rdfs:label xml:lang="en">TankLevelSensor</rdfs:label>
     </owl:Class>
     
 
@@ -647,16 +685,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
-    <!-- https://w3id.org/def/S4WATR#WasteWaterPlant -->
-
-    <owl:Class rdf:about="https://w3id.org/def/S4WATR#WasteWaterPlant">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
-        <rdfs:comment xml:lang="en">A Waste Water Plant is a facility where contaminants are removed from waste water or sewage</rdfs:comment>
-        <rdfs:label xml:lang="en">WasteWaterPlant</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://w3id.org/def/S4WATR#WaterAsset -->
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterAsset">
@@ -674,10 +702,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://w3id.org/def/S4WATR#WaterInfrastructure -->
+
+    <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterInfrastructure">
+        <rdfs:label xml:lang="en">WaterInfrastructure</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/def/S4WATR#WaterMeter -->
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterMeter">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/def/S4WATR#hasFirmwareVersion"/>
@@ -686,24 +722,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A WaterMeter is a device that measure different aspects of a water infrastructure.</rdfs:comment>
         <rdfs:label xml:lang="en">WaterMeter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/S4WATR#WaterMeterType -->
-
-    <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterMeterType">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:label xml:lang="en">WaterMeterType</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/S4WATR#WaterMonitoringSensor -->
-
-    <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterMonitoringSensor">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
-        <rdfs:label xml:lang="en">WaterMonitoringSensor</rdfs:label>
     </owl:Class>
     
 
@@ -723,15 +741,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterQualitySensor">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Sensor"/>
         <rdfs:label xml:lang="en">WaterQualitySensor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/S4WATR#WaterflowInstrument -->
-
-    <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterflowInstrument">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
-        <rdfs:label xml:lang="en">WaterflowInstrument</rdfs:label>
     </owl:Class>
     
 
@@ -917,11 +926,25 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     
 
 
+    <!-- https://w3id.org/def/S4WATR#Burghos -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#Burghos">
+        <rdf:type rdf:resource="https://w3id.org/def/saref4city#City"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://w3id.org/def/S4WATR#Capacity -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#Capacity">
         <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/def/S4WATR#ColdWaterMeter -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#ColdWaterMeter"/>
     
 
 
