@@ -1,0 +1,57 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:WaterAsset" ":Sensor" "base:WaterMeter" ":Device" "base:Indicator" "http://www.opengis.net/ont/geosparql#Geometry" "http://www.opengis.net/ont/geosparql#SpatialObject" ":UnitOfMeasure" ":City" "base:Tarrif" "wgs84_pos:Point" ":Measurement" ":Actuator" ; /*classes style*/
+	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
+	"NULL" -> "wgs84_pos:Point" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":isMeasuredByDevice" [ label = "owl:onProperty" ];
+	"NULL" -> ":isControlledByDevice" [ label = "owl:onProperty" ];
+	"NULL" -> ":Measurement" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "xsd:float" [ label = "owl:onDataRange" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":relatesToProperty" [ label = "owl:onProperty" ];
+	"NULL" -> ":controlsProperty" [ label = "owl:onProperty" ];
+	"NULL" -> ":City" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "xsd:dateTime" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "base:Version" [ label = "owl:onClass" ];
+	"NULL" -> "base:assignedTo" [ label = "owl:onProperty" ];
+	"NULL" -> ":Property" [ label = "owl:onClass" ];
+	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":hasValue" [ label = "owl:onProperty" ];
+	"NULL" -> "base:hasVersion" [ label = "owl:onProperty" ];
+	"NULL" -> ":UnitOfMeasure" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":UnitOfMeasure" [ label = "owl:onClass" ];
+	"NULL" -> ":isMeasuredIn" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#sfContains" [ label = "owl:onProperty" ];
+	"NULL" -> ":measuresProperty" [ label = "owl:onProperty" ];
+	"NULL" -> ":hasTimeStamp" [ label = "owl:onProperty" ];
+	"NULL" -> ":makesMeasurement" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#sfWithin" [ label = "owl:onProperty" ];
+	"NULL" -> "base:hasFabricationNo" [ label = "owl:onProperty" ];
+	"NULL" -> ":Property" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#hasGeometry" [ label = "owl:onProperty" ];
+	"NULL" -> ":Device" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "base:hasFirmwareVersion" [ label = "owl:onProperty" ];
+	":Actuator" -> ":Sensor" [ label = "owl:disjointWith" ];
+	"base:Indicator" -> ":City" [ label = "base:assignedTo" ];
+	":Measurement" -> ":Device" [ label = ":measurementMadeBy" ];
+	":Device" -> "base:WaterAsset" [ label = "base:manageWaterAsset" ];
+	":Device" -> "rdfs:Literal" [ label = ":hasModel" ];
+	":Property" -> ":Device" [ label = ":isControlledByDevice" ];
+	":Device" -> "rdfs:Literal" [ label = "base:hasHardwareVersion" ];
+	"base:WaterMeter" -> "base:Version" [ label = "base:hasVersion" ];
+	":Property" -> ":Measurement" [ label = ":relatesToMeasurements" ];
+	":Device" -> ":Measurement" [ label = ":makesMeasurement" ];
+	":Device" -> "rdfs:Literal" [ label = "base:hasFabricationNo" ];
+	":Device" -> "rdfs:Literal" [ label = "base:hasFirmwareVersion" ];
+	":Device" -> ":Property" [ label = ":controlsProperty" ];
+	"base:WaterAsset" -> ":Device" [ label = "base:isManagedBy" ];
+	"base:WaterAsset" -> "base:Indicator" [ label = "base:hasIndicator" ];
+	":Property" -> ":Device" [ label = ":isMeasuredByDevice" ];
+	"base:WaterMeter" -> "base:Tarrif" [ label = "base:hasTarrif" ];
+	"base:WaterMeter" -> "owl:Thing" [ label = "base:hasMeter" ];
+	":Measurement" -> ":UnitOfMeasure" [ label = ":isMeasuredIn" ];
+	":Device" -> ":Property" [ label = ":measuresProperty" ];
+
+}

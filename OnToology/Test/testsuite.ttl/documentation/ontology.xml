@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:vtc="http://w3id.org/def/vtc#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/vtc#desiredBehaviour -->
+
+
+    <AnnotationProperty rdf:about="http://w3id.org/def/vtc#desiredBehaviour"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/def/vtc#TestCaseDesign -->
+
+
+    <Class rdf:about="http://w3id.org/def/vtc#TestCaseDesign"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- urn:default:baseUri:Test1 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test1">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>pH type Characterstics</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test10 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test10">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Device subClassOf hasModel max 1 string</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test11 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test11">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>CatchmentWell subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test12 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test12">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WasteWaterPlant subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test13 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test13">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>StorageTank subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test14 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test14">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterAsset subClassOf isMeasuredIn only UnitOfMeasure</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test15 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test15">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Property subClassOf isMeasuredByDevice only Device</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test16 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test16">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Property subClassOf isControlledByDevice only Device</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test17 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test17">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterMeter subClassOf hasFabricationNo max 1 string</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test18 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test18">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterMeter subClassOf hasModel max 1 string</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test19 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test19">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Valve type Class</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test2 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test2">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Conductance type Characterstics</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test20 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test20">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Pump type Class</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test21 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test21">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>GroundWaterWell subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test22 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test22">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Dam subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test23 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test23">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Reservoir subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test24 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test24">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Property subClassOf relatesToMeasurements only Measurement</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test3 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test3">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Dam subClassOf WaterAsset</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test4 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test4">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterMeter subClassOf Device</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test5 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test5">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Sensor type Class</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test6 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test6">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Actuator type Class</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test7 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test7">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>WaterMeter subClassOf Device</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test8 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test8">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Sensor subClassOf Device</vtc:desiredBehaviour>
+    </NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:Test9 -->
+
+
+    <NamedIndividual rdf:about="urn:default:baseUri:Test9">
+        <rdf:type rdf:resource="http://w3id.org/def/vtc#TestCaseDesign"/>
+        <vtc:desiredBehaviour>Device type Class</vtc:desiredBehaviour>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

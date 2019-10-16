@@ -1,0 +1,10 @@
+{
+  "@context" : {
+    "desiredBehaviour" : {
+      "@id" : "http://w3id.org/def/vtc#desiredBehaviour"
+    },
+    "TestCaseDesign" : {
+      "@id" : "http://w3id.org/def/vtc#TestCaseDesign"
+    }
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "@context" : {
+    "hasTarrif" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasTarrif",
+      "@type" : "@id"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://w3id.org/saref#UnitOfMeasure"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://w3id.org/saref#isControlledByDevice",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "https://w3id.org/def/S4WATR#dcterm:created"
+    },
+    "hasModel" : {
+      "@id" : "https://w3id.org/saref#hasModel",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Dam" : {
+      "@id" : "https://w3id.org/def/S4WATR#Dam"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "hasVersion" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasVersion",
+      "@type" : "@id"
+    },
+    "measuresProperty" : {
+      "@id" : "https://w3id.org/saref#measuresProperty",
+      "@type" : "@id"
+    },
+    "Pipe" : {
+      "@id" : "https://w3id.org/def/S4WATR#Pipe"
+    },
+    "Geometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
+    },
+    "hasMeter" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasMeter",
+      "@type" : "@id"
+    },
+    "hasValue" : {
+      "@id" : "https://w3id.org/saref#hasValue"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "sfWithin" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
+      "@type" : "@id"
+    },
+    "long" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+    },
+    "assignedTo" : {
+      "@id" : "https://w3id.org/def/S4WATR#assignedTo",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Indicator" : {
+      "@id" : "https://w3id.org/def/S4WATR#Indicator"
+    },
+    "hasIndicator" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasIndicator",
+      "@type" : "@id"
+    },
+    "isManagedBy" : {
+      "@id" : "https://w3id.org/def/S4WATR#isManagedBy",
+      "@type" : "@id"
+    },
+    "Measurement" : {
+      "@id" : "https://w3id.org/saref#Measurement"
+    },
+    "WaterMeter" : {
+      "@id" : "https://w3id.org/def/S4WATR#WaterMeter"
+    },
+    "Chemical" : {
+      "@id" : "https://w3id.org/def/S4WATR#Chemical"
+    },
+    "WaterInfrastructure" : {
+      "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure"
+    },
+    "Physical" : {
+      "@id" : "https://w3id.org/def/S4WATR#Physical"
+    },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
+    "measurementMadeBy" : {
+      "@id" : "https://w3id.org/saref#measurementMadeBy",
+      "@type" : "@id"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "location" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+      "@type" : "@id"
+    },
+    "WaterQualitySensor" : {
+      "@id" : "https://w3id.org/def/S4WATR#WaterQualitySensor"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "alt" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
+    },
+    "GroundWaterWell" : {
+      "@id" : "https://w3id.org/def/S4WATR#GroundWaterWell"
+    },
+    "StorageTank" : {
+      "@id" : "https://w3id.org/def/S4WATR#StorageTank"
+    },
+    "hasTimeStamp" : {
+      "@id" : "https://w3id.org/saref#hasTimeStamp"
+    },
+    "WaterAsset" : {
+      "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://w3id.org/saref#isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "hasHardwareVersion" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasHardwareVersion",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "https://w3id.org/def/S4WATR#preferredNamespacePrefix"
+    },
+    "hasFirmwareVersion" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasFirmwareVersion",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "preferredNamespaceURI" : {
+      "@id" : "https://w3id.org/def/S4WATR#preferredNamespaceURI"
+    },
+    "CapacitySensor" : {
+      "@id" : "https://w3id.org/def/S4WATR#CapacitySensor"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "Point" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://w3id.org/saref#makesMeasurement",
+      "@type" : "@id"
+    },
+    "manageWaterAsset" : {
+      "@id" : "https://w3id.org/def/S4WATR#manageWaterAsset",
+      "@type" : "@id"
+    },
+    "hasGeometry" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry",
+      "@type" : "@id"
+    },
+    "Property" : {
+      "@id" : "https://w3id.org/saref#Property"
+    },
+    "sfContains" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://w3id.org/saref#isMeasuredIn",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "SpatialObject" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#SpatialObject"
+    },
+    "PressureRegulator" : {
+      "@id" : "https://w3id.org/def/S4WATR#PressureRegulator"
+    },
+    "lat" : {
+      "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+    },
+    "Aquedunct" : {
+      "@id" : "https://w3id.org/def/S4WATR#Aquedunct"
+    },
+    "Pump" : {
+      "@id" : "https://w3id.org/def/S4WATR#Pump"
+    },
+    "Tarrif" : {
+      "@id" : "https://w3id.org/def/S4WATR#Tarrif"
+    },
+    "hasManufacture" : {
+      "@id" : "https://w3id.org/saref#hasManufacture"
+    },
+    "City" : {
+      "@id" : "https://w3id.org/def/saref4city#City"
+    },
+    "Version" : {
+      "@id" : "https://w3id.org/def/S4WATR#Version"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://w3id.org/saref#relatesToProperty",
+      "@type" : "@id"
+    },
+    "Actuator" : {
+      "@id" : "https://w3id.org/saref#Actuator"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "controlsProperty" : {
+      "@id" : "https://w3id.org/saref#controlsProperty",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "CatchmentWell" : {
+      "@id" : "https://w3id.org/def/S4WATR#CatchmentWell"
+    },
+    "Device" : {
+      "@id" : "https://w3id.org/saref#Device"
+    },
+    "Valve" : {
+      "@id" : "https://w3id.org/def/S4WATR#Valve"
+    },
+    "WaterProperty" : {
+      "@id" : "https://w3id.org/def/S4WATR#WaterProperty"
+    },
+    "relatesToMeasurements" : {
+      "@id" : "https://w3id.org/saref#relatesToMeasurements",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "Reservoir" : {
+      "@id" : "https://w3id.org/def/S4WATR#Reservoir"
+    },
+    "TankLevelSensor" : {
+      "@id" : "https://w3id.org/def/S4WATR#TankLevelSensor"
+    },
+    "hasFabricationNo" : {
+      "@id" : "https://w3id.org/def/S4WATR#hasFabricationNo",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/saref#Sensor"
+    }
+  }
+}

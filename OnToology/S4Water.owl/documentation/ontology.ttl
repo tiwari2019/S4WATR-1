@@ -1,0 +1,713 @@
+@prefix : <https://w3id.org/def/S4WATR#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/S4WATR> .
+
+<https://w3id.org/def/S4WATR> rdf:type owl:Ontology ;
+                               <http://purl.org/dc/elements/1.1/description> "SAREF4WATR is an extension of SAREF for Water"@en ;
+                               <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ,
+                                                                           "https://www.etsi.org/" ;
+                               <http://purl.org/dc/elements/1.1/title> "SAREF4WATR is an extension of SAREF for Water"@en ;
+                               <http://purl.org/dc/terms/creator> "http://www.garcia-castro.com/foaf.rdf#me" ;
+                               <http://purl.org/dc/terms/license> "https://forge.etsi.org/etsi-software-license" ;
+                               owl:versionInfo "v0.1.2"@en ;
+                               :preferredNamespacePrefix ""@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#alt
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/S4WATR#preferredNamespacePrefix
+:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/S4WATR#preferredNamespaceURI
+:preferredNamespaceURI rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/def/S4WATR#dcterm:created
+:created rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#hasGeometry
+<http://www.opengis.net/ont/geosparql#hasGeometry> rdf:type owl:ObjectProperty ;
+                                                   rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en ;
+                                                   rdfs:label "hasGeometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfContains
+<http://www.opengis.net/ont/geosparql#sfContains> rdf:type owl:ObjectProperty ;
+                                                  rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en ;
+                                                  rdfs:label "sfContains"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#sfWithin
+<http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty ;
+                                                rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en ;
+                                                rdfs:label "sfWithin"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> rdf:type owl:ObjectProperty ;
+                                                   rdfs:isDefinedBy "http://www.w3.org/2003/01/geo/wgs84_pos#"@en ;
+                                                   rdfs:label "location" .
+
+
+###  https://w3id.org/def/S4WATR#assignedTo
+:assignedTo rdf:type owl:ObjectProperty ;
+            rdfs:domain :Indicator ;
+            rdfs:range <https://w3id.org/def/saref4city#City> ;
+            rdfs:label "assignedTo"@en .
+
+
+###  https://w3id.org/def/S4WATR#hasIndicator
+:hasIndicator rdf:type owl:ObjectProperty ;
+              rdfs:domain :WaterAsset ;
+              rdfs:range :Indicator ;
+              rdfs:label "hasIndicator"@en .
+
+
+###  https://w3id.org/def/S4WATR#hasMeter
+:hasMeter rdf:type owl:ObjectProperty ;
+          rdfs:domain :WaterMeter ;
+          rdfs:label "hasMeter"@en .
+
+
+###  https://w3id.org/def/S4WATR#hasTarrif
+:hasTarrif rdf:type owl:ObjectProperty ;
+           rdfs:domain :WaterMeter ;
+           rdfs:range :Tarrif ;
+           rdfs:label "Tarrif"@en .
+
+
+###  https://w3id.org/def/S4WATR#hasVersion
+:hasVersion rdf:type owl:ObjectProperty ;
+            rdfs:domain :WaterMeter ;
+            rdfs:range :Version ;
+            rdfs:label "hasVersion"@en .
+
+
+###  https://w3id.org/def/S4WATR#isManagedBy
+:isManagedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :manageWaterAsset ;
+             rdfs:domain :WaterAsset ;
+             rdfs:range <https://w3id.org/saref#Device> ;
+             rdfs:label "isManagedBy"@en .
+
+
+###  https://w3id.org/def/S4WATR#manageWaterAsset
+:manageWaterAsset rdf:type owl:ObjectProperty ;
+                  rdfs:domain <https://w3id.org/saref#Device> ;
+                  rdfs:range :WaterAsset ;
+                  rdfs:label "manageWaterAsset"@en .
+
+
+###  https://w3id.org/saref#controlsProperty
+<https://w3id.org/saref#controlsProperty> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://w3id.org/saref#Device> ;
+                                          rdfs:range <https://w3id.org/saref#Property> ;
+                                          rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                          rdfs:label "controlsProperty"@en .
+
+
+###  https://w3id.org/saref#isControlledByDevice
+<https://w3id.org/saref#isControlledByDevice> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://w3id.org/saref#Property> ;
+                                              rdfs:range <https://w3id.org/saref#Device> ;
+                                              rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                              rdfs:label "isControlledByDevice"@en .
+
+
+###  https://w3id.org/saref#isMeasuredByDevice
+<https://w3id.org/saref#isMeasuredByDevice> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://w3id.org/saref#Property> ;
+                                            rdfs:range <https://w3id.org/saref#Device> ;
+                                            rdfs:label "isMeasuredByDevice"@en .
+
+
+###  https://w3id.org/saref#isMeasuredIn
+<https://w3id.org/saref#isMeasuredIn> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://w3id.org/saref#Measurement> ;
+                                      rdfs:range <https://w3id.org/saref#UnitOfMeasure> ;
+                                      rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                      rdfs:label "isMeasuredIn"@en .
+
+
+###  https://w3id.org/saref#makesMeasurement
+<https://w3id.org/saref#makesMeasurement> rdf:type owl:ObjectProperty ;
+                                          owl:inverseOf <https://w3id.org/saref#measurementMadeBy> ;
+                                          rdfs:domain <https://w3id.org/saref#Device> ;
+                                          rdfs:range <https://w3id.org/saref#Measurement> ;
+                                          rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                          rdfs:label "makesMeasurement"@en .
+
+
+###  https://w3id.org/saref#measurementMadeBy
+<https://w3id.org/saref#measurementMadeBy> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/saref#Measurement> ;
+                                           rdfs:range <https://w3id.org/saref#Device> ;
+                                           rdfs:label "measurementMadeBy"@en .
+
+
+###  https://w3id.org/saref#measuresProperty
+<https://w3id.org/saref#measuresProperty> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://w3id.org/saref#Device> ;
+                                          rdfs:range <https://w3id.org/saref#Property> ;
+                                          rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                          rdfs:label "measuresProperty"@en .
+
+
+###  https://w3id.org/saref#relatesToMeasurements
+<https://w3id.org/saref#relatesToMeasurements> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/saref#Property> ;
+                                               rdfs:range <https://w3id.org/saref#Measurement> ;
+                                               rdfs:label "relatesToMeasurement"@en .
+
+
+###  https://w3id.org/saref#relatesToProperty
+<https://w3id.org/saref#relatesToProperty> rdf:type owl:ObjectProperty ;
+                                           rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                           rdfs:label "relatesToProperty"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/S4WATR#hasFabricationNo
+:hasFabricationNo rdf:type owl:DatatypeProperty ;
+                  rdfs:domain <https://w3id.org/saref#Device> ;
+                  rdfs:range rdfs:Literal ;
+                  rdfs:label "hasFabricationNo"@en .
+
+
+###  https://w3id.org/def/S4WATR#hasFirmwareVersion
+:hasFirmwareVersion rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <https://w3id.org/saref#Device> ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "hasFirmwareVersion"@en .
+
+
+###  https://w3id.org/def/S4WATR#hasHardwareVersion
+:hasHardwareVersion rdf:type owl:DatatypeProperty ;
+                    rdfs:domain <https://w3id.org/saref#Device> ;
+                    rdfs:range rdfs:Literal ;
+                    rdfs:label "hasHardwareVersion"@en .
+
+
+###  https://w3id.org/saref#hasManufacture
+<https://w3id.org/saref#hasManufacture> rdf:type owl:DatatypeProperty ;
+                                        rdfs:comment "A relationship identifying the manufacturer of an entity (e.g., device)"@en ;
+                                        rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                        rdfs:label "hasManufacture"@en .
+
+
+###  https://w3id.org/saref#hasModel
+<https://w3id.org/saref#hasModel> rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain <https://w3id.org/saref#Device> ;
+                                  rdfs:range rdfs:Literal ;
+                                  rdfs:comment "A relationship identifying the model of an entity (e.g., device)"@en ;
+                                  rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                  rdfs:label "hasModel"@en .
+
+
+###  https://w3id.org/saref#hasTimeStamp
+<https://w3id.org/saref#hasTimeStamp> rdf:type owl:DatatypeProperty ;
+                                      rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                      rdfs:label "hasTimeStamp"@en .
+
+
+###  https://w3id.org/saref#hasValue
+<https://w3id.org/saref#hasValue> rdf:type owl:DatatypeProperty ;
+                                  rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                  rdfs:label "hasValue"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.opengis.net/ont/geosparql#Feature
+<http://www.opengis.net/ont/geosparql#Feature> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                               rdfs:comment "This class represents the top-level feature type. This class is equivalent to GFI_Feature defined in ISO 19156:2011, and it is superclass of all feature types."@en ;
+                                               rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en ;
+                                               rdfs:label "Feature"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#Geometry
+<http://www.opengis.net/ont/geosparql#Geometry> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#SpatialObject> ;
+                                                rdfs:comment "The class represents the top-level geometry type. This class is equivalent to the UML class GM_Object defined in ISO 19107, and it is superclass of all geometry types."@en ;
+                                                rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en ;
+                                                rdfs:label "Geometry"@en .
+
+
+###  http://www.opengis.net/ont/geosparql#SpatialObject
+<http://www.opengis.net/ont/geosparql#SpatialObject> rdf:type owl:Class ;
+                                                     rdfs:subClassOf owl:Thing ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.opengis.net/ont/geosparql#hasGeometry> ;
+                                                                       owl:allValuesFrom <http://www.opengis.net/ont/geosparql#Geometry>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.opengis.net/ont/geosparql#sfContains> ;
+                                                                       owl:allValuesFrom <http://www.opengis.net/ont/geosparql#SpatialObject>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.opengis.net/ont/geosparql#sfWithin> ;
+                                                                       owl:allValuesFrom <http://www.opengis.net/ont/geosparql#SpatialObject>
+                                                                     ] ,
+                                                                     [ rdf:type owl:Restriction ;
+                                                                       owl:onProperty <http://www.w3.org/2003/01/geo/wgs84_pos#location> ;
+                                                                       owl:allValuesFrom <http://www.w3.org/2003/01/geo/wgs84_pos#Point>
+                                                                     ] ;
+                                                     rdfs:isDefinedBy "http://www.opengis.net/ont/geosparql#"@en ;
+                                                     rdfs:label "SpatialObject"@en .
+
+
+###  http://www.w3.org/2003/01/geo/wgs84_pos#Point
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> rdf:type owl:Class ;
+                                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Geometry> ;
+                                                rdfs:comment """Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT), lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2)."""@en ;
+                                                rdfs:isDefinedBy "http://www.w3.org/2003/01/geo/wgs84_pos#"@en ;
+                                                rdfs:label "Point"@en .
+
+
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             rdfs:comment "A temporal interval or instant."@en ;
+                                             rdfs:isDefinedBy "http://www.w3.org/2006/time#"@en ;
+                                             rdfs:label "TemporalUnit"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/S4WATR#Aquedunct
+:Aquedunct rdf:type owl:Class ;
+           rdfs:subClassOf :WaterInfrastructure ;
+           rdfs:label "Aquedunct"@en .
+
+
+###  https://w3id.org/def/S4WATR#CapacitySensor
+:CapacitySensor rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                rdfs:label "CapacitySensor"@en .
+
+
+###  https://w3id.org/def/S4WATR#CatchmentWell
+:CatchmentWell rdf:type owl:Class ;
+               rdfs:subClassOf :WaterAsset ;
+               rdfs:comment "A Catchment Well is a well that hasbeen constructed to collect water."@en ;
+               rdfs:label "CatchmentWell"@en .
+
+
+###  https://w3id.org/def/S4WATR#Chemical
+:Chemical rdf:type owl:Class ;
+          rdfs:subClassOf :WaterProperty ;
+          rdfs:comment "Chemical Property"@en ;
+          rdfs:label "Chemical"@en .
+
+
+###  https://w3id.org/def/S4WATR#Dam
+:Dam rdf:type owl:Class ;
+     rdfs:subClassOf :WaterAsset ;
+     rdfs:label "Dam"@en .
+
+
+###  https://w3id.org/def/S4WATR#GroundWaterWell
+:GroundWaterWell rdf:type owl:Class ;
+                 rdfs:subClassOf :WaterAsset ;
+                 rdfs:label "GroundWaterWell"@en .
+
+
+###  https://w3id.org/def/S4WATR#Indicator
+:Indicator rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :assignedTo ;
+                             owl:someValuesFrom <https://w3id.org/def/saref4city#City>
+                           ] ;
+           rdfs:label "Indicator"@en .
+
+
+###  https://w3id.org/def/S4WATR#Physical
+:Physical rdf:type owl:Class ;
+          rdfs:subClassOf :WaterProperty ;
+          rdfs:comment "Physical Property"@en ;
+          rdfs:label "Physical"@en .
+
+
+###  https://w3id.org/def/S4WATR#Pipe
+:Pipe rdf:type owl:Class ;
+      rdfs:subClassOf :WaterInfrastructure ;
+      rdfs:label "Pipe"@en .
+
+
+###  https://w3id.org/def/S4WATR#PressureRegulator
+:PressureRegulator rdf:type owl:Class ;
+                   rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
+                   rdfs:label "PressureRegulator"@en .
+
+
+###  https://w3id.org/def/S4WATR#Pump
+:Pump rdf:type owl:Class ;
+      rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
+      rdfs:label "Pump"@en .
+
+
+###  https://w3id.org/def/S4WATR#Reservoir
+:Reservoir rdf:type owl:Class ;
+           rdfs:subClassOf :WaterAsset ;
+           rdfs:label "Reservoir"@en .
+
+
+###  https://w3id.org/def/S4WATR#StorageTank
+:StorageTank rdf:type owl:Class ;
+             rdfs:subClassOf :WaterInfrastructure ;
+             rdfs:label "StorageTank"@en .
+
+
+###  https://w3id.org/def/S4WATR#TankLevelSensor
+:TankLevelSensor rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                 rdfs:label "TankLevelSensor"@en .
+
+
+###  https://w3id.org/def/S4WATR#Tarrif
+:Tarrif rdf:type owl:Class ;
+        rdfs:label "Tarrif"@en .
+
+
+###  https://w3id.org/def/S4WATR#Valve
+:Valve rdf:type owl:Class ;
+       rdfs:subClassOf <https://w3id.org/saref#Actuator> ;
+       rdfs:label "Valve"@en .
+
+
+###  https://w3id.org/def/S4WATR#Version
+:Version rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ;
+         rdfs:label "Version"@en .
+
+
+###  https://w3id.org/def/S4WATR#WaterAsset
+:WaterAsset rdf:type owl:Class ;
+            rdfs:subClassOf owl:Thing ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
+                              owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
+                            ] ;
+            rdfs:comment """Water Asset contains, what is built to pump, divert, store, transport, trat and provide pure drinking water.
+(http://www.waterencyclopedia.com/Hy-La/Infrastructure-Water-Supply.html)"""@en ;
+            rdfs:label "WaterAsset"@en .
+
+
+###  https://w3id.org/def/S4WATR#WaterInfrastructure
+:WaterInfrastructure rdf:type owl:Class ;
+                     rdfs:label "WaterInfrastructure"@en .
+
+
+###  https://w3id.org/def/S4WATR#WaterMeter
+:WaterMeter rdf:type owl:Class ;
+            rdfs:subClassOf <https://w3id.org/saref#Sensor> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasFirmwareVersion ;
+                              owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                            ] ;
+            rdfs:comment "A WaterMeter is a device that measure different aspects of a water infrastructure."@en ;
+            rdfs:label "WaterMeter"@en .
+
+
+###  https://w3id.org/def/S4WATR#WaterProperty
+:WaterProperty rdf:type owl:Class ;
+               rdfs:subClassOf <https://w3id.org/saref#Property> ;
+               rdfs:comment "WaterProperty"@en ;
+               rdfs:label "WaterProperty"@en .
+
+
+###  https://w3id.org/def/S4WATR#WaterQualitySensor
+:WaterQualitySensor rdf:type owl:Class ;
+                    rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                    rdfs:label "WaterQualitySensor"@en .
+
+
+###  https://w3id.org/def/saref4city#City
+<https://w3id.org/def/saref4city#City> rdf:type owl:Class ;
+                                       rdfs:comment "A city is a large human settlement. A city is distinguished from other human settlements by its relatively great size, but also by its functions and its special symbolic status, which may be conferred by a central authority."@en ;
+                                       rdfs:isDefinedBy "https://w3id.org/def/saref4city#"@en ;
+                                       rdfs:label "City"@en .
+
+
+###  https://w3id.org/saref#Actuator
+<https://w3id.org/saref#Actuator> rdf:type owl:Class ;
+                                  rdfs:subClassOf <https://w3id.org/saref#Device> ;
+                                  owl:disjointWith <https://w3id.org/saref#Sensor> ;
+                                  rdfs:comment "A device responsible for moving or controlling a mechanism or system."@en ;
+                                  rdfs:isDefinedBy "https://w3id.org/saref"@en ;
+                                  rdfs:label "Actuator"@en .
+
+
+###  https://w3id.org/saref#Device
+<https://w3id.org/saref#Device> rdf:type owl:Class ;
+                                rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#controlsProperty> ;
+                                                  owl:allValuesFrom <https://w3id.org/saref#Property>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#makesMeasurement> ;
+                                                  owl:allValuesFrom <https://w3id.org/saref#Measurement>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty <https://w3id.org/saref#measuresProperty> ;
+                                                  owl:allValuesFrom <https://w3id.org/saref#Property>
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasVersion ;
+                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :Version
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasFabricationNo ;
+                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ;
+                                rdfs:comment "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended."@en ;
+                                rdfs:isDefinedBy "https://w3id.org/saref"@en ;
+                                rdfs:label "Device"@en .
+
+
+###  https://w3id.org/saref#Measurement
+<https://w3id.org/saref#Measurement> rdf:type owl:Class ;
+                                     rdfs:subClassOf owl:Thing ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
+                                                       owl:allValuesFrom <https://w3id.org/saref#UnitOfMeasure>
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/saref#relatesToProperty> ;
+                                                       owl:allValuesFrom <https://w3id.org/saref#Property>
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/saref#isMeasuredIn> ;
+                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass <https://w3id.org/saref#UnitOfMeasure>
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/saref#relatesToProperty> ;
+                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onClass <https://w3id.org/saref#Property>
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/saref#hasTimeStamp> ;
+                                                       owl:allValuesFrom xsd:dateTime
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/saref#hasValue> ;
+                                                       owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                     ] ,
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty <https://w3id.org/saref#hasValue> ;
+                                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                       owl:onDataRange xsd:float
+                                                     ] ;
+                                     rdfs:comment "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en ;
+                                     rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                     rdfs:label "Measurement"@en .
+
+
+###  https://w3id.org/saref#Property
+<https://w3id.org/saref#Property> rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://w3id.org/saref#isControlledByDevice> ;
+                                                    owl:allValuesFrom <https://w3id.org/saref#Device>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://w3id.org/saref#isMeasuredByDevice> ;
+                                                    owl:allValuesFrom <https://w3id.org/saref#Device>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://w3id.org/saref#relatesToMeasurements> ;
+                                                    owl:allValuesFrom <https://w3id.org/saref#Measurement>
+                                                  ] ;
+                                  rdfs:comment "An aspect of an entity that can be observable by a sensor."@en ;
+                                  rdfs:isDefinedBy "https://w3id.org/saref"@en ;
+                                  rdfs:label "Property"@en .
+
+
+###  https://w3id.org/saref#Sensor
+<https://w3id.org/saref#Sensor> rdf:type owl:Class ;
+                                rdfs:subClassOf <https://w3id.org/saref#Device> ;
+                                rdfs:comment "A device that detects and responds to events or changes in the physical environment such as light, motion, or temperature changes. A device that has category saref:Sensor and performs a saref:SensingFunction."@en ;
+                                rdfs:isDefinedBy "https://w3id.org/saref"@en ;
+                                rdfs:label "Sensor"@en .
+
+
+###  https://w3id.org/saref#UnitOfMeasure
+<https://w3id.org/saref#UnitOfMeasure> rdf:type owl:Class ;
+                                       rdfs:subClassOf owl:Thing ;
+                                       rdfs:comment "The unit of measure is a standard for measurement of a quantity, such as a Property. For example, Power is a property and Watt is a unit of power that represents a definite predetermined power: when we say 10 Watt, we actually mean 10 times the definite predetermined power called \"watt\". Our definition is based on the definition of unit of measure in the Ontology of units of Measure (OM). We propose here a list of some units of measure that are relevant for the purpose of the Smart Appliances ontology, but this list can be extended."@en ;
+                                       rdfs:isDefinedBy "https://w3id.org/saref#"@en ;
+                                       rdfs:label "UnitOfMeasure"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/def/S4WATR#Burghos
+:Burghos rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/def/saref4city#City> .
+
+
+###  https://w3id.org/def/S4WATR#Capacity
+:Capacity rdf:type owl:NamedIndividual ,
+                   :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#ColdWaterMeter
+:ColdWaterMeter rdf:type owl:NamedIndividual .
+
+
+###  https://w3id.org/def/S4WATR#Conductance
+:Conductance rdf:type owl:NamedIndividual ,
+                      :Physical .
+
+
+###  https://w3id.org/def/S4WATR#CurrentLevel
+:CurrentLevel rdf:type owl:NamedIndividual ,
+                       :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#CurrentWaterFlow
+:CurrentWaterFlow rdf:type owl:NamedIndividual ,
+                           :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#CurrentWaterLeak
+:CurrentWaterLeak rdf:type owl:NamedIndividual ,
+                           :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#FlowOfWater
+:FlowOfWater rdf:type owl:NamedIndividual ,
+                      :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#Hardness
+:Hardness rdf:type owl:NamedIndividual ,
+                   :Chemical .
+
+
+###  https://w3id.org/def/S4WATR#HotWaterMeter
+:HotWaterMeter rdf:type owl:NamedIndividual ,
+                        owl:Thing .
+
+
+###  https://w3id.org/def/S4WATR#InflowRates
+:InflowRates rdf:type owl:NamedIndividual ,
+                      :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#OutFlowRates
+:OutFlowRates rdf:type owl:NamedIndividual ,
+                       :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#Power
+:Power rdf:type owl:NamedIndividual ,
+                :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#RadioFrequencyLevel
+:RadioFrequencyLevel rdf:type owl:NamedIndividual ,
+                              :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#Temperature
+:Temperature rdf:type owl:NamedIndividual ,
+                      <https://w3id.org/saref#Property> .
+
+
+###  https://w3id.org/def/S4WATR#Turbidity
+:Turbidity rdf:type owl:NamedIndividual ,
+                    :Physical .
+
+
+###  https://w3id.org/def/S4WATR#Volume
+:Volume rdf:type owl:NamedIndividual ,
+                 :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#pH
+:pH rdf:type owl:NamedIndividual ,
+             :Chemical .
+
+
+###  Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
