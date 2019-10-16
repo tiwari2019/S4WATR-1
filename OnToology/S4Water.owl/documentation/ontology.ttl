@@ -538,6 +538,10 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 <https://w3id.org/saref#Device> rdf:type owl:Class ;
                                 rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
                                                 [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :usedIn ;
+                                                  owl:someValuesFrom :WaterInfrastructure
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
                                                   owl:onProperty <https://w3id.org/saref#controlsProperty> ;
                                                   owl:allValuesFrom <https://w3id.org/saref#Property>
                                                 ] ,
