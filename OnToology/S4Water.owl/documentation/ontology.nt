@@ -3,11 +3,10 @@
 <https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" .
 <https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/publisher> "https://www.etsi.org/" .
 <https://w3id.org/def/S4WATR> <http://purl.org/dc/elements/1.1/title> "SAREF4WATR is an extension of SAREF for Water"@en .
-<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/creator> "http://w3id.org/people/mpoveda" .
 <https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/creator> "http://www.garcia-castro.com/foaf.rdf#me" .
-<https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/creator> "https://www.linkedin.com/in/sanjutiwari/" .
 <https://w3id.org/def/S4WATR> <http://purl.org/dc/terms/license> "https://forge.etsi.org/etsi-software-license" .
 <https://w3id.org/def/S4WATR> <http://www.w3.org/2002/07/owl#versionInfo> "v0.1.2"@en .
+<https://w3id.org/def/S4WATR> <https://w3id.org/def/S4WATR#preferredNamespacePrefix> ""@en .
 # 
 # 
 # #################################################################
@@ -56,6 +55,9 @@
 # https://w3id.org/def/S4WATR#preferredNamespaceURI
 <https://w3id.org/def/S4WATR#preferredNamespaceURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# https://w3id.org/def/S4WATR#dcterm:created
+<https://w3id.org/def/S4WATR#dcterm:created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # 
 # 
 # #################################################################
@@ -100,7 +102,6 @@
 # https://w3id.org/def/S4WATR#hasMeter
 <https://w3id.org/def/S4WATR#hasMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/S4WATR#hasMeter> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/S4WATR#WaterMeter> .
-<https://w3id.org/def/S4WATR#hasMeter> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/S4WATR#WaterMeterType> .
 <https://w3id.org/def/S4WATR#hasMeter> <http://www.w3.org/2000/01/rdf-schema#label> "hasMeter"@en .
 # 
 # https://w3id.org/def/S4WATR#hasTarrif
@@ -290,14 +291,32 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 <http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2003/01/geo/wgs84_pos#"@en .
 <http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point"@en .
 # 
-# http://www.w3.org/2006/time#TemporalUnit
-<http://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://www.w3.org/2006/time#TemporalUnit> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalUnit"@en .
+# http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#Instant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
+# 
+# http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#Interval> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2006/time#TemporalEntity> .
+# 
+# http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal interval or instant."@en .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2006/time#"@en .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalUnit"@en .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/def/S4WATR#Aquedunct
 <https://w3id.org/def/S4WATR#Aquedunct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#Aquedunct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
+<https://w3id.org/def/S4WATR#Aquedunct> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterInfrastructure> .
 <https://w3id.org/def/S4WATR#Aquedunct> <http://www.w3.org/2000/01/rdf-schema#label> "Aquedunct"@en .
+# 
+# https://w3id.org/def/S4WATR#CapacitySensor
+<https://w3id.org/def/S4WATR#CapacitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/S4WATR#CapacitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
+<https://w3id.org/def/S4WATR#CapacitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "CapacitySensor"@en .
 # 
 # https://w3id.org/def/S4WATR#CatchmentWell
 <https://w3id.org/def/S4WATR#CatchmentWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -337,7 +356,7 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 # 
 # https://w3id.org/def/S4WATR#Pipe
 <https://w3id.org/def/S4WATR#Pipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#Pipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
+<https://w3id.org/def/S4WATR#Pipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterInfrastructure> .
 <https://w3id.org/def/S4WATR#Pipe> <http://www.w3.org/2000/01/rdf-schema#label> "Pipe"@en .
 # 
 # https://w3id.org/def/S4WATR#PressureRegulator
@@ -357,13 +376,13 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 # 
 # https://w3id.org/def/S4WATR#StorageTank
 <https://w3id.org/def/S4WATR#StorageTank> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
+<https://w3id.org/def/S4WATR#StorageTank> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterInfrastructure> .
 <https://w3id.org/def/S4WATR#StorageTank> <http://www.w3.org/2000/01/rdf-schema#label> "StorageTank"@en .
 # 
-# https://w3id.org/def/S4WATR#SurfaceWaterIntake
-<https://w3id.org/def/S4WATR#SurfaceWaterIntake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#SurfaceWaterIntake> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
-<https://w3id.org/def/S4WATR#SurfaceWaterIntake> <http://www.w3.org/2000/01/rdf-schema#label> "SurfaceWaterIntake"@en .
+# https://w3id.org/def/S4WATR#TankLevelSensor
+<https://w3id.org/def/S4WATR#TankLevelSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/S4WATR#TankLevelSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
+<https://w3id.org/def/S4WATR#TankLevelSensor> <http://www.w3.org/2000/01/rdf-schema#label> "TankLevelSensor"@en .
 # 
 # https://w3id.org/def/S4WATR#Tarrif
 <https://w3id.org/def/S4WATR#Tarrif> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -379,12 +398,6 @@ _:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/sa
 <https://w3id.org/def/S4WATR#Version> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
 <https://w3id.org/def/S4WATR#Version> <http://www.w3.org/2000/01/rdf-schema#label> "Version"@en .
 # 
-# https://w3id.org/def/S4WATR#WasteWaterPlant
-<https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
-<https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#comment> "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage"@en .
-<https://w3id.org/def/S4WATR#WasteWaterPlant> <http://www.w3.org/2000/01/rdf-schema#label> "WasteWaterPlant"@en .
-# 
 # https://w3id.org/def/S4WATR#WaterAsset
 <https://w3id.org/def/S4WATR#WaterAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
@@ -395,25 +408,19 @@ _:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#U
 <https://w3id.org/def/S4WATR#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Water Asset contains, what is built to pump, divert, store, transport, trat and provide pure drinking water.\n(http://www.waterencyclopedia.com/Hy-La/Infrastructure-Water-Supply.html)"@en .
 <https://w3id.org/def/S4WATR#WaterAsset> <http://www.w3.org/2000/01/rdf-schema#label> "WaterAsset"@en .
 # 
+# https://w3id.org/def/S4WATR#WaterInfrastructure
+<https://w3id.org/def/S4WATR#WaterInfrastructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/S4WATR#WaterInfrastructure> <http://www.w3.org/2000/01/rdf-schema#label> "WaterInfrastructure"@en .
+# 
 # https://w3id.org/def/S4WATR#WaterMeter
 <https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
+<https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
 <https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#hasFirmwareVersion> .
 _:genid7 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#comment> "A WaterMeter is a device that measure different aspects of a water infrastructure."@en .
 <https://w3id.org/def/S4WATR#WaterMeter> <http://www.w3.org/2000/01/rdf-schema#label> "WaterMeter"@en .
-# 
-# https://w3id.org/def/S4WATR#WaterMeterType
-<https://w3id.org/def/S4WATR#WaterMeterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#WaterMeterType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/def/S4WATR#WaterMeterType> <http://www.w3.org/2000/01/rdf-schema#label> "WaterMeterType"@en .
-# 
-# https://w3id.org/def/S4WATR#WaterMonitoringSensor
-<https://w3id.org/def/S4WATR#WaterMonitoringSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#WaterMonitoringSensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
-<https://w3id.org/def/S4WATR#WaterMonitoringSensor> <http://www.w3.org/2000/01/rdf-schema#label> "WaterMonitoringSensor"@en .
 # 
 # https://w3id.org/def/S4WATR#WaterProperty
 <https://w3id.org/def/S4WATR#WaterProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -425,11 +432,6 @@ _:genid7 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/
 <https://w3id.org/def/S4WATR#WaterQualitySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#WaterQualitySensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Sensor> .
 <https://w3id.org/def/S4WATR#WaterQualitySensor> <http://www.w3.org/2000/01/rdf-schema#label> "WaterQualitySensor"@en .
-# 
-# https://w3id.org/def/S4WATR#WaterflowInstrument
-<https://w3id.org/def/S4WATR#WaterflowInstrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/def/S4WATR#WaterflowInstrument> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/saref#Device> .
-<https://w3id.org/def/S4WATR#WaterflowInstrument> <http://www.w3.org/2000/01/rdf-schema#label> "WaterflowInstrument"@en .
 # 
 # https://w3id.org/def/saref4city#City
 <https://w3id.org/def/saref4city#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -552,9 +554,16 @@ _:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # #################################################################
 # 
 # 
+# https://w3id.org/def/S4WATR#Burghos
+<https://w3id.org/def/S4WATR#Burghos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/def/S4WATR#Burghos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/saref4city#City> .
+# 
 # https://w3id.org/def/S4WATR#Capacity
 <https://w3id.org/def/S4WATR#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/S4WATR#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+# 
+# https://w3id.org/def/S4WATR#ColdWaterMeter
+<https://w3id.org/def/S4WATR#ColdWaterMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 # 
 # https://w3id.org/def/S4WATR#Conductance
 <https://w3id.org/def/S4WATR#Conductance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .

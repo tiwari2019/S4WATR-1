@@ -368,12 +368,35 @@
   "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3.org/2006/time#TemporalUnit",
+  "@id" : "http://www.w3.org/2006/time#Instant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#Interval",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2006/time#TemporalEntity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A temporal interval or instant."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://www.w3.org/2006/time#"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "TemporalUnit"
   } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
@@ -391,11 +414,7 @@
     "@value" : "SAREF4WATR is an extension of SAREF for Water"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "http://w3id.org/people/mpoveda"
-  }, {
     "@value" : "http://www.garcia-castro.com/foaf.rdf#me"
-  }, {
-    "@value" : "https://www.linkedin.com/in/sanjutiwari/"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://forge.etsi.org/etsi-software-license"
@@ -403,6 +422,10 @@
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
     "@value" : "v0.1.2"
+  } ],
+  "https://w3id.org/def/S4WATR#preferredNamespacePrefix" : [ {
+    "@language" : "en",
+    "@value" : ""
   } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#Aquedunct",
@@ -412,11 +435,24 @@
     "@value" : "Aquedunct"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+    "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure"
   } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#Burghos",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/saref4city#City" ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#Capacity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#WaterProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#CapacitySensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "CapacitySensor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Sensor"
+  } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#CatchmentWell",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
@@ -445,6 +481,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://w3id.org/def/S4WATR#WaterProperty"
   } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#ColdWaterMeter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#Conductance",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#Physical" ]
@@ -524,7 +563,7 @@
     "@value" : "Pipe"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+    "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure"
   } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#Power",
@@ -570,17 +609,17 @@
     "@value" : "StorageTank"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+    "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/S4WATR#SurfaceWaterIntake",
+  "@id" : "https://w3id.org/def/S4WATR#TankLevelSensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "SurfaceWaterIntake"
+    "@value" : "TankLevelSensor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
+    "@id" : "https://w3id.org/saref#Sensor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#Tarrif",
@@ -619,20 +658,6 @@
   "@id" : "https://w3id.org/def/S4WATR#Volume",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/def/S4WATR#WaterProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/S4WATR#WasteWaterPlant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WasteWaterPlant"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/S4WATR#WaterAsset"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/S4WATR#WaterAsset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -649,6 +674,13 @@
     "@id" : "_:genid6"
   } ]
 }, {
+  "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "WaterInfrastructure"
+  } ]
+}, {
   "@id" : "https://w3id.org/def/S4WATR#WaterMeter",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -660,29 +692,9 @@
     "@value" : "WaterMeter"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Device"
+    "@id" : "https://w3id.org/saref#Sensor"
   }, {
     "@id" : "_:genid7"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/S4WATR#WaterMeterType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterMeterType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3.org/2002/07/owl#Thing"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/S4WATR#WaterMonitoringSensor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterMonitoringSensor"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Sensor"
   } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#WaterProperty",
@@ -709,16 +721,6 @@
     "@id" : "https://w3id.org/saref#Sensor"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/S4WATR#WaterflowInstrument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "WaterflowInstrument"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/saref#Device"
-  } ]
-}, {
   "@id" : "https://w3id.org/def/S4WATR#assignedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -731,6 +733,9 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://w3id.org/def/saref4city#City"
   } ]
+}, {
+  "@id" : "https://w3id.org/def/S4WATR#dcterm:created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#hasFabricationNo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -792,9 +797,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "hasMeter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://w3id.org/def/S4WATR#WaterMeterType"
   } ]
 }, {
   "@id" : "https://w3id.org/def/S4WATR#hasTarrif",

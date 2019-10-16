@@ -11,11 +11,10 @@
                                <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ,
                                                                            "https://www.etsi.org/" ;
                                <http://purl.org/dc/elements/1.1/title> "SAREF4WATR is an extension of SAREF for Water"@en ;
-                               <http://purl.org/dc/terms/creator> "http://w3id.org/people/mpoveda" ,
-                                                                  "http://www.garcia-castro.com/foaf.rdf#me" ,
-                                                                  "https://www.linkedin.com/in/sanjutiwari/" ;
+                               <http://purl.org/dc/terms/creator> "http://www.garcia-castro.com/foaf.rdf#me" ;
                                <http://purl.org/dc/terms/license> "https://forge.etsi.org/etsi-software-license" ;
-                               owl:versionInfo "v0.1.2"@en .
+                               owl:versionInfo "v0.1.2"@en ;
+                               :preferredNamespacePrefix ""@en .
 
 #################################################################
 #    Annotation properties
@@ -73,6 +72,10 @@
 :preferredNamespaceURI rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/def/S4WATR#dcterm:created
+:created rdf:type owl:AnnotationProperty .
+
+
 #################################################################
 #    Object Properties
 #################################################################
@@ -118,7 +121,6 @@
 ###  https://w3id.org/def/S4WATR#hasMeter
 :hasMeter rdf:type owl:ObjectProperty ;
           rdfs:domain :WaterMeter ;
-          rdfs:range :WaterMeterType ;
           rdfs:label "hasMeter"@en .
 
 
@@ -327,15 +329,37 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                 rdfs:label "Point"@en .
 
 
-###  http://www.w3.org/2006/time#TemporalUnit
-<http://www.w3.org/2006/time#TemporalUnit> rdf:type owl:Class ;
-                                           rdfs:label "TemporalUnit"@en .
+###  http://www.w3.org/2006/time#Instant
+<http://www.w3.org/2006/time#Instant> rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.w3.org/2006/time#Interval
+<http://www.w3.org/2006/time#Interval> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.w3.org/2006/time#TemporalEntity> .
+
+
+###  http://www.w3.org/2006/time#TemporalEntity
+<http://www.w3.org/2006/time#TemporalEntity> rdf:type owl:Class ;
+                                             rdfs:comment "A temporal interval or instant."@en ;
+                                             rdfs:isDefinedBy "http://www.w3.org/2006/time#"@en ;
+                                             rdfs:label "TemporalUnit"@en .
+
+
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class .
 
 
 ###  https://w3id.org/def/S4WATR#Aquedunct
 :Aquedunct rdf:type owl:Class ;
-           rdfs:subClassOf :WaterAsset ;
+           rdfs:subClassOf :WaterInfrastructure ;
            rdfs:label "Aquedunct"@en .
+
+
+###  https://w3id.org/def/S4WATR#CapacitySensor
+:CapacitySensor rdf:type owl:Class ;
+                rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                rdfs:label "CapacitySensor"@en .
 
 
 ###  https://w3id.org/def/S4WATR#CatchmentWell
@@ -382,7 +406,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#Pipe
 :Pipe rdf:type owl:Class ;
-      rdfs:subClassOf :WaterAsset ;
+      rdfs:subClassOf :WaterInfrastructure ;
       rdfs:label "Pipe"@en .
 
 
@@ -406,14 +430,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#StorageTank
 :StorageTank rdf:type owl:Class ;
-             rdfs:subClassOf :WaterAsset ;
+             rdfs:subClassOf :WaterInfrastructure ;
              rdfs:label "StorageTank"@en .
 
 
-###  https://w3id.org/def/S4WATR#SurfaceWaterIntake
-:SurfaceWaterIntake rdf:type owl:Class ;
-                    rdfs:subClassOf :WaterAsset ;
-                    rdfs:label "SurfaceWaterIntake"@en .
+###  https://w3id.org/def/S4WATR#TankLevelSensor
+:TankLevelSensor rdf:type owl:Class ;
+                 rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
+                 rdfs:label "TankLevelSensor"@en .
 
 
 ###  https://w3id.org/def/S4WATR#Tarrif
@@ -433,13 +457,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          rdfs:label "Version"@en .
 
 
-###  https://w3id.org/def/S4WATR#WasteWaterPlant
-:WasteWaterPlant rdf:type owl:Class ;
-                 rdfs:subClassOf :WaterAsset ;
-                 rdfs:comment "A Waste Water Plant is a facility where contaminants are removed from waste water or sewage"@en ;
-                 rdfs:label "WasteWaterPlant"@en .
-
-
 ###  https://w3id.org/def/S4WATR#WaterAsset
 :WaterAsset rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ,
@@ -452,27 +469,20 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             rdfs:label "WaterAsset"@en .
 
 
+###  https://w3id.org/def/S4WATR#WaterInfrastructure
+:WaterInfrastructure rdf:type owl:Class ;
+                     rdfs:label "WaterInfrastructure"@en .
+
+
 ###  https://w3id.org/def/S4WATR#WaterMeter
 :WaterMeter rdf:type owl:Class ;
-            rdfs:subClassOf <https://w3id.org/saref#Device> ,
+            rdfs:subClassOf <https://w3id.org/saref#Sensor> ,
                             [ rdf:type owl:Restriction ;
                               owl:onProperty :hasFirmwareVersion ;
                               owl:maxCardinality "1"^^xsd:nonNegativeInteger
                             ] ;
             rdfs:comment "A WaterMeter is a device that measure different aspects of a water infrastructure."@en ;
             rdfs:label "WaterMeter"@en .
-
-
-###  https://w3id.org/def/S4WATR#WaterMeterType
-:WaterMeterType rdf:type owl:Class ;
-                rdfs:subClassOf owl:Thing ;
-                rdfs:label "WaterMeterType"@en .
-
-
-###  https://w3id.org/def/S4WATR#WaterMonitoringSensor
-:WaterMonitoringSensor rdf:type owl:Class ;
-                       rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
-                       rdfs:label "WaterMonitoringSensor"@en .
 
 
 ###  https://w3id.org/def/S4WATR#WaterProperty
@@ -486,12 +496,6 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 :WaterQualitySensor rdf:type owl:Class ;
                     rdfs:subClassOf <https://w3id.org/saref#Sensor> ;
                     rdfs:label "WaterQualitySensor"@en .
-
-
-###  https://w3id.org/def/S4WATR#WaterflowInstrument
-:WaterflowInstrument rdf:type owl:Class ;
-                     rdfs:subClassOf <https://w3id.org/saref#Device> ;
-                     rdfs:label "WaterflowInstrument"@en .
 
 
 ###  https://w3id.org/def/saref4city#City
@@ -617,9 +621,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 #    Individuals
 #################################################################
 
+###  https://w3id.org/def/S4WATR#Burghos
+:Burghos rdf:type owl:NamedIndividual ,
+                  <https://w3id.org/def/saref4city#City> .
+
+
 ###  https://w3id.org/def/S4WATR#Capacity
 :Capacity rdf:type owl:NamedIndividual ,
                    :WaterProperty .
+
+
+###  https://w3id.org/def/S4WATR#ColdWaterMeter
+:ColdWaterMeter rdf:type owl:NamedIndividual .
 
 
 ###  https://w3id.org/def/S4WATR#Conductance

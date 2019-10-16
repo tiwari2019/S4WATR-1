@@ -7,15 +7,15 @@
     "UnitOfMeasure" : {
       "@id" : "https://w3id.org/saref#UnitOfMeasure"
     },
-    "WaterflowInstrument" : {
-      "@id" : "https://w3id.org/def/S4WATR#WaterflowInstrument"
-    },
     "isControlledByDevice" : {
       "@id" : "https://w3id.org/saref#isControlledByDevice",
       "@type" : "@id"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "https://w3id.org/def/S4WATR#dcterm:created"
     },
     "hasModel" : {
       "@id" : "https://w3id.org/saref#hasModel",
@@ -29,9 +29,6 @@
     },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
-    },
-    "TemporalUnit" : {
-      "@id" : "http://www.w3.org/2006/time#TemporalUnit"
     },
     "hasVersion" : {
       "@id" : "https://w3id.org/def/S4WATR#hasVersion",
@@ -53,6 +50,9 @@
     },
     "hasValue" : {
       "@id" : "https://w3id.org/saref#hasValue"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
     },
     "sfWithin" : {
       "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
@@ -88,18 +88,24 @@
     "WaterMeter" : {
       "@id" : "https://w3id.org/def/S4WATR#WaterMeter"
     },
-    "WaterMeterType" : {
-      "@id" : "https://w3id.org/def/S4WATR#WaterMeterType"
-    },
     "Chemical" : {
       "@id" : "https://w3id.org/def/S4WATR#Chemical"
+    },
+    "WaterInfrastructure" : {
+      "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure"
     },
     "Physical" : {
       "@id" : "https://w3id.org/def/S4WATR#Physical"
     },
+    "Person" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Person"
+    },
     "measurementMadeBy" : {
       "@id" : "https://w3id.org/saref#measurementMadeBy",
       "@type" : "@id"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
@@ -110,6 +116,9 @@
     },
     "WaterQualitySensor" : {
       "@id" : "https://w3id.org/def/S4WATR#WaterQualitySensor"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
     },
     "alt" : {
       "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#alt"
@@ -144,6 +153,9 @@
     "preferredNamespaceURI" : {
       "@id" : "https://w3id.org/def/S4WATR#preferredNamespaceURI"
     },
+    "CapacitySensor" : {
+      "@id" : "https://w3id.org/def/S4WATR#CapacitySensor"
+    },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
@@ -175,9 +187,6 @@
     "source" : {
       "@id" : "http://purl.org/dc/terms/source"
     },
-    "SurfaceWaterIntake" : {
-      "@id" : "https://w3id.org/def/S4WATR#SurfaceWaterIntake"
-    },
     "isMeasuredIn" : {
       "@id" : "https://w3id.org/saref#isMeasuredIn",
       "@type" : "@id"
@@ -202,9 +211,6 @@
     },
     "Tarrif" : {
       "@id" : "https://w3id.org/def/S4WATR#Tarrif"
-    },
-    "WasteWaterPlant" : {
-      "@id" : "https://w3id.org/def/S4WATR#WasteWaterPlant"
     },
     "hasManufacture" : {
       "@id" : "https://w3id.org/saref#hasManufacture"
@@ -254,12 +260,12 @@
     "Reservoir" : {
       "@id" : "https://w3id.org/def/S4WATR#Reservoir"
     },
+    "TankLevelSensor" : {
+      "@id" : "https://w3id.org/def/S4WATR#TankLevelSensor"
+    },
     "hasFabricationNo" : {
       "@id" : "https://w3id.org/def/S4WATR#hasFabricationNo",
       "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
-    "WaterMonitoringSensor" : {
-      "@id" : "https://w3id.org/def/S4WATR#WaterMonitoringSensor"
     },
     "Sensor" : {
       "@id" : "https://w3id.org/saref#Sensor"
