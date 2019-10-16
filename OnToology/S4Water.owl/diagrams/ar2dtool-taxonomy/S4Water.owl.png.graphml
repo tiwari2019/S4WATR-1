@@ -5,7 +5,7 @@
    <key for="edge" id="d2" yfiles.type="edgegraphics" />
    <key attr.name="description" attr.type="string" for="edge" id="d3" />
    <key for="graphml" id="d4" yfiles.type="resources" />
-   <graph edgedefault="directed" id="G" parse.edges="31" parse.nodes="33" parse.order="free">
+   <graph edgedefault="directed" id="G" parse.edges="30" parse.nodes="34" parse.order="free">
       <node id="nid_:Measurement">
          <data key="d0">
             <y:ShapeNode>
@@ -41,13 +41,13 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:WaterflowInstrument">
+      <node id="nid_:Sensor">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="70.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:WaterflowInstrument</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:Sensor</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
@@ -65,7 +65,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf1" source="nid_base:WaterflowInstrument" target="nid_:Device">
+    <edge id="eid_rdfs:subClassOf1" source="nid_:Sensor" target="nid_:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -123,42 +123,19 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf3" source="nid_base:Pipe" target="nid_base:WaterAsset">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_base:WaterMonitoringSensor">
+      <node id="nid_base:WaterInfrastructure">
          <data key="d0">
             <y:ShapeNode>
-               <y:Geometry height="30.0" width="260.0" x="0.0" y="0.0" />
+               <y:Geometry height="30.0" width="240.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:WaterMonitoringSensor</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:WaterInfrastructure</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-      <node id="nid_:Sensor">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="70.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:Sensor</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf4" source="nid_base:WaterMonitoringSensor" target="nid_:Sensor">
+    <edge id="eid_rdfs:subClassOf3" source="nid_base:Pipe" target="nid_base:WaterInfrastructure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -181,7 +158,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf5" source="nid_base:CatchmentWell" target="nid_base:WaterAsset">
+    <edge id="eid_rdfs:subClassOf4" source="nid_base:CatchmentWell" target="nid_base:WaterAsset">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -204,7 +181,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf6" source="nid_base:StorageTank" target="nid_base:WaterAsset">
+    <edge id="eid_rdfs:subClassOf5" source="nid_base:StorageTank" target="nid_base:WaterInfrastructure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -227,7 +204,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf7" source="nid_base:WaterMeter" target="nid_:Device">
+    <edge id="eid_rdfs:subClassOf6" source="nid_base:WaterMeter" target="nid_:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -250,7 +227,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf8" source="nid_base:Dam" target="nid_base:WaterAsset">
+    <edge id="eid_rdfs:subClassOf7" source="nid_base:Dam" target="nid_base:WaterAsset">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -261,7 +238,42 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf9" source="nid_base:WaterAsset" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf8" source="nid_base:WaterAsset" target="nid_owl:Thing">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://www.w3.org/2006/time#Interval">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="360.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.w3.org/2006/time#Interval</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+      <node id="nid_http://www.w3.org/2006/time#TemporalEntity">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="420.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.w3.org/2006/time#TemporalEntity</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf9" source="nid_http://www.w3.org/2006/time#Interval" target="nid_http://www.w3.org/2006/time#TemporalEntity">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -330,19 +342,19 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:WaterMeterType">
+      <node id="nid_base:CapacitySensor">
          <data key="d0">
             <y:ShapeNode>
                <y:Geometry height="30.0" width="190.0" x="0.0" y="0.0" />
                <y:Fill color="#000000" transparent="false" />
                <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:WaterMeterType</y:NodeLabel>
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:CapacitySensor</y:NodeLabel>
                <y:Shape type="rectangle" />
             </y:ShapeNode>
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf12" source="nid_base:WaterMeterType" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf12" source="nid_base:CapacitySensor" target="nid_:Sensor">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -365,7 +377,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf13" source="nid_base:Aquedunct" target="nid_base:WaterAsset">
+    <edge id="eid_rdfs:subClassOf13" source="nid_base:Aquedunct" target="nid_base:WaterInfrastructure">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -411,29 +423,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:SurfaceWaterIntake">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:SurfaceWaterIntake</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf15" source="nid_base:SurfaceWaterIntake" target="nid_base:WaterAsset">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_http://www.opengis.net/ont/geosparql#Feature">
          <data key="d0">
             <y:ShapeNode>
@@ -458,7 +447,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf16" source="nid_http://www.opengis.net/ont/geosparql#Feature" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
+    <edge id="eid_rdfs:subClassOf15" source="nid_http://www.opengis.net/ont/geosparql#Feature" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -493,7 +482,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf17" source="nid_base:Physical" target="nid_base:WaterProperty">
+    <edge id="eid_rdfs:subClassOf16" source="nid_base:Physical" target="nid_base:WaterProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -504,7 +493,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf18" source="nid_http://www.opengis.net/ont/geosparql#SpatialObject" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf17" source="nid_http://www.opengis.net/ont/geosparql#SpatialObject" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -515,53 +504,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf19" source="nid_:Actuator" target="nid_:Device">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_:Property">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:Property</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf20" source="nid_base:WaterProperty" target="nid_:Property">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_base:WaterQualitySensor">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:WaterQualitySensor</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf21" source="nid_base:WaterQualitySensor" target="nid_:Sensor">
+    <edge id="eid_rdfs:subClassOf18" source="nid_:Actuator" target="nid_:Device">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -584,7 +527,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf22" source="nid_base:Valve" target="nid_:Actuator">
+    <edge id="eid_rdfs:subClassOf19" source="nid_base:Valve" target="nid_:Actuator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -595,7 +538,99 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf23" source="nid_http://www.opengis.net/ont/geosparql#Geometry" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
+      <node id="nid_base:WaterQualitySensor">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="230.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:WaterQualitySensor</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf20" source="nid_base:WaterQualitySensor" target="nid_:Sensor">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_:Property">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="90.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:Property</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf21" source="nid_base:WaterProperty" target="nid_:Property">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_http://www.w3.org/2006/time#Instant">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="350.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">http://www.w3.org/2006/time#Instant</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf22" source="nid_http://www.w3.org/2006/time#Instant" target="nid_http://www.w3.org/2006/time#TemporalEntity">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+      <node id="nid_base:TankLevelSensor">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:TankLevelSensor</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf23" source="nid_base:TankLevelSensor" target="nid_:Sensor">
+         <data key="d2">
+            <y:PolyLineEdge>
+               <y:LineStyle color="black" type="line" width="1.0" />
+               <y:Arrows source="none" target="normal" />
+               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
+               <y:BendStyle smoothed="false" />
+            </y:PolyLineEdge>
+         </data>
+         <data key="d3" />
+      </edge>
+    <edge id="eid_rdfs:subClassOf24" source="nid_http://www.opengis.net/ont/geosparql#Geometry" target="nid_http://www.opengis.net/ont/geosparql#SpatialObject">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -618,30 +653,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf24" source="nid_base:Chemical" target="nid_base:WaterProperty">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
-      <node id="nid_:UnitOfMeasure">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="140.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:UnitOfMeasure</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf25" source="nid_:UnitOfMeasure" target="nid_owl:Thing">
+    <edge id="eid_rdfs:subClassOf25" source="nid_base:Chemical" target="nid_base:WaterProperty">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -675,29 +687,6 @@
          </data>
          <data key="d3" />
       </edge>
-      <node id="nid_base:WasteWaterPlant">
-         <data key="d0">
-            <y:ShapeNode>
-               <y:Geometry height="30.0" width="200.0" x="0.0" y="0.0" />
-               <y:Fill color="#000000" transparent="false" />
-               <y:BorderStyle color="#000000" type="line" width="1.0" />
-               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">base:WasteWaterPlant</y:NodeLabel>
-               <y:Shape type="rectangle" />
-            </y:ShapeNode>
-         </data>
-         <data key="d1" />
-      </node>
-    <edge id="eid_rdfs:subClassOf27" source="nid_base:WasteWaterPlant" target="nid_base:WaterAsset">
-         <data key="d2">
-            <y:PolyLineEdge>
-               <y:LineStyle color="black" type="line" width="1.0" />
-               <y:Arrows source="none" target="normal" />
-               <y:EdgeLabel alignment="center" distance="2.0" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="six_pos" modelPosition="tail" preferredPlacement="anywhere" ratio="0.5" textColor="#000000" visible="true">rdfs:subClassOf</y:EdgeLabel>
-               <y:BendStyle smoothed="false" />
-            </y:PolyLineEdge>
-         </data>
-         <data key="d3" />
-      </edge>
       <node id="nid_base:Pump">
          <data key="d0">
             <y:ShapeNode>
@@ -710,7 +699,7 @@
          </data>
          <data key="d1" />
       </node>
-    <edge id="eid_rdfs:subClassOf28" source="nid_base:Pump" target="nid_:Actuator">
+    <edge id="eid_rdfs:subClassOf27" source="nid_base:Pump" target="nid_:Actuator">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -721,7 +710,19 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf29" source="nid_:Sensor" target="nid_:Device">
+      <node id="nid_:UnitOfMeasure">
+         <data key="d0">
+            <y:ShapeNode>
+               <y:Geometry height="30.0" width="140.0" x="0.0" y="0.0" />
+               <y:Fill color="#000000" transparent="false" />
+               <y:BorderStyle color="#000000" type="line" width="1.0" />
+               <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" modelName="internal" modelPosition="c" textColor="#000000" visible="true">:UnitOfMeasure</y:NodeLabel>
+               <y:Shape type="rectangle" />
+            </y:ShapeNode>
+         </data>
+         <data key="d1" />
+      </node>
+    <edge id="eid_rdfs:subClassOf28" source="nid_:UnitOfMeasure" target="nid_owl:Thing">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />
@@ -732,7 +733,7 @@
          </data>
          <data key="d3" />
       </edge>
-    <edge id="eid_rdfs:subClassOf30" source="nid_:Device" target="nid_http://www.opengis.net/ont/geosparql#Feature">
+    <edge id="eid_rdfs:subClassOf29" source="nid_:Device" target="nid_http://www.opengis.net/ont/geosparql#Feature">
          <data key="d2">
             <y:PolyLineEdge>
                <y:LineStyle color="black" type="line" width="1.0" />

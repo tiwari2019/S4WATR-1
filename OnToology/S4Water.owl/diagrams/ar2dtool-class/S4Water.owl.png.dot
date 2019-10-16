@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:WaterMeterType" "base:WaterAsset" ":Sensor" "base:WaterMeter" ":Device" "base:Indicator" "http://www.opengis.net/ont/geosparql#SpatialObject" "http://www.opengis.net/ont/geosparql#Geometry" ":UnitOfMeasure" "https://w3id.org/def/saref4city#City" "base:Tarrif" "wgs84_pos:Point" ":Measurement" ":Actuator" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:WaterAsset" ":Sensor" "base:WaterMeter" ":Device" "base:Indicator" "http://www.opengis.net/ont/geosparql#Geometry" "http://www.opengis.net/ont/geosparql#SpatialObject" ":UnitOfMeasure" ":City" "base:Tarrif" "wgs84_pos:Point" ":Measurement" ":Actuator" ; /*classes style*/
 	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
 	"NULL" -> "wgs84_pos:Point" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":isMeasuredByDevice" [ label = "owl:onProperty" ];
@@ -11,14 +11,14 @@ node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:Water
 	"NULL" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":relatesToProperty" [ label = "owl:onProperty" ];
 	"NULL" -> ":controlsProperty" [ label = "owl:onProperty" ];
-	"NULL" -> "https://w3id.org/def/saref4city#City" [ label = "owl:someValuesFrom" ];
+	"NULL" -> ":City" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "xsd:dateTime" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:Version" [ label = "owl:onClass" ];
-	"NULL" -> ":hasValue" [ label = "owl:onProperty" ];
 	"NULL" -> "base:assignedTo" [ label = "owl:onProperty" ];
+	"NULL" -> ":Property" [ label = "owl:onClass" ];
 	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "owl:allValuesFrom" ];
-	"NULL" -> ":Property" [ label = "owl:onClass" ];
+	"NULL" -> ":hasValue" [ label = "owl:onProperty" ];
 	"NULL" -> "base:hasVersion" [ label = "owl:onProperty" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:onClass" ];
@@ -34,7 +34,7 @@ node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:Water
 	"NULL" -> ":Device" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:hasFirmwareVersion" [ label = "owl:onProperty" ];
 	":Actuator" -> ":Sensor" [ label = "owl:disjointWith" ];
-	"base:Indicator" -> "https://w3id.org/def/saref4city#City" [ label = "base:assignedTo" ];
+	"base:Indicator" -> ":City" [ label = "base:assignedTo" ];
 	":Measurement" -> ":Device" [ label = ":measurementMadeBy" ];
 	":Device" -> "base:WaterAsset" [ label = "base:manageWaterAsset" ];
 	":Device" -> "rdfs:Literal" [ label = ":hasModel" ];
@@ -50,7 +50,7 @@ node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:Water
 	"base:WaterAsset" -> "base:Indicator" [ label = "base:hasIndicator" ];
 	":Property" -> ":Device" [ label = ":isMeasuredByDevice" ];
 	"base:WaterMeter" -> "base:Tarrif" [ label = "base:hasTarrif" ];
-	"base:WaterMeter" -> "base:WaterMeterType" [ label = "base:hasMeter" ];
+	"base:WaterMeter" -> "owl:Thing" [ label = "base:hasMeter" ];
 	":Measurement" -> ":UnitOfMeasure" [ label = ":isMeasuredIn" ];
 	":Device" -> ":Property" [ label = ":measuresProperty" ];
 
