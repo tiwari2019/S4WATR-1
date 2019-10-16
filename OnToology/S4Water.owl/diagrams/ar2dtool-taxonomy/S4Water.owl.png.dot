@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:PressureRegulator" "base:Version" "base:WaterProperty" "http://www.opengis.net/ont/geosparql#Feature" ":Property" "base:GroundWaterWell" "base:Dam" "base:WaterAsset" "base:Reservoir" ":Sensor" "base:CatchmentWell" "base:WaterMeter" "base:WaterInfrastructure" ":Device" "base:Pump" "base:StorageTank" "base:Valve" "base:CapacitySensor" "base:TankLevelSensor" "http://www.w3.org/2006/time#Interval" "http://www.opengis.net/ont/geosparql#Geometry" "http://www.opengis.net/ont/geosparql#SpatialObject" "base:Aquedunct" "http://www.w3.org/2006/time#TemporalEntity" "base:Pipe" ":UnitOfMeasure" "wgs84_pos:Point" ":Measurement" "base:Chemical" "base:WaterQualitySensor" "base:Physical" "http://www.w3.org/2006/time#Instant" ":Actuator" ; /*classes style*/
+node [shape = rectangle, color="black"]; "base:PressureRegulator" "base:Version" "base:WaterProperty" "http://www.opengis.net/ont/geosparql#Feature" ":Property" "base:GroundWaterWell" "base:Dam" "base:WaterAsset" "base:Reservoir" ":Sensor" "base:CatchmentWell" "base:WaterMeter" "base:WaterInfrastructure" ":Device" "base:Pump" "base:StorageTank" "base:Valve" "base:CapacitySensor" "base:TankLevelSensor" "base:ColdWaterMeter" "http://www.w3.org/2006/time#Interval" "http://www.opengis.net/ont/geosparql#Geometry" "http://www.opengis.net/ont/geosparql#SpatialObject" "base:Aquedunct" "http://www.w3.org/2006/time#TemporalEntity" "base:Pipe" ":UnitOfMeasure" "base:HotWaterMeter" "wgs84_pos:Point" ":Measurement" "base:Chemical" "base:WaterQualitySensor" "base:Physical" "http://www.w3.org/2006/time#Instant" ":Actuator" ; /*classes style*/
 	":Measurement" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	":Sensor" -> ":Device" [ label = "rdfs:subClassOf" ];
 	"base:Reservoir" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
@@ -9,6 +9,7 @@ node [shape = rectangle, color="black"]; "base:PressureRegulator" "base:Version"
 	"base:CatchmentWell" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
 	"base:StorageTank" -> "base:WaterInfrastructure" [ label = "rdfs:subClassOf" ];
 	"base:WaterMeter" -> ":Sensor" [ label = "rdfs:subClassOf" ];
+	"base:HotWaterMeter" -> "base:WaterMeter" [ label = "rdfs:subClassOf" ];
 	"base:Dam" -> "base:WaterAsset" [ label = "rdfs:subClassOf" ];
 	"base:WaterAsset" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/2006/time#Interval" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
@@ -16,6 +17,7 @@ node [shape = rectangle, color="black"]; "base:PressureRegulator" "base:Version"
 	"base:PressureRegulator" -> ":Actuator" [ label = "rdfs:subClassOf" ];
 	"base:CapacitySensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
 	"base:Aquedunct" -> "base:WaterInfrastructure" [ label = "rdfs:subClassOf" ];
+	"base:ColdWaterMeter" -> "base:WaterMeter" [ label = "rdfs:subClassOf" ];
 	"wgs84_pos:Point" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "rdfs:subClassOf" ];
 	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
 	"base:Physical" -> "base:WaterProperty" [ label = "rdfs:subClassOf" ];

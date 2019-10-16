@@ -129,6 +129,11 @@
 <https://w3id.org/def/S4WATR#manageWaterAsset> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/S4WATR#WaterAsset> .
 <https://w3id.org/def/S4WATR#manageWaterAsset> <http://www.w3.org/2000/01/rdf-schema#label> "manageWaterAsset"@en .
 # 
+# https://w3id.org/def/S4WATR#usedIn
+<https://w3id.org/def/S4WATR#usedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/def/S4WATR#usedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
+<https://w3id.org/def/S4WATR#usedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/S4WATR#WaterInfrastructure> .
+# 
 # https://w3id.org/saref#controlsProperty
 <https://w3id.org/saref#controlsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/saref#controlsProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
@@ -201,7 +206,6 @@
 <https://w3id.org/def/S4WATR#hasFabricationNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/def/S4WATR#hasFabricationNo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
 <https://w3id.org/def/S4WATR#hasFabricationNo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
-<https://w3id.org/def/S4WATR#hasFabricationNo> <http://www.w3.org/2000/01/rdf-schema#label> "hasFabricationNo"@en .
 # 
 # https://w3id.org/def/S4WATR#hasFirmwareVersion
 <https://w3id.org/def/S4WATR#hasFirmwareVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -214,6 +218,10 @@
 <https://w3id.org/def/S4WATR#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
 <https://w3id.org/def/S4WATR#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
 <https://w3id.org/def/S4WATR#hasHardwareVersion> <http://www.w3.org/2000/01/rdf-schema#label> "hasHardwareVersion"@en .
+# 
+# https://w3id.org/def/S4WATR#hasVersionNo
+<https://w3id.org/def/S4WATR#hasVersionNo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/S4WATR#hasVersionNo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
 # 
 # https://w3id.org/saref#hasManufacture
 <https://w3id.org/saref#hasManufacture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -303,7 +311,7 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "A temporal interval or instant."@en .
 <http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/2006/time#"@en .
-<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalUnit"@en .
+<http://www.w3.org/2006/time#TemporalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "TemporalEntity"@en .
 # 
 # http://xmlns.com/foaf/0.1/Person
 <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -330,6 +338,10 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 <https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemical Property"@en .
 <https://w3id.org/def/S4WATR#Chemical> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical"@en .
 # 
+# https://w3id.org/def/S4WATR#ColdWaterMeter
+<https://w3id.org/def/S4WATR#ColdWaterMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/S4WATR#ColdWaterMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterMeter> .
+# 
 # https://w3id.org/def/S4WATR#Dam
 <https://w3id.org/def/S4WATR#Dam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#Dam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
@@ -339,6 +351,10 @@ _:genid4 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2003/0
 <https://w3id.org/def/S4WATR#GroundWaterWell> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/def/S4WATR#GroundWaterWell> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterAsset> .
 <https://w3id.org/def/S4WATR#GroundWaterWell> <http://www.w3.org/2000/01/rdf-schema#label> "GroundWaterWell"@en .
+# 
+# https://w3id.org/def/S4WATR#HotWaterMeter
+<https://w3id.org/def/S4WATR#HotWaterMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/S4WATR#HotWaterMeter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/S4WATR#WaterMeter> .
 # 
 # https://w3id.org/def/S4WATR#Indicator
 <https://w3id.org/def/S4WATR#Indicator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -624,5 +640,18 @@ _:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # https://w3id.org/def/S4WATR#pH
 <https://w3id.org/def/S4WATR#pH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://w3id.org/def/S4WATR#pH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#Chemical> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/def/S4WATR#ColdWaterMeter> <http://www.w3.org/2000/01/rdf-schema#label> "ColdWaterMeter"@en .
+# 
+<https://w3id.org/def/S4WATR#HotWaterMeter> <http://www.w3.org/2000/01/rdf-schema#label> "HotWaterMeter"@en .
 # 
 # Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
