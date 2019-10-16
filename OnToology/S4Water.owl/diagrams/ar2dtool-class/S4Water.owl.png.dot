@@ -28,8 +28,8 @@ node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:Water
 	"NULL" -> ":hasTimeStamp" [ label = "owl:onProperty" ];
 	"NULL" -> ":makesMeasurement" [ label = "owl:onProperty" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#sfWithin" [ label = "owl:onProperty" ];
-	"NULL" -> "base:hasFabricationNo" [ label = "owl:onProperty" ];
 	"NULL" -> ":Property" [ label = "owl:allValuesFrom" ];
+	"NULL" -> "base:hasFabricationNo" [ label = "owl:onProperty" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#hasGeometry" [ label = "owl:onProperty" ];
 	"NULL" -> ":Device" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:hasFirmwareVersion" [ label = "owl:onProperty" ];
