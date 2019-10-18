@@ -7,6 +7,7 @@
 @base <https://w3id.org/def/S4WATR> .
 
 <https://w3id.org/def/S4WATR> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://w3id.org/def/S4WATR> ;
                                <http://purl.org/dc/elements/1.1/description> "SAREF4WATR is an extension of SAREF for Water"@en ;
                                <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ,
                                                                            "https://www.etsi.org/" ;
@@ -562,6 +563,11 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                   owl:onProperty :hasVersion ;
                                                   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
                                                   owl:onClass :Version
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :usedIn ;
+                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onClass :WaterInfrastructure
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty :hasFabricationNo ;
