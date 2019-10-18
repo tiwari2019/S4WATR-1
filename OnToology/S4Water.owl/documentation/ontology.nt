@@ -133,6 +133,7 @@
 <https://w3id.org/def/S4WATR#usedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/def/S4WATR#usedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/saref#Device> .
 <https://w3id.org/def/S4WATR#usedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/def/S4WATR#WaterInfrastructure> .
+<https://w3id.org/def/S4WATR#usedIn> <http://www.w3.org/2000/01/rdf-schema#label> "UsedIn"@en .
 # 
 # https://w3id.org/saref#controlsProperty
 <https://w3id.org/saref#controlsProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
