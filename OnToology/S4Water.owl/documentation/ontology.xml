@@ -269,6 +269,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/S4WATR#usedIn">
         <rdfs:domain rdf:resource="https://w3id.org/saref#Device"/>
         <rdfs:range rdf:resource="https://w3id.org/def/S4WATR#WaterInfrastructure"/>
+        <rdfs:label xml:lang="en">UsedIn</rdfs:label>
     </owl:ObjectProperty>
     
 

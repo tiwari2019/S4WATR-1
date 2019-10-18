@@ -156,7 +156,8 @@
 ###  https://w3id.org/def/S4WATR#usedIn
 :usedIn rdf:type owl:ObjectProperty ;
         rdfs:domain <https://w3id.org/saref#Device> ;
-        rdfs:range :WaterInfrastructure .
+        rdfs:range :WaterInfrastructure ;
+        rdfs:label "UsedIn"@en .
 
 
 ###  https://w3id.org/saref#controlsProperty
