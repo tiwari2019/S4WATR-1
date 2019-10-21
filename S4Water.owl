@@ -200,7 +200,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/S4WATR#hasTarrif">
         <rdfs:domain rdf:resource="https://w3id.org/def/S4WATR#WaterMeter"/>
         <rdfs:range rdf:resource="https://w3id.org/def/S4WATR#Tarrif"/>
-        <rdfs:label xml:lang="en">Tarrif</rdfs:label>
+        <rdfs:label xml:lang="en">hasTarrif</rdfs:label>
     </owl:ObjectProperty>
     
 
