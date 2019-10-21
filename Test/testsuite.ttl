@@ -8,6 +8,149 @@
 
 
 
+###  Test1_WATR-4
+
+:Test1 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "TankLevelSensor subClassOf usedIn min 1 WaterInfrastructure"^^xsd:string .
+
+
+
+###  Test2_WATR-4
+
+:Test2 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                 owl:NamedIndividual ;
+        
+        <http://w3id.org/def/vtc#desiredBehaviour> "WaterQualitySensor subClassOf usedIn min 1 WaterInfrastructure"^^xsd:string .
+
+
+
+###  Test3_WATR-4
+
+:Test3 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                 owl:NamedIndividual ;
+        
+        <http://w3id.org/def/vtc#desiredBehaviour> "CapacitySensor subClassOf usedIn min 1 WaterInfrastructure"^^xsd:string .
+
+
+
+###  Test4_WATR-4
+
+:Test4 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                 owl:NamedIndividual ;
+        
+        <http://w3id.org/def/vtc#desiredBehaviour> "Sensor subClassOf usedIn min 1 WaterInfrastructure"^^xsd:string .
+
+
+###  Test5_WATR-7
+
+	:Test5 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "HotWaterMeter subClassOf WaterMeter"^^xsd:string .
+
+
+
+###  Test6_WATR-7
+
+	:Test6 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "ColdWaterMeter subClassOf WaterMeter"^^xsd:string .
+
+
+
+
+###  Test7_WATR-8
+
+	:Test7 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasFabricationNo max 1 string"^^xsd:string .
+
+
+
+
+###  Test8_WATR-9
+
+	:Test8 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasModel min 1 String"^^xsd:string .
+
+
+
+###  Test9_WATR-10
+
+
+	:Test9 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasVersion min 1 Version"^^xsd:string .
+
+
+
+###  Test10_WATR-11
+
+
+	:Test10 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasHardwareVersion min 1 String"^^xsd:string .
+
+
+###  Test11_WATR-12
+
+
+
+	:Test11 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                owl:NamedIndividual ;
+       
+       <http://w3id.org/def/vtc#desiredBehaviour> "WaterMeter subClassOf hasFirmwareVersion min 1 String"^^xsd:string .
+
+
+
+
+###  Test12_WATR-33
+
+	:Test12 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                 owl:NamedIndividual ;
+        
+        <http://w3id.org/def/vtc#desiredBehaviour> "Conductance type Physical"^^xsd:string .
+
+
+
+###  Test13_WATR-33
+
+	:Test13 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                 owl:NamedIndividual ;
+        
+        <http://w3id.org/def/vtc#desiredBehaviour> "Turbidity type Physical"^^xsd:string .
+
+
+###  Test14_WATR-34
+
+	:Test14rdf:type <http://w3id.org/def/vtc#TestCaseDesign> ,
+                 owl:NamedIndividual ;
+        
+        <http://w3id.org/def/vtc#desiredBehaviour> "pH type Chemical"^^xsd:string .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ###  Test1
 
 :Test1 rdf:type <http://w3id.org/def/vtc#TestCaseDesign> , owl:NamedIndividual ;
