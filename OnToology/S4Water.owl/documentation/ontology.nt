@@ -506,16 +506,25 @@ _:genid15 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://w
 _:genid15 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/def/S4WATR#WaterInfrastructure> .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasManufacture> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#hasFabricationNo> .
 _:genid16 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasModel> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#hasFirmwareVersion> .
 _:genid17 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#hasFabricationNo> .
-_:genid18 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#hasHardwareVersion> .
+_:genid18 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid18 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasManufacture> .
+_:genid19 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasModel> .
+_:genid20 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended."@en .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref"@en .
 <https://w3id.org/saref#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
@@ -523,55 +532,55 @@ _:genid18 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org
 # https://w3id.org/saref#Measurement
 <https://w3id.org/saref#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
-<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
-_:genid19 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
-<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToProperty> .
-_:genid20 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid21 .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid21 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
-_:genid21 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid21 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#UnitOfMeasure> .
+_:genid21 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#UnitOfMeasure> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid22 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToProperty> .
-_:genid22 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid22 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Property> .
+_:genid22 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasTimeStamp> .
-_:genid23 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid23 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredIn> .
+_:genid23 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid23 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#UnitOfMeasure> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
-_:genid24 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToProperty> .
+_:genid24 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid24 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/saref#Property> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid25 .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
-_:genid25 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid25 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid25 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasTimeStamp> .
+_:genid25 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
+_:genid26 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#hasValue> .
+_:genid27 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid27 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#float> .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Represents the measured value made over a property. It is also linked to the unit of measure in which the value is expressed and the timestamp of the measurement."@en .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref#"@en .
 <https://w3id.org/saref#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
 # 
 # https://w3id.org/saref#Property
 <https://w3id.org/saref#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid26 .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid26 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isControlledByDevice> .
-_:genid26 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
-<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid27 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredByDevice> .
-_:genid27 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid28 .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToMeasurements> .
-_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isControlledByDevice> .
+_:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#isMeasuredByDevice> .
+_:genid29 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Device> .
+<https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/saref#relatesToMeasurements> .
+_:genid30 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#Measurement> .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#comment> "An aspect of an entity that can be observable by a sensor."@en .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "https://w3id.org/saref"@en .
 <https://w3id.org/saref#Property> <http://www.w3.org/2000/01/rdf-schema#label> "Property"@en .
@@ -605,7 +614,7 @@ _:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # 
 # https://w3id.org/def/S4WATR#Capacity
 <https://w3id.org/def/S4WATR#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#ColdWaterMeter
 <https://w3id.org/def/S4WATR#ColdWaterMeter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -616,19 +625,19 @@ _:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # 
 # https://w3id.org/def/S4WATR#CurrentLevel
 <https://w3id.org/def/S4WATR#CurrentLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#CurrentLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#CurrentLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#CurrentWaterFlow
 <https://w3id.org/def/S4WATR#CurrentWaterFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#CurrentWaterFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#CurrentWaterFlow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#CurrentWaterLeak
 <https://w3id.org/def/S4WATR#CurrentWaterLeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#CurrentWaterLeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#CurrentWaterLeak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#FlowOfWater
 <https://w3id.org/def/S4WATR#FlowOfWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#FlowOfWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#FlowOfWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#Hardness
 <https://w3id.org/def/S4WATR#Hardness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -640,19 +649,19 @@ _:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # 
 # https://w3id.org/def/S4WATR#InflowRates
 <https://w3id.org/def/S4WATR#InflowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#InflowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#InflowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#OutFlowRates
 <https://w3id.org/def/S4WATR#OutFlowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#OutFlowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#OutFlowRates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#Power
 <https://w3id.org/def/S4WATR#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#Power> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#RadioFrequencyLevel
 <https://w3id.org/def/S4WATR#RadioFrequencyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#RadioFrequencyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#RadioFrequencyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#Temperature
 <https://w3id.org/def/S4WATR#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -664,7 +673,7 @@ _:genid28 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#
 # 
 # https://w3id.org/def/S4WATR#Volume
 <https://w3id.org/def/S4WATR#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://w3id.org/def/S4WATR#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/def/S4WATR#WaterProperty> .
+<https://w3id.org/def/S4WATR#Volume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/saref#Property> .
 # 
 # https://w3id.org/def/S4WATR#pH
 <https://w3id.org/def/S4WATR#pH> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
