@@ -391,14 +391,6 @@
     
 
 
-    <!-- https://w3id.org/def/S4WATR#hasVersionNo -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/def/S4WATR#hasVersionNo">
-        <rdfs:domain rdf:resource="https://w3id.org/saref#Device"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://w3id.org/saref#hasManufacture -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/saref#hasManufacture">
@@ -863,6 +855,18 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                 <owl:onProperty rdf:resource="https://w3id.org/def/S4WATR#usedIn"/>
                 <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
                 <owl:onClass rdf:resource="https://w3id.org/def/S4WATR#WaterInfrastructure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasManufacture"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/saref#hasModel"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
