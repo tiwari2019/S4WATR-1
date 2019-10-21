@@ -576,16 +576,25 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
                                                   owl:onClass :WaterInfrastructure
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasFabricationNo ;
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasFirmwareVersion ;
+                                                  owl:minCardinality "1"^^xsd:nonNegativeInteger
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :hasHardwareVersion ;
+                                                  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                  owl:onDataRange rdf:PlainLiteral
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
                                                   owl:onProperty <https://w3id.org/saref#hasManufacture> ;
                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
                                                 ] ,
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty <https://w3id.org/saref#hasModel> ;
                                                   owl:minCardinality "1"^^xsd:nonNegativeInteger
-                                                ] ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :hasFabricationNo ;
-                                                  owl:maxCardinality "1"^^xsd:nonNegativeInteger
                                                 ] ;
                                 rdfs:comment "A tangible object designed to accomplish a particular task in households, common public buildings or offices. In order to accomplish this task, the device performs one or more functions. For example, a washing machine is designed to wash (task) and to accomplish this task it performs a start and stop function. Devices can be structured in categories (subclasses) that reflect the different domain in which a device is used, e.g., smart appliances domain (subclass FunctionRelated) vs. building domain (subclass BuildingRelated) vs. smart grid domain (subclass EnergyRelated). New categories can be defined,if needed, to reflect other differences, for example different points of view, such as the point of view of the device's user vs. the point of view of the device's manufacturer. We propose a list of devices that are relevant for the purpose of SAREF, but this list can be extended."@en ;
                                 rdfs:isDefinedBy "https://w3id.org/saref"@en ;
@@ -677,7 +686,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#Capacity
 :Capacity rdf:type owl:NamedIndividual ,
-                   :WaterProperty .
+                   <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#ColdWaterMeter
@@ -691,22 +700,22 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#CurrentLevel
 :CurrentLevel rdf:type owl:NamedIndividual ,
-                       :WaterProperty .
+                       <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#CurrentWaterFlow
 :CurrentWaterFlow rdf:type owl:NamedIndividual ,
-                           :WaterProperty .
+                           <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#CurrentWaterLeak
 :CurrentWaterLeak rdf:type owl:NamedIndividual ,
-                           :WaterProperty .
+                           <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#FlowOfWater
 :FlowOfWater rdf:type owl:NamedIndividual ,
-                      :WaterProperty .
+                      <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#Hardness
@@ -721,22 +730,22 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#InflowRates
 :InflowRates rdf:type owl:NamedIndividual ,
-                      :WaterProperty .
+                      <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#OutFlowRates
 :OutFlowRates rdf:type owl:NamedIndividual ,
-                       :WaterProperty .
+                       <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#Power
 :Power rdf:type owl:NamedIndividual ,
-                :WaterProperty .
+                <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#RadioFrequencyLevel
 :RadioFrequencyLevel rdf:type owl:NamedIndividual ,
-                              :WaterProperty .
+                              <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#Temperature
@@ -751,7 +760,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 ###  https://w3id.org/def/S4WATR#Volume
 :Volume rdf:type owl:NamedIndividual ,
-                 :WaterProperty .
+                 <https://w3id.org/saref#Property> .
 
 
 ###  https://w3id.org/def/S4WATR#pH
