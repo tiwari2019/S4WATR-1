@@ -1023,7 +1023,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#Capacity -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#Capacity">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1045,7 +1045,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#CurrentLevel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#CurrentLevel">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1053,7 +1053,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#CurrentWaterFlow -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#CurrentWaterFlow">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1061,7 +1061,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#CurrentWaterLeak -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#CurrentWaterLeak">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1069,7 +1069,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#FlowOfWater -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#FlowOfWater">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1093,7 +1093,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#InflowRates -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#InflowRates">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1101,7 +1101,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#OutFlowRates -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#OutFlowRates">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1109,7 +1109,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#Power -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#Power">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1117,7 +1117,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#RadioFrequencyLevel -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#RadioFrequencyLevel">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
@@ -1141,7 +1141,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#Volume -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/S4WATR#Volume">
-        <rdf:type rdf:resource="https://w3id.org/def/S4WATR#WaterProperty"/>
+        <rdf:type rdf:resource="https://w3id.org/saref#Property"/>
     </owl:NamedIndividual>
     
 
