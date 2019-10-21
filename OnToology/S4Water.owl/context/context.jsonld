@@ -115,9 +115,6 @@
     "Interval" : {
       "@id" : "http://www.w3.org/2006/time#Interval"
     },
-    "hasVersionNo" : {
-      "@id" : "https://w3id.org/def/S4WATR#hasVersionNo"
-    },
     "HotWaterMeter" : {
       "@id" : "https://w3id.org/def/S4WATR#HotWaterMeter"
     },

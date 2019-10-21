@@ -3,6 +3,7 @@ rankdir=LR;
 size="1501"
 node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:WaterAsset" ":Sensor" "base:WaterMeter" "base:WaterInfrastructure" ":Device" "base:Indicator" "http://www.opengis.net/ont/geosparql#Geometry" "http://www.opengis.net/ont/geosparql#SpatialObject" ":UnitOfMeasure" ":City" "base:Tarrif" "wgs84_pos:Point" ":Measurement" ":Actuator" ; /*classes style*/
 	"NULL" -> "wgs84_pos:location" [ label = "owl:onProperty" ];
+	"NULL" -> ":hasManufacture" [ label = "owl:onProperty" ];
 	"NULL" -> "wgs84_pos:Point" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":isMeasuredByDevice" [ label = "owl:onProperty" ];
 	"NULL" -> ":isControlledByDevice" [ label = "owl:onProperty" ];
@@ -13,14 +14,15 @@ node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:Water
 	"NULL" -> ":relatesToProperty" [ label = "owl:onProperty" ];
 	"NULL" -> ":City" [ label = "owl:someValuesFrom" ];
 	"NULL" -> ":controlsProperty" [ label = "owl:onProperty" ];
+	"NULL" -> ":hasModel" [ label = "owl:onProperty" ];
 	"NULL" -> "base:usedIn" [ label = "owl:onProperty" ];
 	"NULL" -> "xsd:dateTime" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:Version" [ label = "owl:onClass" ];
-	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
 	"NULL" -> "base:assignedTo" [ label = "owl:onProperty" ];
-	"NULL" -> ":Property" [ label = "owl:onClass" ];
-	"NULL" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":hasValue" [ label = "owl:onProperty" ];
+	"NULL" -> ":relatesToMeasurements" [ label = "owl:onProperty" ];
+	"NULL" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "owl:allValuesFrom" ];
+	"NULL" -> ":Property" [ label = "owl:onClass" ];
 	"NULL" -> "base:hasVersion" [ label = "owl:onProperty" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:allValuesFrom" ];
 	"NULL" -> ":UnitOfMeasure" [ label = "owl:onClass" ];
@@ -33,8 +35,8 @@ node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:Water
 	"NULL" -> ":hasTimeStamp" [ label = "owl:onProperty" ];
 	"NULL" -> ":makesMeasurement" [ label = "owl:onProperty" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#sfWithin" [ label = "owl:onProperty" ];
-	"NULL" -> ":Property" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:hasFabricationNo" [ label = "owl:onProperty" ];
+	"NULL" -> ":Property" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "http://www.opengis.net/ont/geosparql#hasGeometry" [ label = "owl:onProperty" ];
 	"NULL" -> ":Device" [ label = "owl:allValuesFrom" ];
 	"NULL" -> "base:hasFirmwareVersion" [ label = "owl:onProperty" ];
@@ -46,7 +48,6 @@ node [shape = rectangle, color="orange"]; "base:Version" ":Property" "base:Water
 	"base:WaterInfrastructure" -> "base:WaterAsset" [ label = "base:isComposedBy" ];
 	":Device" -> "rdfs:Literal" [ label = ":hasModel" ];
 	":Property" -> ":Device" [ label = ":isControlledByDevice" ];
-	":Device" -> "owl:Thing" [ label = "base:hasVersionNo" ];
 	":Device" -> "rdfs:Literal" [ label = "base:hasHardwareVersion" ];
 	"base:WaterMeter" -> "base:Version" [ label = "base:hasVersion" ];
 	":Property" -> ":Measurement" [ label = ":relatesToMeasurements" ];
