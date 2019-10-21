@@ -241,6 +241,17 @@
     
 
 
+    <!-- https://w3id.org/def/S4WATR#isComposedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/S4WATR#isComposedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/def/S4WATR#WaterInfrastructure"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+        <rdfs:label xml:lang="en">isComposedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/def/S4WATR#isManagedBy -->
 
 
@@ -270,7 +281,7 @@
     <owl:ObjectProperty rdf:about="https://w3id.org/def/S4WATR#usedIn">
         <rdfs:domain rdf:resource="https://w3id.org/saref#Device"/>
         <rdfs:range rdf:resource="https://w3id.org/def/S4WATR#WaterInfrastructure"/>
-        <rdfs:label xml:lang="en">UsedIn</rdfs:label>
+        <rdfs:label xml:lang="en">usedIn</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -822,6 +833,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterInfrastructure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/S4WATR#isComposedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">WaterInfrastructure</rdfs:label>
     </owl:Class>
     

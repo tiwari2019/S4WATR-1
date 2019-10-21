@@ -98,6 +98,10 @@
     "WaterInfrastructure" : {
       "@id" : "https://w3id.org/def/S4WATR#WaterInfrastructure"
     },
+    "isComposedBy" : {
+      "@id" : "https://w3id.org/def/S4WATR#isComposedBy",
+      "@type" : "@id"
+    },
     "Physical" : {
       "@id" : "https://w3id.org/def/S4WATR#Physical"
     },
