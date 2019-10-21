@@ -320,8 +320,7 @@ This section provides details for each class and property defined by SAREF exten
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">UsedIn</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#controlsProperty" title="https://w3id.org/saref#controlsProperty">controlsProperty</a>
+            <a href="#https://w3id.org/saref#controlsProperty" title="https://w3id.org/saref#controlsProperty">controlsProperty</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#hasFabricationNo" title="https://w3id.org/def/S4WATR#hasFabricationNo">has fabrication no</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/S4WATR#hasVersionNo" title="https://w3id.org/def/S4WATR#hasVersionNo">has version no</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/def/S4WATR#hasFirmwareVersion" title="https://w3id.org/def/S4WATR#hasFirmwareVersion">hasFirmwareVersion</a>
@@ -330,6 +329,7 @@ This section provides details for each class and property defined by SAREF exten
             <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/saref#makesMeasurement" title="https://w3id.org/saref#makesMeasurement">makesMeasurement</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#manageWaterAsset" title="https://w3id.org/def/S4WATR#manageWaterAsset">manageWaterAsset</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/saref#measuresProperty" title="https://w3id.org/saref#measuresProperty">measuresProperty</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">usedIn</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -889,7 +889,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/def/S4WATR#manageWaterAsset" title="https://w3id.org/def/S4WATR#manageWaterAsset">manageWaterAsset</a>
+            <a href="#https://w3id.org/def/S4WATR#isComposedBy" title="https://w3id.org/def/S4WATR#isComposedBy">isComposedBy</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/def/S4WATR#manageWaterAsset" title="https://w3id.org/def/S4WATR#manageWaterAsset">manageWaterAsset</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -902,6 +903,8 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       <p>
          <strong>IRI:</strong> https://w3id.org/def/S4WATR#WaterInfrastructure</p>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
          <dt>has sub-classes</dt>
          <dd>
             <a href="#https://w3id.org/def/S4WATR#Aquedunct" title="https://w3id.org/def/S4WATR#Aquedunct">Aquedunct</a>
@@ -909,9 +912,14 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/def/S4WATR#StorageTank" title="https://w3id.org/def/S4WATR#StorageTank">StorageTank</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#https://w3id.org/def/S4WATR#isComposedBy" title="https://w3id.org/def/S4WATR#isComposedBy">isComposedBy</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">UsedIn</a>
+            <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">usedIn</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -1022,6 +1030,9 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#https://w3id.org/def/S4WATR#hasVersion" title="https://w3id.org/def/S4WATR#hasVersion">hasVersion</a>
       </li>
       <li>
+         <a href="#https://w3id.org/def/S4WATR#isComposedBy" title="https://w3id.org/def/S4WATR#isComposedBy">isComposedBy</a>
+      </li>
+      <li>
          <a href="#https://w3id.org/saref#isControlledByDevice" title="https://w3id.org/saref#isControlledByDevice">isControlledByDevice</a>
       </li>
       <li>
@@ -1064,7 +1075,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
          <a href="#https://w3id.org/def/S4WATR#hasTarrif" title="https://w3id.org/def/S4WATR#hasTarrif">Tarrif</a>
       </li>
       <li>
-         <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">UsedIn</a>
+         <a href="#https://w3id.org/def/S4WATR#usedIn" title="https://w3id.org/def/S4WATR#usedIn">usedIn</a>
       </li>
    </ul>
    <div class="entity" id="https://w3id.org/def/S4WATR#assignedTo">
@@ -1183,6 +1194,28 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
             <dt>has range</dt>
             <dd>
                <a href="#https://w3id.org/def/S4WATR#Version" title="https://w3id.org/def/S4WATR#Version">Version</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="https://w3id.org/def/S4WATR#isComposedBy">
+      <h3>isComposedBy<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/def/S4WATR#isComposedBy</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#https://w3id.org/def/S4WATR#WaterInfrastructure" title="https://w3id.org/def/S4WATR#WaterInfrastructure">WaterInfrastructure</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#https://w3id.org/def/S4WATR#WaterAsset" title="https://w3id.org/def/S4WATR#WaterAsset">WaterAsset</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1493,7 +1526,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
       </div>
    </div>
    <div class="entity" id="https://w3id.org/def/S4WATR#usedIn">
-      <h3>UsedIn<sup class="type-op" title="object property">op</sup>
+      <h3>usedIn<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>

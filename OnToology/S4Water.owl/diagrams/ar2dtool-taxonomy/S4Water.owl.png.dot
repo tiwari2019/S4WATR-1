@@ -24,8 +24,8 @@ node [shape = rectangle, color="black"]; "base:PressureRegulator" "base:Version"
 	"http://www.opengis.net/ont/geosparql#SpatialObject" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	":Actuator" -> ":Device" [ label = "rdfs:subClassOf" ];
 	"base:Valve" -> ":Actuator" [ label = "rdfs:subClassOf" ];
-	"base:WaterQualitySensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
 	"base:WaterProperty" -> ":Property" [ label = "rdfs:subClassOf" ];
+	"base:WaterQualitySensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
 	"http://www.w3.org/2006/time#Instant" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
 	"base:TankLevelSensor" -> ":Sensor" [ label = "rdfs:subClassOf" ];
 	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
