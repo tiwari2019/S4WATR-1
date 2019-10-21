@@ -747,6 +747,12 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
     <!-- https://w3id.org/def/S4WATR#WaterInfrastructure -->
 
     <owl:Class rdf:about="https://w3id.org/def/S4WATR#WaterInfrastructure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/S4WATR#isComposedBy"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/S4WATR#WaterAsset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">WaterInfrastructure</rdfs:label>
     </owl:Class>
     
