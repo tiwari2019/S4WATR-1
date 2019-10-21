@@ -437,7 +437,7 @@ _:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/saref#U
 <https://w3id.org/def/S4WATR#WaterInfrastructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 _:genid8 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/S4WATR#isComposedBy> .
-_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/S4WATR#WaterAsset> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://w3id.org/def/S4WATR#WaterAsset> .
 <https://w3id.org/def/S4WATR#WaterInfrastructure> <http://www.w3.org/2000/01/rdf-schema#label> "WaterInfrastructure"@en .
 # 
 # https://w3id.org/def/S4WATR#WaterMeter

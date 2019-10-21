@@ -501,7 +501,7 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
 :WaterInfrastructure rdf:type owl:Class ;
                      rdfs:subClassOf [ rdf:type owl:Restriction ;
                                        owl:onProperty :isComposedBy ;
-                                       owl:someValuesFrom :WaterAsset
+                                       owl:allValuesFrom :WaterAsset
                                      ] ;
                      rdfs:label "WaterInfrastructure"@en .
 
